@@ -1,3 +1,16 @@
+import { Link } from "react-router-dom";
+
 export function Header() {
-  return <div>Header</div>;
+  return (
+    <>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/movies">Movies</Link>
+            <Link to="/admin"> Admin</Link>
+          </li>
+        </ul>
+      </nav>
+    </>
+  );
 }

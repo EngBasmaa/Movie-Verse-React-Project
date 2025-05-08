@@ -1,10 +1,10 @@
 import { createRoot } from "react-dom/client";
-import MainLayout from "./app/layout/MainLayout";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
+import App from "./app/App";
 
 createRoot(document.getElementById("root")).render(
   <Provider store={store}>
-    <MainLayout />
+    <App />
   </Provider>
 );
