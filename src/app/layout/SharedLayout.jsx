@@ -1,7 +1,6 @@
 import React from "react";
-
+import { Footer, Header } from "../../shared/components";
 import { Outlet } from "react-router-dom";
-import { Footer, Header } from "../shared/components";
 
 export function SharedLayout() {
   return (

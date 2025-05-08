@@ -1,9 +1,10 @@
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import Mainlayout from "./layout/Mainlayout";
+import MainLayout from "./app/layout/MainLayout";
+import { Provider } from "react-redux";
+import { store } from "./app/store";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <Mainlayout />
-  </StrictMode>
+  <Provider store={store}>
+    <MainLayout />
+  </Provider>
 );
