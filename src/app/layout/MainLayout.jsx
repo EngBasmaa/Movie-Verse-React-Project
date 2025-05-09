@@ -5,6 +5,7 @@ import { Home } from "../../features/home";
 import { NotFound } from "../../shared/components";
 import { AdminLayout } from "../../features/admin/pages/AdminLayout";
 import { MovieDetails, Movies } from "../../features/movies";
+import MovieForm from "../../features/admin/pages/MovieForm";
 
 export default function MainLayout() {
   return (
@@ -18,6 +19,7 @@ export default function MainLayout() {
           <Route path="movies/:id" element={<MovieDetails />} />
           {/* ADMIN */}
           <Route path="admin" element={<AdminLayout />} />
+          <Route path="admin/:id/edit" element={<MovieForm />} />
           {/* NOTFOUND */}
           <Route path="*" element={<NotFound />} />
         </Route>

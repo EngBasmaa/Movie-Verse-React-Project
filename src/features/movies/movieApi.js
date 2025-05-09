@@ -12,4 +12,14 @@ const editMovie = (movieId, movie) =>
 
 const deleteMovie = (movieId) => axios.delete(`${API_URL_MOVIES}/${movieId}`);
 
-export { getAllMovies, getMovieById, addMovie, editMovie, deleteMovie };
+const searchMovies = (query) => {
+  return axios.get(`${API_URL_MOVIES}?title=${encodeURIComponent(query)}`);
+};
+export {
+  getAllMovies,
+  getMovieById,
+  addMovie,
+  editMovie,
+  deleteMovie,
+  searchMovies,
+};

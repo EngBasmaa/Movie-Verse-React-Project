@@ -21,7 +21,6 @@ export function Movies() {
 
   const filteredMovies = useMemo(() => {
     let result = [...movies];
-
     if (genre !== "All") {
       result = filterByGenre(result, genre);
     }
@@ -54,6 +53,7 @@ export function Movies() {
           <option value="All">All</option>
           <option value="Action">Action</option>
           <option value="Thriller">Thriller</option>
+          <option value="Science Fiction">Science Fiction</option>
         </select>
 
         <select onChange={(e) => setSortType(e.target.value)}>
