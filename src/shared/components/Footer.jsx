@@ -1,3 +1,3 @@
 export function Footer() {
-  return <div>Footer</div>;
+  return <div>Test Pr Footer</div>;
 }
