@@ -6,6 +6,8 @@ import { NotFound } from "../../shared/components";
 import { AdminLayout } from "../../features/admin/pages/AdminLayout";
 import { MovieDetails, Movies } from "../../features/movies";
 import MovieForm from "../../features/admin/pages/MovieForm";
+import { People } from "../../features/people/pages/People";
+import { PersonDetails } from "../../features/people/pages/PersonDetails";
 
 export default function MainLayout() {
   return (
@@ -17,9 +19,12 @@ export default function MainLayout() {
           {/* MOVIES */}
           <Route path="movies" element={<Movies />} />
           <Route path="movies/:id" element={<MovieDetails />} />
+          {/* PEOPLE */}
+          <Route path="movies" element={<Movies />} />
+          <Route path="movies/:id" element={<MovieDetails />} />
           {/* ADMIN */}
-          <Route path="admin" element={<AdminLayout />} />
-          <Route path="admin/:id/edit" element={<MovieForm />} />
+          <Route path="people" element={<People />} />
+          <Route path="people/:id" element={<PersonDetails />} />
           {/* NOTFOUND */}
           <Route path="*" element={<NotFound />} />
         </Route>
