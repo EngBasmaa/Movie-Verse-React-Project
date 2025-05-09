@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { deleteMovieAction } from "../../movies/movieSlice";
 import { useEffect } from "react";
+import { Table } from "../components/Table";
 
 export function AdminLayout() {
   const { movies, isLoading, errors } = useSelector(
@@ -19,6 +20,7 @@ export function AdminLayout() {
     <>
       <div>
         <button onClick={() => deleteHandler(986056)}>Delete</button>
+      <Table />
       </div>
     </>
   );
