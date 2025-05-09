@@ -7,6 +7,7 @@ import {
   sortByPopularity,
   sortByRating,
 } from "../../../shared/utils/movieUtils";
+import { Button } from "../../../shared/components/MyButton";
 
 export function Movies() {
   const { movies, isLoading, errors } = useSelector(
@@ -49,7 +50,7 @@ export function Movies() {
     <>
       <div>
         {/* Filter + Sort Controls */}
-        <select onChange={(e) => setGenre(e.target.value)}>
+        <select className="inp" onChange={(e) => setGenre(e.target.value)}>
           <option value="All">All</option>
           <option value="Action">Action</option>
           <option value="Thriller">Thriller</option>
@@ -68,22 +69,24 @@ export function Movies() {
         />
 
         {/* Display Movies */}
-        {paginatedMovies.map((movie) => (
+        {paginatedMovies.map((movie, index) => (
           <div key={movie.id}>
-            <h3>{movie.title}</h3>
+            <h3 className="text-red-500 font-bold">
+              {index + 1}- {movie.title}
+            </h3>
             <p>{movie.genres.join(", ")}</p>
           </div>
         ))}
 
         {/* Pagination Controls */}
-        <button
+        <Button
           onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
           disabled={currentPage === 1}
         >
           Prev
-        </button>
+        </Button>
         <span>Page {currentPage}</span>
-        <button
+        <Button
           onClick={() =>
             setCurrentPage((p) =>
               p < Math.ceil(filteredMovies.length / limit) ? p + 1 : p
@@ -92,7 +95,7 @@ export function Movies() {
           disabled={currentPage === Math.ceil(filteredMovies.length / limit)}
         >
           Next
-        </button>
+        </Button>
       </div>
     </>
   );

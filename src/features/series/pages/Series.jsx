@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useMemo, useState } from "react";
+import { useSelector } from "react-redux";
 import {
   filterByGenre,
   filterBySearch,
@@ -7,19 +7,13 @@ import {
   sortByPopularity,
   sortByRating,
 } from "../../../shared/utils/seriesUtils";
-import { getAllSeriesAction } from "../seriesSlice";
+import { Button } from "../../../shared/components/MyButton";
 
 export function Series() {
   const { series, isLoading, errors } = useSelector(
     (store) => store.seriesSlice
   );
-  const dispatch = useDispatch();
 
-  useEffect(() => {
-    if (!series || series.length === 0) {
-      dispatch(getAllSeriesAction());
-    }
-  }, [dispatch, series]);
   // Local Filters
   const [genre, setGenre] = useState("All");
   const [sortType, setSortType] = useState("rating");
@@ -84,14 +78,14 @@ export function Series() {
         ))}
 
         {/* Pagination Controls */}
-        <button
+        <Button
           onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
           disabled={currentPage === 1}
         >
           Prev
-        </button>
+        </Button>
         <span>Page {currentPage}</span>
-        <button
+        <Button
           onClick={() =>
             setCurrentPage((p) =>
               p < Math.ceil(filteredSeries.length / limit) ? p + 1 : p
@@ -100,7 +94,7 @@ export function Series() {
           disabled={currentPage === Math.ceil(filteredSeries.length / limit)}
         >
           Next
-        </button>
+        </Button>
       </div>
     </>
   );
