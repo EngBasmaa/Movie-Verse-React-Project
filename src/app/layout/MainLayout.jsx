@@ -8,6 +8,8 @@ import { MovieDetails, Movies } from "../../features/movies";
 import MovieForm from "../../features/admin/pages/MovieForm";
 import { People } from "../../features/people/pages/People";
 import { PersonDetails } from "../../features/people/pages/PersonDetails";
+import { Series } from "../../features/series/pages/Series";
+import { SeriesDetails } from "../../features/series/pages/SeriesDetails";
 
 export default function MainLayout() {
   return (
@@ -19,9 +21,12 @@ export default function MainLayout() {
           {/* MOVIES */}
           <Route path="movies" element={<Movies />} />
           <Route path="movies/:id" element={<MovieDetails />} />
+          {/* SERIES */}
+          <Route path="series" element={<Series />} />
+          <Route path="series/:id" element={<SeriesDetails />} />
           {/* PEOPLE */}
-          <Route path="movies" element={<Movies />} />
-          <Route path="movies/:id" element={<MovieDetails />} />
+          <Route path="admin" element={<AdminLayout />} />
+          <Route path="admin/:id" element={<MovieDetails />} />
           {/* ADMIN */}
           <Route path="people" element={<People />} />
           <Route path="people/:id" element={<PersonDetails />} />
