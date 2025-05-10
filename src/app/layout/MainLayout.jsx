@@ -5,11 +5,12 @@ import { Home } from "../../features/home";
 import { NotFound } from "../../shared/components";
 import { AdminLayout } from "../../features/admin/pages/AdminLayout";
 import { MovieDetails, Movies } from "../../features/movies";
-import MovieForm from "../../features/admin/pages/MovieForm";
 import { People } from "../../features/people/pages/People";
 import { PersonDetails } from "../../features/people/pages/PersonDetails";
 import { Series } from "../../features/series/pages/Series";
 import { SeriesDetails } from "../../features/series/pages/SeriesDetails";
+import { MovieForm } from "../../features/admin/pages/MovieForm";
+import { SeriesForm } from "../../features/admin/pages/SeriesForm";
 
 export default function MainLayout() {
   return (
@@ -24,10 +25,13 @@ export default function MainLayout() {
           {/* SERIES */}
           <Route path="series" element={<Series />} />
           <Route path="series/:id" element={<SeriesDetails />} />
-          {/* PEOPLE */}
-          <Route path="admin" element={<AdminLayout />} />
-          <Route path="admin/:id" element={<MovieDetails />} />
           {/* ADMIN */}
+          <Route path="admin" element={<AdminLayout />} />
+          <Route path="/admin/:id/editMovie" element={<MovieForm />} />
+          <Route path="/admin/:id/editSeries" element={<SeriesForm />} />
+          {/* MOVIE DETAILS */}
+          <Route path="movies/:id" element={<MovieDetails />} />
+          {/* PEOPLE */}
           <Route path="people" element={<People />} />
           <Route path="people/:id" element={<PersonDetails />} />
           {/* NOTFOUND */}
