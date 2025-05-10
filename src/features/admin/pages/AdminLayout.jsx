@@ -1,25 +1,26 @@
-import { useDispatch } from "react-redux";
-import { deleteMovieAction } from "../../movies/movieSlice";
-import { useEffect, useState } from "react";
+
+import {  useState } from "react";
 import { MyTable } from "../components/MyTable";
 import { Sidebar } from "../components/Sidebar";
 
 export function AdminLayout() {
+
+
   // const { movies, isLoading, errors } = useSelector(
   //   (store) => store.movieSlice
   // );
-  const dispatch = useDispatch();
 
   const [activeTab, setActiveTab] = useState("movies");
 
-  useEffect(() => {
-    // ممكن تستدعي هنا جلب الداتا مش الحذف
-    // dispatch(fetchMoviesAction());
-  }, []);
+  const AddNewSeries=()=>{
+// add movie logic
+  }
+  const AddNewMovie = () => {
+    // add series logic
 
-  const deleteHandler = (movieId) => {
-    dispatch(deleteMovieAction(movieId));
-  };
+  }
+
+  
 
   return (
     <div className="grid grid-cols-12 min-h-screen bg-gray-100">
@@ -31,12 +32,7 @@ export function AdminLayout() {
           <>
              <div className="flex justify-between items-center mb-4">
               <h1 className="text-2xl font-bold text-gray-800">All</h1>
-              <button
-                onClick={() => deleteHandler(986056)}
-                className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg"
-              >
-                Delete Dummy Movie
-              </button>
+              <h3 className="text-2xl font-bold text-red-800">Analysis Charts</h3>
             </div>
             <MyTable />
           </>
@@ -48,10 +44,10 @@ export function AdminLayout() {
             <div className="flex justify-between items-center mb-4">
               <h1 className="text-2xl font-bold text-gray-800">Movies</h1>
               <button
-                onClick={() => deleteHandler(986056)}
+                onClick={() => AddNewMovie(986056)}
                 className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg"
               >
-                Delete Dummy Movie
+                Add New Movie
               </button>
             </div>
             <MyTable />
@@ -65,10 +61,10 @@ export function AdminLayout() {
              <div className="flex justify-between items-center mb-4">
               <h1 className="text-2xl font-bold text-gray-800">Series</h1>
               <button
-                onClick={() => deleteHandler(986056)}
+                onClick={() => AddNewSeries(986056)}
                 className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg"
               >
-                Delete Dummy Movie
+                Add New Series
               </button>
             </div>
             <MyTable />
