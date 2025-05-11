@@ -60,8 +60,6 @@ export function Hero() {
           </div>
           {/* button */}
           <div className="flex items-start gap-5">
-            {/* Use your Button component here */}
-
             <Button
               variant="secondary"
               size="lg"

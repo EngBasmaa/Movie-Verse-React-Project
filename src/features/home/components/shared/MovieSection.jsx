@@ -1,43 +1,55 @@
-/* eslint-disable no-unused-vars */
 import React, { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { useSelector } from "react-redux";
 import { MovieCard } from "../../../../shared/components/MovieCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ModernArrow from "./ModernArrow";
 
-export function MovieSection({ title, getMovies, limit = 10 }) {
+export function MovieSection({
+  title,
+  getMovies,
+  limit = 10,
+  navigationId,
+  overlayVariant = "default",
+}) {
+  const swiperRef = useRef(null);
   const { movies } = useSelector((store) => store.movieSlice);
   const [sectionMovies, setSectionMovies] = useState([]);
-  const containerRef = useRef(null);
+  const [swiperInstance, setSwiperInstance] = useState(null);
+
+  // Re-init navigation on mount or navigationId change
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (swiperRef.current?.swiper?.params?.navigation) {
+        swiperRef.current.swiper.navigation.destroy();
+        swiperRef.current.swiper.navigation.init();
+        swiperRef.current.swiper.navigation.update();
+      }
+    }, 300);
+
+    return () => clearTimeout(timeout);
+  }, [navigationId]);
 
   useEffect(() => {
     if (movies && movies.length > 0) {
-      const fetchedMovies = getMovies(movies, limit);
-      setSectionMovies(fetchedMovies);
+      const fetched = getMovies(movies, limit);
+      setSectionMovies(fetched);
     }
   }, [movies, getMovies, limit]);
 
   const swiperParams = {
-    modules: [Autoplay, Navigation],
+    modules: [Autoplay, Navigation, Pagination],
     spaceBetween: 20,
     slidesPerView: 1,
     breakpoints: {
-      640: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      1024: {
-        slidesPerView: 4,
-      },
-      1280: {
-        slidesPerView: 5,
-      },
+      640: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      1024: { slidesPerView: 4 },
+      1280: { slidesPerView: 5 },
     },
     loop: true,
     autoplay: {
@@ -45,10 +57,14 @@ export function MovieSection({ title, getMovies, limit = 10 }) {
       disableOnInteraction: false,
     },
     navigation: {
-      prevEl: ".custom-swiper-button-prev",
-      nextEl: ".custom-swiper-button-next",
+      prevEl: `.${navigationId}-prev`,
+      nextEl: `.${navigationId}-next`,
     },
+    pagination: { clickable: true },
+    observer: true,
+    observeParents: true,
     className: "rounded-lg overflow-hidden",
+    onSwiper: setSwiperInstance,
   };
 
   const arrowStyle = {
@@ -56,37 +72,29 @@ export function MovieSection({ title, getMovies, limit = 10 }) {
     transform: "translateY(0)",
   };
 
+  const slideNext = () => swiperInstance?.slideNext();
+  const slidePrev = () => swiperInstance?.slidePrev();
+
   return (
-    <div className="bg-black/100 py-12" ref={containerRef}>
+    <div className="bg-black py-12">
       <div className="container mx-auto px-4 relative">
-        <div className="flex  items-center justify-between mb-8">
-          <h2
-            className="text-white text-3xl font-bold  text-left relative pl-6 z-10"
-            style={{
-              "::before": {
-                content: '""',
-                position: "absolute",
-                left: 0,
-                top: "50%",
-                transform: "translateY(-50%)",
-                width: "4px",
-                height: "1.5em",
-                backgroundColor: "red",
-              },
-            }}
-          >
+        {/* Header */}
+        <div className="flex items-center justify-between mb-8">
+          <h2 className="text-white text-3xl font-bold text-left pl-6 relative before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-[1.5em] before:bg-red-600">
             {title}
           </h2>
-          <div className="flex  top-0  ">
-            <div className="custom-swiper-button-prev mr-2">
+          <div className="flex">
+            <button className={`${navigationId}-prev mr-2`} onClick={slidePrev}>
               <ModernArrow icon={ChevronLeft} style={arrowStyle} />
-            </div>
-            <div className="custom-swiper-button-next">
+            </button>
+            <button className={`${navigationId}-next`} onClick={slideNext}>
               <ModernArrow icon={ChevronRight} style={arrowStyle} />
-            </div>
+            </button>
           </div>
         </div>
-        <Swiper {...swiperParams}>
+
+        {/* Swiper */}
+        <Swiper ref={swiperRef} {...swiperParams}>
           {sectionMovies.map((movie) => (
             <SwiperSlide key={movie.id}>
               <MovieCard
@@ -95,8 +103,8 @@ export function MovieSection({ title, getMovies, limit = 10 }) {
                 rating={movie.vote_average}
                 releaseDate={movie.release_date}
                 showPlayButton={true}
-                overlayVariant="default"
-              ></MovieCard>
+                overlayVariant={overlayVariant}
+              />
             </SwiperSlide>
           ))}
         </Swiper>

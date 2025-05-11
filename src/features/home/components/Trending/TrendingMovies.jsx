@@ -11,6 +11,8 @@ export function TrendingMovies() {
       title="Trending Now"
       getMovies={getTrendingMovies}
       limit={20}
+      navigationId="trending-swiper-nav"
+      overlayVariant="red"
     />
   );
 }
