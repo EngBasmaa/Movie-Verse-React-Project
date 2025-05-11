@@ -13,6 +13,7 @@ export function MovieSection({
   title,
   getMovies,
   limit = 10,
+  genre,
   navigationId,
   overlayVariant = "default",
 }) {
@@ -24,10 +25,10 @@ export function MovieSection({
 
   useEffect(() => {
     if (movies && movies.length > 0) {
-      const fetchedMovies = getMovies(movies, limit);
+      const fetchedMovies = getMovies(movies, limit, genre);
       setSectionMovies(fetchedMovies);
     }
-  }, [movies, getMovies, limit]);
+  }, [movies, getMovies, limit, genre]);
 
   useEffect(() => {
     const id = setTimeout(() => {

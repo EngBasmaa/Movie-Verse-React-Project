@@ -34,7 +34,7 @@ export const sortByRating = (movies) => [
   ...movies.sort((a, b) => b.vote_average - a.vote_average),
 ];
 
-export const sortByReleaseDate = (movies, order = "desc") =>
+export const sortByReleaseDate = (movies, order = "asc") =>
   [...movies].sort((a, b) =>
     order === "asc"
       ? new Date(a.release_date) - new Date(b.release_date)

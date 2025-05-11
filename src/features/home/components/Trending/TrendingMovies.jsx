@@ -1,10 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { MovieSection } from "../shared/MovieSection";
+import { getTrendingMovies } from "../../homeSlice";
 
-export const getTrendingMovies = (movies, limit = 10) => {
-  const sortedMovies = [...movies].sort((a, b) => b.popularity - a.popularity);
-  return sortedMovies.slice(0, limit);
-};
 export function TrendingMovies() {
   return (
     <MovieSection
