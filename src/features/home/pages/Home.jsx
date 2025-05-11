@@ -5,6 +5,9 @@ import { TrendingMovies } from "../components/Trending/TrendingMovies";
 import UpComing from "../components/UpComing/UpComing";
 import TopCategories from "../components/TopCategeory/TopCategory";
 import FreeContentSection from "../components/FreeContent/FreeContentSection";
+import TopRated from "../components/TopRated/TopRated";
+import NewReleas from "../components/NewRelease/NewReleas";
+
 export function Home() {
   const { movies, isLoading, errors } = useSelector(
     (store) => store.movieSlice
@@ -21,6 +24,8 @@ export function Home() {
         {/* <TopCategories></TopCategories> */}
         <UpComing></UpComing>
         <FreeContentSection></FreeContentSection>
+        <NewReleas></NewReleas>
+        <TopRated></TopRated>
       </div>
     </>
   );

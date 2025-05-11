@@ -5,10 +5,11 @@ import { filterUpcoming } from "../../../../shared/utils/movieUtils";
 export default function UpComing() {
   return (
     <MovieSection
-      title="Coming Soon"
+      title="Upcoming"
       getMovies={filterUpcoming}
-      navigationId="Upcoming-swiper-nav"
-      overlayVariant="dark"
+      limit={20}
+      navigationId="upcoming-swiper-nav"
+      overlayVariant="blue"
     />
   );
 }
