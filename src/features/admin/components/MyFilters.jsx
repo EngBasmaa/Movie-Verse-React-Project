@@ -1,29 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function MyFilters({ onFilterChange }) {
   const [genre, setGenre] = useState("");
   const [category, setCategory] = useState("");
-  const [language, setLanguage] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
+  const [sortBy, setSortBy] = useState("");
 
-  const handleFilterChange = () => {
-    onFilterChange({
-      genre,
-      category,
-      language,
-      searchQuery
-    });
-  };
+  useEffect(
+    () => {
+      onFilterChange({ genre, category, searchQuery, sortBy });
+    },
+    [genre, category, searchQuery, sortBy]
+  );
 
   return (
-    <div className="flex space-x-4 mb-4">
+    <div className="flex flex-wrap gap-4 justify-center mb-6">
       {/* Genre Filter */}
       <select
         value={genre}
         onChange={e => setGenre(e.target.value)}
-        className="p-2 border border-gray-300 rounded-md"
+        className="p-2 border border-gray-300 rounded-md text-sm"
       >
-        <option value="">Select Genre</option>
+        <option value="">🎬 Genre</option>
         <option value="Action">Action</option>
         <option value="Comedy">Comedy</option>
         <option value="Drama">Drama</option>
@@ -34,41 +32,32 @@ export function MyFilters({ onFilterChange }) {
       <select
         value={category}
         onChange={e => setCategory(e.target.value)}
-        className="p-2 border border-gray-300 rounded-md"
+        className="p-2 border border-gray-300 rounded-md text-sm"
       >
-        <option value="">Select Category</option>
-        <option value="movie">Movie</option>
-        <option value="series">Series</option>
+        <option value="">👥 Audience</option>
+        <option value="general">General</option>
+        <option value="adults">Adults</option>
       </select>
 
-      {/* Language Filter */}
+      {/* Sort Filter */}
       <select
-        value={language}
-        onChange={e => setLanguage(e.target.value)}
-        className="p-2 border border-gray-300 rounded-md"
+        value={sortBy}
+        onChange={e => setSortBy(e.target.value)}
+        className="p-2 border border-gray-300 rounded-md text-sm"
       >
-        <option value="">Select Language</option>
-        <option value="en">English</option>
-        <option value="ar">Arabic</option>
-        <option value="fr">French</option>
+        <option value="">🔽 Sort By</option>
+        <option value="rating">Rating</option>
+        <option value="releaseDate">Release Date</option>
       </select>
 
       {/* Search Filter */}
       <input
         type="text"
-        placeholder="Search by title"
+        placeholder="🔍 Search by title"
         value={searchQuery}
         onChange={e => setSearchQuery(e.target.value)}
-        className="p-2 border border-gray-300 rounded-md"
+        className="p-2 border border-gray-300 rounded-md text-sm w-48"
       />
-
-      {/* Apply Filters */}
-      <button
-        onClick={handleFilterChange}
-        className="px-4 py-2 bg-blue-500 text-white rounded-md"
-      >
-        Apply Filters
-      </button>
     </div>
   );
 }
