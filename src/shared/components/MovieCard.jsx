@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { FaStar, FaStarHalfAlt, FaRegStar, FaPlay } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export function MovieCard({
   imageUrl,
@@ -13,6 +14,8 @@ export function MovieCard({
   height,
   children,
   className,
+  typeOfCard = "movie",
+  id = 0,
 }) {
   const overlayStyles = {
     default: "bg-gradient-to-t from-black/80 via-black/30 to-transparent",
@@ -115,14 +118,26 @@ export function MovieCard({
         </div>
       </div>
 
-      {/* Play button */}
-      {showPlayButton && (
-        <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 cursor-pointer focus:outline-none">
-          <div className="bg-zinc-900/90 backdrop-blur-md rounded-full p-3 shadow-lg transition-transform hover:scale-110 hover:shadow-xl">
-            <FaPlay className="w-5 h-5 text-white" />
-          </div>
-        </button>
-      )}
+      {showPlayButton &&
+        (typeOfCard === "movie" ? (
+          <Link
+            to={`/media/movie/${id}`}
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 cursor-pointer focus:outline-none"
+          >
+            <div className="bg-zinc-900/90 backdrop-blur-md rounded-full p-3 shadow-lg transition-transform hover:scale-110 hover:shadow-xl">
+              <FaPlay className="w-5 h-5 text-white" />
+            </div>
+          </Link>
+        ) : (
+          <Link
+            to={`/media/series/${id}`}
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 cursor-pointer focus:outline-none"
+          >
+            <div className="bg-zinc-900/90 backdrop-blur-md rounded-full p-3 shadow-lg transition-transform hover:scale-110 hover:shadow-xl">
+              <FaPlay className="w-5 h-5 text-white" />
+            </div>
+          </Link>
+        ))}
 
       {children && (
         <div className="absolute top-4 right-4 z-40">{children}</div>

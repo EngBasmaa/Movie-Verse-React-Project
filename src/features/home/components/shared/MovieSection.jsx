@@ -98,6 +98,8 @@ export function MovieSection({
                 releaseDate={movie.release_date}
                 showPlayButton={true}
                 overlayVariant={overlayVariant}
+                typeOfCard="movie"
+                id={movie.id}
               />
             </SwiperSlide>
           ))}
