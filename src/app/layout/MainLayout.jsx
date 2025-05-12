@@ -13,8 +13,7 @@ import { MovieForm } from "../../features/admin/pages/MovieForm";
 import { SeriesForm } from "../../features/admin/pages/SeriesForm";
 
 export default function MainLayout() {
-  return (
-    <BrowserRouter>
+  return <BrowserRouter>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           {/* HOME */}
@@ -26,10 +25,7 @@ export default function MainLayout() {
           <Route path="series" element={<Series />} />
           <Route path="series/:id" element={<SeriesDetails />} />
           {/* ADMIN */}
-          <Route
-            path="admin"
-            element={<Navigate to="/admin/movies" replace />}
-          />
+          <Route path="admin" element={<Navigate to="admin/dashbord" replace />} />
           <Route path="admin/:tab" element={<AdminLayout />} />
           <Route path="admin/:id/editMovie" element={<MovieForm />} />
           <Route path="admin/:id/editSeries" element={<SeriesForm />} />
@@ -42,6 +38,5 @@ export default function MainLayout() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </BrowserRouter>
-  );
+    </BrowserRouter>;
 }

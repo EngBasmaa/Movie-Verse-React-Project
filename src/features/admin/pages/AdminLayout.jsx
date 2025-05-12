@@ -4,9 +4,10 @@ import { Link, useParams, useNavigate } from "react-router-dom";
 import { MdAddToPhotos } from "react-icons/md";
 
 import { MyTable } from "../components/MyTable";
-import { Sidebar } from "../components/Sidebar";
 import { MyFilters } from "../components/MyFilters";
 import { MyHeader } from "../components/MyHeader";
+import { MyChart } from "../components/MyChart";
+import { MyPie } from "../components/MyPie";
 
 import {
   filterByGenre,
@@ -63,11 +64,13 @@ export function AdminLayout() {
   useEffect(
     () => {
       setCurrentPage(1);
-      setActiveTab(tab === "series" ? "series" : "movies");
-
+      setActiveTab(tab === "series" ? "series" : (tab === "movies"?"movies":"dashboard"));
       if (tab === "movies") {
         dispatch(getAllMoviesAction());
+      } else if (tab === "series") {
+        dispatch(getAllSeriesAction());
       } else {
+        dispatch(getAllMoviesAction());
         dispatch(getAllSeriesAction());
       }
     },
@@ -133,64 +136,50 @@ export function AdminLayout() {
 
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
-  return (
-    <div className="flex">
-      {/* <Sidebar
-        activeTab={activeTab}
-        onTabChange={tab =>
-          navigate(
-            `/admin/${tab // setActiveTab={setActiveTab}
-            }`
-          )}
-      /> */}
+  return <div className="flex">
       <main className="flex-1 p-6 bg-gray-100 min-h-screen">
-        <MyHeader
-          activeTab={activeTab}
-          onTabChange={tab => navigate(`/admin/${tab}`)}
-        />
+        <MyHeader activeTab={activeTab} onTabChange={tab => navigate(`/admin/${tab}`)} />
         <div className="flex justify-around items-center mb-4 align-items-center align-content-center">
-          <MyFilters
-            filters={filters}
-            setFilters={setFilters}
-            onFilterChange={setFilters}
-          />
+          <MyFilters filters={filters} setFilters={setFilters} onFilterChange={setFilters} />
         </div>
-        <Link
-          to={`/admin/0/${activeTab === "movies" ? "editMovie" : "editSeries"}`}
-          className="flex items-center gap-2 w-50 ms-auto me-6 px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition"
-        >
+        <Link to={`/admin/0/${activeTab === "movies" ? "editMovie" : "editSeries"}`} className="flex items-center gap-2 w-50 ms-auto me-6 px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition">
           <MdAddToPhotos className="inline-block mr-2 size-6" />
           Add New {activeTab === "movies" ? "Movie" : "Series"}
         </Link>
-        <MyTable
-          type={activeTab === "movies" ? "movie" : "series"}
-          tableTitle={activeTab === "movies" ? "All Movies" : "All Series"}
-          data={paginatedData}
-          pagination={{ currentPage, totalPages }}
-          setPage={setCurrentPage}
-        />
+
+        {activeTab === "movies" && <MyChart movies={filteredData} />}
+        {activeTab === "movies" && <MyPie movies={filteredData} />}
+        {activeTab === "series" && <MyChart series={filteredData} />}
+        {activeTab === "series" && <MyPie series={filteredData} />}
+
+      {activeTab === "dashboard" &&
+        (<>
+          {activeTab === "movies" && <MyChart movies={filteredData} />}
+        {activeTab === "movies" && <MyPie movies={filteredData} />}
+        {activeTab === "series" && <MyChart series={filteredData} />}
+        {activeTab === "series" && <MyPie series={filteredData} />}
+
+      </>)
+      
+      }
+
+        <MyTable type={activeTab === "movies" ? "movie" : "series"} tableTitle={activeTab === "movies" ? "All Movies" : "All Series"} data={paginatedData} pagination={{ currentPage, totalPages }} setPage={setCurrentPage} />
         {/* Pagination Controls */}
         <div className="flex justify-center mt-6">
-          <button
-            className="px-4 py-2 mr-2 bg-gray-300 rounded-md"
-            disabled={currentPage === 1}
-            onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
-          >
+          <button className="px-4 py-2 mr-2 bg-gray-300 rounded-md" disabled={currentPage === 1} onClick={() => setCurrentPage(
+                prev => Math.max(prev - 1, 1)
+              )}>
             Previous
           </button>
           <span className="px-4 py-2">
             {currentPage} of {totalPages}
           </span>
-          <button
-            className="px-4 py-2 ml-2 bg-gray-300 rounded-md"
-            disabled={currentPage === totalPages}
-            onClick={() =>
-              setCurrentPage(prev => Math.min(prev + 1, totalPages))}
-          >
+          <button className="px-4 py-2 ml-2 bg-gray-300 rounded-md" disabled={currentPage === totalPages} onClick={() => setCurrentPage(
+                prev => Math.min(prev + 1, totalPages)
+              )}>
             Next
           </button>
         </div>
       </main>
     </div>
-  );
 }

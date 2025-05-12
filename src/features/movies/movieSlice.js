@@ -87,8 +87,6 @@ export const deleteMovieAction = createAsyncThunk(
   }
 );
 
-
-
 /* ============================SLICE============================================ */
 const movieSlice = createSlice({
   name: "movie",
