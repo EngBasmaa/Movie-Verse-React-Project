@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 export function MyFilters({ onFilterChange }) {
   const [genre, setGenre] = useState("");
@@ -10,16 +11,16 @@ export function MyFilters({ onFilterChange }) {
     () => {
       onFilterChange({ genre, category, searchQuery, sortBy });
     },
-    [genre, category, searchQuery, sortBy]
+    [onFilterChange, genre, category, searchQuery, sortBy]
   );
 
   return (
-    <div className="flex flex-wrap gap-4 justify-center mb-6">
+    <div className="flex flex-wrap gap-12 justify-center mb-6">
       {/* Genre Filter */}
       <select
         value={genre}
         onChange={e => setGenre(e.target.value)}
-        className="p-2 border border-gray-300 rounded-md text-sm"
+        className="p-2 border border-gray-300 rounded-md text-sm  font-semibold"
       >
         <option value="">🎬 Genre</option>
         <option value="Action">Action</option>
@@ -32,7 +33,7 @@ export function MyFilters({ onFilterChange }) {
       <select
         value={category}
         onChange={e => setCategory(e.target.value)}
-        className="p-2 border border-gray-300 rounded-md text-sm"
+        className="px-6 py-2 border border-gray-300 rounded-md text-sm font-semibold"
       >
         <option value="">👥 Audience</option>
         <option value="general">General</option>
@@ -43,7 +44,7 @@ export function MyFilters({ onFilterChange }) {
       <select
         value={sortBy}
         onChange={e => setSortBy(e.target.value)}
-        className="p-2 border border-gray-300 rounded-md text-sm"
+        className="p-2 border border-gray-300 rounded-md text-sm  font-semibold"
       >
         <option value="">🔽 Sort By</option>
         <option value="rating">Rating</option>
@@ -53,11 +54,15 @@ export function MyFilters({ onFilterChange }) {
       {/* Search Filter */}
       <input
         type="text"
-        placeholder="🔍 Search by title"
+        placeholder="   🔍     Search by title"
         value={searchQuery}
         onChange={e => setSearchQuery(e.target.value)}
-        className="p-2 border border-gray-300 rounded-md text-sm w-48"
+        className="p-2 border border-gray-300 rounded-md text-sm w-55  font-semibold"
       />
     </div>
   );
 }
+
+MyFilters.propTypes = {
+  onFilterChange: PropTypes.func
+};

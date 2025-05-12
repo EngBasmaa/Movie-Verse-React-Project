@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import { SharedLayout } from "./SharedLayout";
 import { Home } from "../../features/home";
 import { NotFound } from "../../shared/components";
@@ -26,9 +26,13 @@ export default function MainLayout() {
           <Route path="series" element={<Series />} />
           <Route path="series/:id" element={<SeriesDetails />} />
           {/* ADMIN */}
-          <Route path="admin" element={<AdminLayout />} />
-          <Route path="/admin/:id/editMovie" element={<MovieForm />} />
-          <Route path="/admin/:id/editSeries" element={<SeriesForm />} />
+          <Route
+            path="admin"
+            element={<Navigate to="/admin/movies" replace />}
+          />
+          <Route path="admin/:tab" element={<AdminLayout />} />
+          <Route path="admin/:id/editMovie" element={<MovieForm />} />
+          <Route path="admin/:id/editSeries" element={<SeriesForm />} />
           {/* MOVIE DETAILS */}
           <Route path="movies/:id" element={<MovieDetails />} />
           {/* PEOPLE */}

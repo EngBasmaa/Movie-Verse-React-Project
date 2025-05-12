@@ -13,11 +13,6 @@ export const filterBySearch = (movies, query) =>
     movie.title.toLowerCase().includes(query.toLowerCase())
   );
 
-export const filterReleased = movies => {
-  const now = new Date();
-  return movies.filter(movie => new Date(movie.release_date) <= now);
-};
-
 export const filterUpcoming = movies => {
   const now = new Date();
   return movies.filter(movie => new Date(movie.release_date) > now);
@@ -26,20 +21,17 @@ export const filterUpcoming = movies => {
 export const filterUpcomingByCategory = movies =>
   movies.filter(movie => movie.category === "upcoming");
 // SORT
-export const sortByPopularity = movies => [
-  ...movies.sort((a, b) => b.popularity - a.popularity)
-];
+export const sortByPopularity = movies =>
+  [...movies].sort((a, b) => b.popularity - a.popularity);
 
 export const sortByRating = movies =>
   [...movies].sort((a, b) => b.vote_average - a.vote_average);
 
-export const sortByReleaseDate = (movies, order = "desc") =>
+export const sortByReleaseDate = movies =>
   [...movies].sort(
-    (a, b) =>
-      order === "asc"
-        ? new Date(a.release_date) - new Date(b.release_date)
-        : new Date(b.release_date) - new Date(a.release_date)
+    (a, b) => new Date(b.release_date) - new Date(a.release_date)
   );
+
 // ============Limit==========
 export const getTrendingMovies = (movies, limit = 10) =>
   sortByPopularity(movies).slice(0, limit);

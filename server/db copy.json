@@ -1,6 +1,113 @@
 {
   "movies": [
     {
+      "adult": true,
+      "backdrop_path": "/bVm6udIB6iKsRqgMdQh6HywuEBj.jpg",
+      "id": "1233069",
+      "original_language": "de",
+      "original_title": "Exterritorial",
+      "overview": "When her son vanishes inside a US consulate, ex-special forces soldier Sara does everything in her power to find him — and uncovers a dark conspiracy.",
+      "popularity": 505.1585,
+      "poster_path": "/jM2uqCZNKbiyStyzXOERpMqAbdx.jpg",
+      "release_date": "2025-04-29",
+      "title": "Exterritorial",
+      "vote_average": 6.723,
+      "vote_count": 233,
+      "poster_url": "https://image.tmdb.org/t/p/original/jM2uqCZNKbiyStyzXOERpMqAbdx.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/bVm6udIB6iKsRqgMdQh6HywuEBj.jpg",
+      "genres": [
+        "Thriller",
+        "Action"
+      ],
+      "reviews": [],
+      "trailer_url": "https://www.youtube.com/watch?v=tlLsFEDHtWs",
+      "cast": "Jeanne Goursaud, Dougray Scott, Lera Abova, Emanuel Fellmer, Annabelle Mandeng",
+      "category": "popular",
+      "createdAt": "2025-05-09T18:08:24.709Z"
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cJvUJEEQ86LSjl4gFLkYpdCJC96.jpg",
+      "id": "1241436",
+      "original_language": "en",
+      "original_title": "Warfare",
+      "overview": "A platoon of Navy SEALs embarks on a dangerous mission in Ramadi, Iraq, with the chaos and brotherhood of war retold through their memories of the event.",
+      "popularity": 436.2016,
+      "poster_path": "/j8tqBXwH2PxBPzbtO19BTF9Ukbf.jpg",
+      "release_date": "2025-04-09",
+      "title": "Warfare",
+      "vote_average": 7.201,
+      "vote_count": 149,
+      "poster_url": "https://image.tmdb.org/t/p/original/j8tqBXwH2PxBPzbtO19BTF9Ukbf.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/cJvUJEEQ86LSjl4gFLkYpdCJC96.jpg",
+      "genres": [
+        "War",
+        "Action"
+      ],
+      "reviews": [
+        {
+          "author": "CinemaSerf",
+          "author_details": {
+            "name": "CinemaSerf",
+            "username": "Geronimo1967",
+            "avatar_path": "/yz2HPme8NPLne0mM8tBnZ5ZWJzf.jpg",
+            "rating": 7
+          },
+          "content": "A squad of American soldiers seemingly randomly select an house in Ramadi and having relocated it’s sleeping occupants to the ground floor, set up a sniper station from where they can monitor the goings on around them. Initially, this all looks harmless enough as the Iraqi locals go about their business, but gradually the spotters become suspicious of repetitive activity, the odd person who seems to be snooping on them - and then, well all hell breaks loose leaving them facing an existential threat that will test their mettle, their equipment and require some feats of legerdemain if they are to survive long enough to be rescued. There is quite some intensity to this drama as the young men under siege must each deal with their fears, strengths and weaknesses under a constant stream of fire. Will Poulter’s “Erik” leads the team, but the best effort for me came from his comms man “Ray” (D’Pharoah Woon-A-Tai) and, though sparingly, from Kit Connor’s rookie “Tommy” who, like us watching, had no idea what they were doing in this house and what the purpose of their mission actually was in the first place. There isn’t so much a script as an increasingly nervous dialogue that disintegrates as their predicament becomes more perilous and the photography and particularly the audio serve really well in conveying a sense of the lethally claustrophobic atmosphere in which these men had to function. Real veterans wrote the story, advised the production and that shows in something that is certainly incomplete from a narrative perspective, but is uncomfortably enthralling to watch and graphically displays the horrors of urban warfare.",
+          "created_at": "2025-04-20T14:18:59.522Z",
+          "id": "68050253276bf64e41aa882b",
+          "updated_at": "2025-04-20T14:22:31.333Z",
+          "url": "https://www.themoviedb.org/review/68050253276bf64e41aa882b"
+        },
+        {
+          "author": "r96sk",
+          "author_details": {
+            "name": "",
+            "username": "r96sk",
+            "avatar_path": "/mwR7rFHoDcobAx1i61I3skzMW3U.jpg",
+            "rating": 8
+          },
+          "content": "<em>'Warfare'</em> ends up as expected: bleak and miserable. The sound design is truly outstanding, such fine work ensures that you hear and feel everything. The plot being told in real time makes it rather captivating too, the tone of either trepidation or torment is omnipresent.\r\n\r\nWell, I say omnipresent, that's taking out the opening scene. I was not expecting that! Very fun though and a good way to show a snapshot of the camaraderie. It shouldn't work because it's not like it matches the rest of the film, but I gotta say I really loved it. What a tune, by the way.\r\n\r\nIt's a fairly stacked cast list, from Will Poulter to Joseph Quinn to Charles Melton to Michael Gandolfini to D'Pharaoh Woon-A-Tai. No-one actually stands out individually, but I think that's entirely a good thing because it obviously isn't a story about any one person - it's about all of them.",
+          "created_at": "2025-04-25T20:23:32.198Z",
+          "id": "680bef4415a1d5a614ab8ff1",
+          "updated_at": "2025-04-25T20:24:11.552Z",
+          "url": "https://www.themoviedb.org/review/680bef4415a1d5a614ab8ff1"
+        },
+        {
+          "author": "MovieGuys",
+          "author_details": {
+            "name": "",
+            "username": "MovieGuys",
+            "avatar_path": null,
+            "rating": 7
+          },
+          "content": "\"Warfare\" is as a simple statement on the reality of conflict.\r\n\r\nWarfare can be dull, even bureaucratic, with its own language, spoken over radio in codes. Equally, its frenetic, violent and horribly visceral. \r\n\r\nWe see all of these aspects of war, in this film. I'll admit its depressing, sad, underlining in blood, the wastefulness of war. Mind you, that's what war is. Not heroic, symphonic, grandiose. \r\n\r\nSuffice to say, I liked this film. Its unpretentious and makes you question, not only the need for war but attempts to make it appear noble, when clearly, its nothing of the kind.\r\n\r\nIn summary, a realistic portrayal of the true face of war. Something every young person, thinking of joining the military, should watch.",
+          "created_at": "2025-05-07T09:51:18.112Z",
+          "id": "681b2d164aecedda1c701596",
+          "updated_at": "2025-05-07T09:53:07.957Z",
+          "url": "https://www.themoviedb.org/review/681b2d164aecedda1c701596"
+        },
+        {
+          "author": "Manuel São Bento",
+          "author_details": {
+            "name": "Manuel São Bento",
+            "username": "msbreviews",
+            "avatar_path": null,
+            "rating": 7
+          },
+          "content": "FULL SPOILER-FREE REVIEW @ https://movieswetextedabout.com/warfare-movie-review-garland-and-mendoza-strip-the-genre-to-its-rawest-form/\r\n\r\n\"Warfare is a film you admire more than you enjoy. Its anti-narrative structure, slow pacing, and lack of strong central figures make it difficult to revisit - but impossible to forget.\r\n\r\nIt's a remarkable display of technical realism, a brutally honest recreation of a war zone, and a testament to cinema's power when it refuses to play by the rules. Alex Garland and Ray Mendoza may not have crafted a universally captivating masterpiece, but they've created something undeniably authentic.\r\n\r\nAnd sometimes, that's enough.\"\r\n\r\nRating: B",
+          "created_at": "2025-05-09T10:21:12.037Z",
+          "id": "681dd718c901137e2b6e3c12",
+          "updated_at": "2025-05-09T10:21:12.124Z",
+          "url": "https://www.themoviedb.org/review/681dd718c901137e2b6e3c12"
+        }
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=JER0Fkyy3tw",
+      "cast": "D'Pharaoh Woon-A-Tai, Will Poulter, Cosmo Jarvis, Kit Connor, Finn Bennett",
+      "category": "popular",
+      "createdAt": "2025-05-09T18:08:24.928Z"
+    },
+    {
       "adult": false,
       "backdrop_path": "/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
       "id": "986056",
@@ -10,13 +117,15 @@
       "popularity": 417.2589,
       "poster_path": "/m9EtP1Yrzv6v7dMaC9mRaGhd1um.jpg",
       "release_date": "2025-04-30",
-      "title": "new Thunderbolts*",
+      "title": "Thunderbolts*",
       "vote_average": 7.554,
       "vote_count": 634,
       "poster_url": "https://image.tmdb.org/t/p/original/m9EtP1Yrzv6v7dMaC9mRaGhd1um.jpg",
       "backdrop_url": "https://image.tmdb.org/t/p/original/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
       "genres": [
-        "comedy"
+        "Action",
+        "Adventure",
+        "Science Fiction"
       ],
       "reviews": [
         {
@@ -110,6 +219,143 @@
       "createdAt": "2025-05-09T18:08:25.264Z"
     },
     {
+      "adult": true,
+      "backdrop_path": "/fTrQsdMS2MUw00RnzH0r3JWHhts.jpg",
+      "id": "1197306",
+      "original_language": "en",
+      "original_title": "A Working Man",
+      "overview": "Levon Cade left behind a decorated military career in the black ops to live a simple life working construction. But when his boss's daughter, who is like family to him, is taken by human traffickers, his search to bring her home uncovers a world of corruption far greater than he ever could have imagined.",
+      "popularity": 363.5091,
+      "poster_path": "/6FRFIogh3zFnVWn7Z6zcYnIbRcX.jpg",
+      "release_date": "2025-03-26",
+      "title": "A Working Man",
+      "vote_average": 6.505,
+      "vote_count": 591,
+      "poster_url": "https://image.tmdb.org/t/p/original/6FRFIogh3zFnVWn7Z6zcYnIbRcX.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/fTrQsdMS2MUw00RnzH0r3JWHhts.jpg",
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "reviews": [
+        {
+          "author": "Manuel São Bento",
+          "author_details": {
+            "name": "Manuel São Bento",
+            "username": "msbreviews",
+            "avatar_path": null,
+            "rating": 3
+          },
+          "content": "FULL SPOILER-FREE REVIEW @ https://fandomwire.com/a-working-man-review/\r\n\r\n\"A Working Man is a textbook example of a movie that fails in every fundamental aspect of its own genre.\r\n\r\nWithout impactful action sequences, engaging characters, or any valid attempt at innovation or narrative depth, David Ayer delivers a frustratingly generic, utterly forgettable experience.\r\n\r\nJason Statham does his best to elevate a project doomed from the first draft of the script, but not even his charismatic presence can save a film that will inevitably end as one of the worst of the year.\"\r\n\r\nRating: D",
+          "created_at": "2025-03-27T13:59:03.871Z",
+          "id": "67e559a75e8e5c9bacba471a",
+          "updated_at": "2025-03-27T13:59:03.956Z",
+          "url": "https://www.themoviedb.org/review/67e559a75e8e5c9bacba471a"
+        },
+        {
+          "author": "Manuel São Bento",
+          "author_details": {
+            "name": "Manuel São Bento",
+            "username": "msbreviews",
+            "avatar_path": null,
+            "rating": 3
+          },
+          "content": "FULL SPOILER-FREE REVIEW @ https://fandomwire.com/a-working-man-review/\r\n\r\n\"A Working Man is a textbook example of a movie that fails in every fundamental aspect of its own genre.\r\n\r\nWithout impactful action sequences, engaging characters, or any valid attempt at innovation or narrative depth, David Ayer delivers a frustratingly generic, utterly forgettable experience.\r\n\r\nJason Statham does his best to elevate a project doomed from the first draft of the script, but not even his charismatic presence can save a film that will inevitably end as one of the worst of the year.\"\r\n\r\nRating: D",
+          "created_at": "2025-03-27T13:59:04.209Z",
+          "id": "67e559a85f3e0ac1880027b0",
+          "updated_at": "2025-03-27T13:59:04.303Z",
+          "url": "https://www.themoviedb.org/review/67e559a85f3e0ac1880027b0"
+        },
+        {
+          "author": "r96sk",
+          "author_details": {
+            "name": "",
+            "username": "r96sk",
+            "avatar_path": "/mwR7rFHoDcobAx1i61I3skzMW3U.jpg",
+            "rating": 8
+          },
+          "content": "<em>'A Working Man'</em> is imperfectly very good. I do have a couple of issues with it, but all in all I have to say that I did enjoy this to a fairly strong degree. Jason Statham seldom disappoints in an action thriller, I'm a fan of his so was always likely to get the required fun out of this.\r\n\r\nStatham is great, naturally without him the movie would be vastly less entertaining. Away from the former British diver (still can't quite believe that's the same guy!), there are too many characters - which is one of the issues I have. There didn't need to be so many peeps in this.\r\n\r\nEven so, those onscreen are all decent enough and none register as overt negatives in my mind. David Harbour does well in a small role, he usually speaks the same way in roles but this feels minorly different. Michael Peña and Arianna Rivas are solid, as is Jason Flemyng.\r\n\r\nThe latter's character should've be the only bad guy in this, or at least one of a few. He gives enough that we didn't need anyone else in my opinion, especially as 'higher-ups' Andrej Kaminsky and Maximilian Osinski give weaker performances. Chidi Ajufo is the best of the rest.\r\n\r\nMy other issue lies with the run time. I guess with so many characters it did need to be almost two hours in length, however you could've told this story within 90 minutes without a doubt. But again, as noticeable as that and the other issue is, it at least doesn't hinder much for me.",
+          "created_at": "2025-03-28T19:45:48.271Z",
+          "id": "67e6fc6cfa4b524e047680c5",
+          "updated_at": "2025-03-28T19:45:48.358Z",
+          "url": "https://www.themoviedb.org/review/67e6fc6cfa4b524e047680c5"
+        },
+        {
+          "author": "MovieGuys",
+          "author_details": {
+            "name": "",
+            "username": "MovieGuys",
+            "avatar_path": null,
+            "rating": 3
+          },
+          "content": "\"A working Man\" is an accidental satire, of the US action film genre.\r\n\r\nWorking class guy, who served in the military and now works for a migrant families construction company, looks to save their angelic daughter, the vision of perfection, from the evil Russian human traffickers. \r\n\r\nEverything is an exaggeration. From the notion of the working class guy, a rough diamond, a patriot,  with a heart of gold. The migrant family with the dutiful, over achiever on steroids daughter, the true inheritors of the American dream. Even, the minimum wage construction workers, who are told to make sure they \"keep their fingers\" (you can see occupational health and safety is a big thing) are so happy they look like they belong in the original production of \"Snow White\" (the real one, not the hideous remake). As for the Russians, well surprise, surprise, they are brutal, cruel and stupid. No one saw that coming, right?\r\n\r\nI won't mix words, this is cliched, biased, condescending, pro Western military, jingoistic, crap. Interesting too, how venture capitalists \"State Street\" make a brief appearance, in the opening credits. If they thought this would lift their profile, well all I can say is it didn't \"do it, for me\". Sorry guys. \r\n\r\nIs there an upside? In short no. Even the action has a ham fisted, \"seen it all before\", air of stale, stagnation, about it. \r\n\r\nIn summary, a horrible facsimile of superior action films, you have probably seen before. Loaded down with trite cliches, stereotypes and jarring biases. One to avoid.",
+          "created_at": "2025-04-01T03:05:30.293Z",
+          "id": "67eb57fad9981fda187aa48d",
+          "updated_at": "2025-05-07T22:12:38.956Z",
+          "url": "https://www.themoviedb.org/review/67eb57fad9981fda187aa48d"
+        },
+        {
+          "author": "Louisa Moore - Screen Zealots",
+          "author_details": {
+            "name": "Louisa Moore - Screen Zealots",
+            "username": "screenzealots",
+            "avatar_path": null,
+            "rating": 5
+          },
+          "content": "On paper, director David Ayer‘s revenge action thriller “A Working Man” should be a slam dunk for Jason Statham. Based on Chuck Dixon’s novel “Levon’s Trade,” it has all the familiar elements that not only cater to the actor’s strengths, but also to the desires of his most die hard fans. Unfortunately, very little about the film works, and it comes across as dull, predictable, and unmemorable.\r\n\r\nLevon (Statham) is a former black ops solider turned construction worker who is forced to return to his lethal past when his boss’s daughter (Arianna Rivas) is abducted by human traffickers. What starts as a rescue mission soon unravels a deeper web of corruption, pushing Levon to do what he does best: take down bad guys with ruthless efficiency.\r\n\r\nThe premise is well-worn but serviceable, but never quite rises above its own mediocrity. The stunt work is strong and the fights are bloody, but the action sequences mostly lack the punch and creativity needed to garner any feelings of excitement. The action is middling, which makes the uninspired story stand out in the worst way.\r\n\r\nEven worse, the film lacks personality. It’s competently made but painfully generic, with a by-the-numbers plot that fails to generate any real emotional stakes. The script (co-written by Ayer and Sylvester Stallone) doesn’t do enough to elevate the material beyond standard action fare.\r\n\r\nDespite being well cast, the film wastes a terrific supporting turn from David Harbour, and it feels like the reliable tough guy Statham is running on autopilot. Nobody enjoys watching a movie where the lead actor is delivering a performance that feels more like a contractual obligation than a passion project.\r\n\r\nWorking in harmony with Ayer’s directorial style, Shawn White’s cinematography proves to be the brightest spot. This is a polished, good looking action thriller, at least visually speaking.\r\n\r\nIf I had to sum up “A Working Man” in one word, it would be “serviceable.” This is a film that will be buried under Statham’s long list of similar (and much better) movies.\r\n\r\nBy: Louisa Moore / SCREEN ZEALOTS",
+          "created_at": "2025-04-04T07:21:24.492Z",
+          "id": "67ef8874ede8d82f3bad0b34",
+          "updated_at": "2025-04-04T07:21:24.557Z",
+          "url": "https://www.themoviedb.org/review/67ef8874ede8d82f3bad0b34"
+        },
+        {
+          "author": "CinemaSerf",
+          "author_details": {
+            "name": "CinemaSerf",
+            "username": "Geronimo1967",
+            "avatar_path": "/yz2HPme8NPLne0mM8tBnZ5ZWJzf.jpg",
+            "rating": 6
+          },
+          "content": "Well if you just thought Jason Statham was going to make a movie about the dangers of the construction industry then the first few scenes will put you straight and give a clue that his past is altogether more violent. That is going to come in handy when the daughter of his boss is kidnapped-to-order by some people traffickers and he is, initially reluctantly, drafted into track her down. With consummate ease, he sets about his task facing down some of the menacing Russian brotherhood who rule the roost supplying girls, drugs and booze to whoever can afford to pay! Can he find the girl? Will the sun come up? There’s not the slightest hint of jeopardy to any of this derivative outing for a star whose usual charisma has been left in his Winnebago. It’s got bits of “Die Hard” (1988) mixed in with, I thought, that Clint Eastwood “Cry Macho” (2021) affair plus the seriously camped up pairing of Jason Flemyng and Maximilian Osinski to make sure that any scintilla of credibility was well and truly throttled after about fifteen minutes of this repetitive and predictable drama. Sylvester Stallone had an hand in the writing - I suppose someone had to put the full stops in the script, and David Ayer shows little, is any, flair as the thing lumbers along for what seems like a lot longer than two hours. Let’s hope Jace isn’t going down the Bruce Willis boulevard of broken dreams here, and doesn’t make any more duds like this.",
+          "created_at": "2025-04-05T18:33:58.624Z",
+          "id": "67f17796a7336870ee994c8b",
+          "updated_at": "2025-04-05T18:35:38.418Z",
+          "url": "https://www.themoviedb.org/review/67f17796a7336870ee994c8b"
+        }
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=mdfrG2cLK58",
+      "cast": "Jason Statham, Jason Flemyng, Merab Ninidze, Maximilian Osinski, Cokey Falkow",
+      "category": "popular",
+      "createdAt": "2025-05-09T18:08:25.548Z"
+    },
+    {
+      "adult": true,
+      "backdrop_path": "/4A5HH9HkCPqAwyYL6CnA0mxbYjn.jpg",
+      "id": "1144430",
+      "original_language": "fr",
+      "original_title": "Balle perdue 3",
+      "overview": "Car genius Lino returns to conclude his vendetta against Areski and the corrupt commander who ruined their lives in this turbo-charged trilogy finale.",
+      "popularity": 360.8958,
+      "poster_path": "/qycPITRqXgPai7zj1gKffjCdSB5.jpg",
+      "release_date": "2025-05-06",
+      "title": "Last Bullet",
+      "vote_average": 7.433,
+      "vote_count": 30,
+      "poster_url": "https://image.tmdb.org/t/p/original/qycPITRqXgPai7zj1gKffjCdSB5.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/4A5HH9HkCPqAwyYL6CnA0mxbYjn.jpg",
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "reviews": [],
+      "trailer_url": "https://www.youtube.com/watch?v=r2u9GifyDg0",
+      "cast": "Alban Lenoir, Stéfi Celma, Nicolas Duvauchelle, Gérard Lanvin, Pascale Arbillot",
+      "category": "popular",
+      "createdAt": "2025-05-09T18:08:25.920Z"
+    },
+    {
       "adult": false,
       "backdrop_path": "/12tEzU0bNYKIjXXEwI5abuOotHF.jpg",
       "id": "710258",
@@ -132,6 +378,76 @@
       "cast": "Alec Baldwin, Josh Hopkins, Patrick Scott McDermott, Travis Fimmel, Frances Fisher",
       "category": "popular",
       "createdAt": "2025-05-09T18:08:26.252Z"
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
+      "id": "950387",
+      "original_language": "en",
+      "original_title": "A Minecraft Movie",
+      "overview": "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
+      "popularity": 276.6921,
+      "poster_path": "/iPPTGh2OXuIv6d7cwuoPkw8govp.jpg",
+      "release_date": "2025-03-31",
+      "title": "A Minecraft Movie",
+      "vote_average": 6.165,
+      "vote_count": 842,
+      "poster_url": "https://image.tmdb.org/t/p/original/iPPTGh2OXuIv6d7cwuoPkw8govp.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
+      "genres": [
+        "Family",
+        "Comedy",
+        "Adventure",
+        "Fantasy"
+      ],
+      "reviews": [
+        {
+          "author": "tmdb98094809",
+          "author_details": {
+            "name": "",
+            "username": "tmdb98094809",
+            "avatar_path": null,
+            "rating": 10
+          },
+          "content": "Alright, buckle up, because I just saw a movie that completely blew my mind! Seriously, I'm still buzzing. From the very first scene, I was absolutely hooked, and it didn't let go until the credits rolled.\r\n\r\nThe story? Oh my gosh, the story! It was so clever and well-crafted. It had twists and turns I never saw coming, but it all made perfect sense in the end. It was like a puzzle that slowly came together, and every piece was perfectly placed. You know when a movie makes you think? This one definitely did that. It wasn't just mindless action or fluff; it had real substance.\r\n\r\nAnd the characters! They were so real and relatable. I felt like I knew them, like I was right there with them on their journey. They had depth, they had flaws, they had moments that made me laugh, and moments that made me want to cry. I was completely invested in what happened to them. The actors did an amazing job bringing them to life. You could feel their emotions through the screen.\r\n\r\nVisually, it was stunning. The way it was shot, the colors, the sets – everything was just beautiful. It wasn't just pretty to look at, though; it also added to the story and the mood. Some scenes were so powerful, they'll stay with me for a long time. The music was also perfect! It really enhanced the emotions and made everything even more impactful.\r\n\r\nHonestly, I can't think of a single thing I didn't like about this movie. It had everything: a great story, amazing characters, beautiful visuals, and a fantastic soundtrack. It made me feel so many different things, and it left me thinking long after it was over. If you're looking for a movie that will take you on a journey and leave you completely satisfied, this is it. Trust me, you won't be disappointed! It's a 10/10 masterpiece in my book!",
+          "created_at": "2025-04-07T05:01:36.761Z",
+          "id": "67f35c30eddec28b03ad856b",
+          "updated_at": "2025-04-11T22:05:23.212Z",
+          "url": "https://www.themoviedb.org/review/67f35c30eddec28b03ad856b"
+        },
+        {
+          "author": "CinemaSerf",
+          "author_details": {
+            "name": "CinemaSerf",
+            "username": "Geronimo1967",
+            "avatar_path": "/yz2HPme8NPLne0mM8tBnZ5ZWJzf.jpg",
+            "rating": 6
+          },
+          "content": "Who doesn’t like a white woolly llama? Well that’s probably the highlight of this derivative CGI-fest that finds a quartet of geeks and gamers dragged through a magical portal to a world ruled by the evil “Malgosha”. Now she wants to use this glowing cube to escape from her dark and dingy “Overworld” realm and take over the peaceable and colourful real-world but she hasn’t banked on the tenacity of former gaming champion “Garrett” (Jason Momoa) and the geeky “Henry” (Sebastian Hansen) who reunite with the long trapped “Steve” (Jack Black) to save the day and the world. You don’t really need to know much about the video game to appreciate the simplicity of this, but then again I’m note sure you’d need to be much over 5 to appreciate it either. The visuals are engagingly 1980s with some references that did remind me a bit of “Back to the Future” (1985) meets “Dungeons & Dragons” and a decent soundtrack that allows Black to get straight into his element and prove that it is possible to entertain amidst what was undoubtedly (for him) a sea of green! Momoa isn’t afraid to send himself up both Danielle Brooks and Sebastian Henry seem to be ready to immerse themselves in this once in a lifetime opportunity to be in a big-budget movie without really having any lines to learn, cues to make or long sessions in the make up chair. As ever with these weakly written fantasies, the denouement is never in jeopardy but with so much enthusiasm on the screen for something that was, for many, an integral part of their growing up it’s difficult to be overly critical of something so shamelessly sentimental. What it isn’t, though, is funny and the laughs are few and far between so I think it’s best to just aim low and let the whole tide of your adolescence (if you are old enough) to wash over you before you leave the cinema, completely forget all about this and hope there isn’t a sequel.",
+          "created_at": "2025-04-14T14:22:18.863Z",
+          "id": "67fd1a1a61b1c4bb32993342",
+          "updated_at": "2025-04-14T14:22:18.991Z",
+          "url": "https://www.themoviedb.org/review/67fd1a1a61b1c4bb32993342"
+        },
+        {
+          "author": "CinemaSerf",
+          "author_details": {
+            "name": "CinemaSerf",
+            "username": "Geronimo1967",
+            "avatar_path": "/yz2HPme8NPLne0mM8tBnZ5ZWJzf.jpg",
+            "rating": 6
+          },
+          "content": "Who doesn’t like a white woolly llama? Well that’s probably the highlight of this derivative CGI-fest that finds a quartet of geeks and gamers dragged through a magical portal to a world ruled by the evil “Malgosha”. Now she wants to use this glowing cube to escape from her dark and dingy “Overworld” realm and take over the peaceable and colourful real-world but she hasn’t banked on the tenacity of former gaming champion “Garrett” (Jason Momoa) and the geeky “Henry” (Sebastian Hansen) who reunite with the long trapped “Steve” (Jack Black) to save the day and the world. You don’t really need to know much about the video game to appreciate the simplicity of this, but then again I’m not sure you’d need to be much over 5 to appreciate that either. The visuals are engagingly 1980s with some references that did remind me a bit of “Back to the Future” (1985) meets “Dungeons & Dragons” whilst a decent soundtrack that allows Black to get straight into his element and prove that it is possible to entertain amidst what was undoubtedly (for him) a sea of green! Momoa isn’t afraid to send himself up and both Danielle Brooks and Sebastian Henry seem to be ready to immerse themselves in this once in a lifetime opportunity to be in a big-budget movie without really having any lines to learn, cues to make or long sessions in the make-up chair. As ever with these weakly written fantasies, the denouement is never in jeopardy but with so much enthusiasm on the screen for something that was, for many, an integral part of their growing up it’s difficult to be overly critical of something so shamelessly sentimental. What it isn’t, though, is funny and the laughs are few and far between so I think it’s best to just aim low and let the whole tide of your adolescence (if you are old enough) to wash over you before you leave the cinema, completely forget all about this and hope there isn’t a sequel.",
+          "created_at": "2025-04-14T14:22:20.021Z",
+          "id": "67fd1a1cde5e4dec62ae3f22",
+          "updated_at": "2025-04-14T14:24:56.356Z",
+          "url": "https://www.themoviedb.org/review/67fd1a1cde5e4dec62ae3f22"
+        }
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=8B1EtVPBSMw",
+      "cast": "Jason Momoa, Jack Black, Sebastian Eugene Hansen, Emma Myers, Danielle Brooks",
+      "category": "popular",
+      "createdAt": "2025-05-09T18:08:26.526Z"
     },
     {
       "adult": true,
@@ -271,6 +587,117 @@
       "cast": "Tom Hardy, Jessie Mei Li, Timothy Olyphant, Forest Whitaker, Justin Cornwell",
       "category": "popular",
       "createdAt": "2025-05-09T18:08:27.304Z"
+    },
+    {
+      "adult": true,
+      "backdrop_path": "/8eifdha9GQeZAkexgtD45546XKx.jpg",
+      "id": "822119",
+      "original_language": "en",
+      "original_title": "Captain America: Brave New World",
+      "overview": "After meeting with newly elected U.S. President Thaddeus Ross, Sam finds himself in the middle of an international incident. He must discover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red.",
+      "popularity": 212.8605,
+      "poster_path": "/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
+      "release_date": "2025-02-12",
+      "title": "Captain America: Brave New World",
+      "vote_average": 6.148,
+      "vote_count": 1763,
+      "poster_url": "https://image.tmdb.org/t/p/original/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/8eifdha9GQeZAkexgtD45546XKx.jpg",
+      "genres": [
+        "Action",
+        "Thriller",
+        "Science Fiction"
+      ],
+      "reviews": [
+        {
+          "author": "r96sk",
+          "author_details": {
+            "name": "",
+            "username": "r96sk",
+            "avatar_path": "/mwR7rFHoDcobAx1i61I3skzMW3U.jpg",
+            "rating": 6
+          },
+          "content": "<em>'Captain America: Brave New World'</em> came close to pleasing me, but in the end I think it is not consistently enjoyable enough to be classed as something I'd want to watch again and/or recommend. There is quite a bit about it that I did like, but the down moments hurt the ups.\r\n\r\nThe cast and their characters are positives. I'm a big fan of Anthony Mackie's as he has done many roles in films that I've highly, highly enjoyed; interestingly, he has appeared in three of the fourteen films I've given a total 10/10 to. Here, he is very good in the titular part.\r\n\r\nI'm not someone overly attached to Marvel and therefore Chris Evans' Captain America, so this new era doesn't hinder my interest in the lead character. I'm admittedly not wholly convinced Mackie is undoubtedly a perfect fit for the role, though his performance itself is perfectly watchable and fun enough.\r\n\r\nCarl Lumbly's performance as Isaiah is great in this, he genuinely made me care quite a bit about Bradley; especially in the more emotive scenes. Danny Ramirez, Harrison Ford, Giancarlo Esposito (a little typecast still, sadly) and Tim Blake Nelson (albeit the weakest) are also pluses that I have for this movie.\r\n\r\nMy main issues lie with the plot and how it is told. There were too many moments where I could feel myself losing interest in events onscreen, most notably across the first half. The second half is better paced, if still not making for superb viewing. I was firmly awaiting the credits, which is never a good sign.\r\n\r\nWhen I was locked on to the story, I did dig it. I particularly found the interactions/dynamics between characters to be solid, for example Cap with Carl, Joaquin and Seth. I just think what lets this down, unfortunately to a somewhat damaging degree, is that the plot just isn't quite good enough. A shorter run time (even though it isn't that long) may have helped, but I'm not sure.\r\n\r\nI just realised that this is the first MCU film that I've scored below 7/10. That feels harsh, it isn't as bad as that sounds at all, but thinking about this and the other flicks from the franchise that I've rated similarly it is actually merited. <em>'The Incredible Hulk'</em> and <em>'Ant-Man and the Wasp'</em> were my bottom two, both are better films.",
+          "created_at": "2025-02-14T19:14:13.539Z",
+          "id": "67af96056d1a7b60523b7972",
+          "updated_at": "2025-02-14T19:14:13.617Z",
+          "url": "https://www.themoviedb.org/review/67af96056d1a7b60523b7972"
+        },
+        {
+          "author": "CinemaSerf",
+          "author_details": {
+            "name": "CinemaSerf",
+            "username": "Geronimo1967",
+            "avatar_path": "/yz2HPme8NPLne0mM8tBnZ5ZWJzf.jpg",
+            "rating": 6
+          },
+          "content": "“Brave New World” but same old yarn, sadly. Morgan Freeman clearly didn’t fancy this one so Marvel have resurrected another ex-president in Harrison Ford to put together a treaty that will deliver the old save the globe type of thing. It’s all about this giant hand-shaped structure that has emerged from the ocean and that contains “adamantium” - and that’s even more indestructible than “Vibranium” (how can something be more indestructible?). Anyway, before this accord can get signed off by a curious quadrumvirate of the USA, India, France and China a shipment of this new material gets pinched and it’s down to “Capt. America” (Anthony Mackie) and his new sidekick “Torres/Falcon” (Danny Ramirez) to retrieve it. Loads of end-to-end fisticuffs later and the goods are secure which earns our dynamic duo and their inspirational trainer “Bradley” (Carl Lumbly) an invitation to the White House. That’s where the wheels really do come off as their pal starts taking potshots at the President and we discover that the erstwhile somewhat militaristic and temperamental “Ross” and “Cap” aren’t exactly on the same page. It’s pretty obvious that there’s a third party pulling the strings so it’s going to need all of his patience and guile if the shielded wonder is to retrieve his mentor from solitary, rebuild his relationship with his president before that man really sees red, and also get to the bottom of a dastardly scheme that seems bent on causing international strife between the USA and Japan. Mackie’s a charismatic man and he does what he can with this, but the story comes across as little more than an hybrid of “Top Gun” (1986) meets “Tomorrow Never Dies” (1997) with an unremarkable cast, including Ford’s “Ross”, that struggles to make any impact as it races along for two hours without presenting anything original or particularly entertaining. It passes the time, but is yet another bland offering from a studio that is increasingly resorting to it’s creative technicians to design something that looks great but resonates not remotely. Disappointing, sorry.",
+          "created_at": "2025-02-15T10:20:09.767Z",
+          "id": "67b06a59201d9bf64e6c457e",
+          "updated_at": "2025-02-15T10:20:09.927Z",
+          "url": "https://www.themoviedb.org/review/67b06a59201d9bf64e6c457e"
+        },
+        {
+          "author": "Manuel São Bento",
+          "author_details": {
+            "name": "Manuel São Bento",
+            "username": "msbreviews",
+            "avatar_path": null,
+            "rating": 7
+          },
+          "content": "FULL SPOILER-FREE REVIEW @ movieswetextedabout.com/captain-america-brave-new-world-review-anthony-mackie-deserves-to-wield-the-shield/\r\n\r\n\"Captain America: Brave New World may not reach the high bar set by its direct predecessors, but it's far from the disaster some claim it to be.\r\n\r\nDespite its evident production flaws, Julius Onah still manages to deliver moments of real entertainment, supported by a charismatic cast and well-crafted action sequences. Most importantly, Anthony Mackie's performance as Sam Wilson proves, without a doubt, that he was the right choice to wield the shield left behind by Steve Rogers. The actor perfectly captures the duality of being both a global symbol and a man still searching for his own path, bringing a unique approach to the legacy of the titular hero.\r\n\r\nIt may not be top-tier MCU, but it's a film worthy of being experienced on the big screen.\"\r\n\r\nRating: B",
+          "created_at": "2025-02-19T10:01:23.767Z",
+          "id": "67b5abf32152638f5ee3c1ac",
+          "updated_at": "2025-02-19T10:01:24.208Z",
+          "url": "https://www.themoviedb.org/review/67b5abf32152638f5ee3c1ac"
+        },
+        {
+          "author": "seaneoo",
+          "author_details": {
+            "name": "",
+            "username": "seaneoo",
+            "avatar_path": null,
+            "rating": 7
+          },
+          "content": "A fun watch but could, and should, have been a lot more. Anthony Mackie was easily the stand out of this entire film.",
+          "created_at": "2025-03-04T14:25:03.112Z",
+          "id": "67c70d3f3a971dd2c0c08a00",
+          "updated_at": "2025-03-27T17:02:23.437Z",
+          "url": "https://www.themoviedb.org/review/67c70d3f3a971dd2c0c08a00"
+        },
+        {
+          "author": "Hadam10Rose",
+          "author_details": {
+            "name": "",
+            "username": "Hadam10Rose",
+            "avatar_path": null,
+            "rating": null
+          },
+          "content": "While I find it the same general quality of a majority of what Marvel has put out, it is a flawed film with moments you could tell were caused from one of the many reshoots they did of the film. (It was shot 4 times) One funny example is when Cap and Falcon are on the run they \"ditch their smart phones\" so they can't be tracked. Leaving them in their offices. On the Car ride to their destination, Falcon isn't wearing a watch. Then at the destination he's wearing a Smart Watch. You know something that can be tracked..... Anyway it was off putting to have Hulk's cast and Villains but not included him, at all. Not even a photo, just \"old news footage\" from the Harlem battle. Mr Blue doesn't even mention Bruce at all. Instead blaming everything on Ross.\r\n\r\nWhat the film did have, I'm sure it makes much more since if you watched Falcon&Winter Solider, but if you didn't they sort of explain things in the film. At least the short 1 dialogue explain it way. The ending battle was a, what the heck? Move and what happened to the President make little Legal since, although in one cut of the film he died. Because Bruce nor She Hulk are in prison, so at best they would keep him locked up until he learned to control it. As the illegal thing he did was, what the Accords already did, keeping a dangerous super locked up. Not very well, but still the same thing. Definitely not as bad as some say it is, but not joining the few MCU films I will rewatch or rewatch over and over again. I give it a C-",
+          "created_at": "2025-03-09T04:35:51.206Z",
+          "id": "67cd1aa742c7521252f5d691",
+          "updated_at": "2025-03-19T20:13:14.826Z",
+          "url": "https://www.themoviedb.org/review/67cd1aa742c7521252f5d691"
+        },
+        {
+          "author": "MovieGuys",
+          "author_details": {
+            "name": "",
+            "username": "MovieGuys",
+            "avatar_path": null,
+            "rating": 6
+          },
+          "content": "Captain America: Brave New World doesn't do anything brave or new. \r\n\r\nIts \"safe\", by the numbers, US rules the world, superhero narrative, is wholly familiar. I will add, I was disappointed by the effort to portray Israel in a positive light, given their appalling behaviour on the world stage. \r\n\r\nAnyway, what you can expect is a predominantly exposition driven affair, with lots of action and CGI eye candy with light character development.\r\n\r\nI will add, viewed superficially its quite watchable but its by no means compelling or thought provoking. \r\n\r\nIn summary, your standard US superhero action stick. Heavy on exposition and light on everything else. A very basic watch.",
+          "created_at": "2025-03-19T02:10:27.520Z",
+          "id": "67da2793ae4a8d1b0fa6c37a",
+          "updated_at": "2025-03-26T00:31:42.364Z",
+          "url": "https://www.themoviedb.org/review/67da2793ae4a8d1b0fa6c37a"
+        }
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=5PSzFLV-EyQ",
+      "cast": "Anthony Mackie, Harrison Ford, Danny Ramirez, Shira Haas, Tim Blake Nelson",
+      "category": "popular",
+      "createdAt": "2025-05-09T18:08:27.663Z"
     },
     {
       "adult": false,
@@ -1120,6 +1547,32 @@
       "cast": "Aleksandr Kuznetsov, Anya Chipovskaya, Andrey Merzlikin",
       "category": "upcoming",
       "createdAt": "2025-05-09T18:08:31.931Z"
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tGjo4L15aELqZGqQH3ThZQGMKmL.jpg",
+      "id": "1011477",
+      "original_language": "en",
+      "original_title": "Karate Kid: Legends",
+      "overview": "After a family tragedy, kung fu prodigy Li Fong is uprooted from his home in Beijing and forced to move to New York City with his mother. When a new friend needs his help, Li enters a karate competition – but his skills alone aren't enough. Li's kung fu teacher Mr. Han enlists original Karate Kid Daniel LaRusso for help, and Li learns a new way to fight, merging their two styles into one for the ultimate martial arts showdown.",
+      "popularity": 45.742,
+      "poster_path": "/ckI6bmQDvvGy20FPTIW1kfGKGRK.jpg",
+      "release_date": "2025-05-08",
+      "title": "Karate Kid: Legends",
+      "vote_average": 9.667,
+      "vote_count": 3,
+      "poster_url": "https://image.tmdb.org/t/p/original/ckI6bmQDvvGy20FPTIW1kfGKGRK.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/tGjo4L15aELqZGqQH3ThZQGMKmL.jpg",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "reviews": [],
+      "trailer_url": "https://www.youtube.com/watch?v=LhRXf-yEQqA",
+      "cast": "Ben Wang, Jackie Chan, Ralph Macchio, Joshua Jackson, Sadie Stanley",
+      "category": "upcoming",
+      "createdAt": "2025-05-09T18:08:32.186Z"
     },
     {
       "adult": false,
@@ -4636,96 +5089,6 @@
       "popularity": "3",
       "reviews": "fff",
       "adult": false
-    },
-    {
-      "id": "8074",
-      "title": "ddd",
-      "original_title": "dddd",
-      "poster_url": "http://dfgfhgfn",
-      "backdrop_url": "http://dfgfhgfn",
-      "release_date": "2025-05-09",
-      "original_language": "ddd",
-      "genres": [
-        "drama"
-      ],
-      "overview": "ccc",
-      "vote_average": "4",
-      "vote_count": "4",
-      "popularity": "4",
-      "reviews": "ccc",
-      "adult": false
-    },
-    {
-      "id": "ff4e",
-      "title": "sss",
-      "original_title": "sss",
-      "poster_url": "http://dfgfhgfn",
-      "backdrop_url": "http://dfgfhgfn",
-      "release_date": "2025-05-08",
-      "original_language": "ss",
-      "genres": [
-        "drama"
-      ],
-      "overview": "vvv",
-      "vote_average": "4",
-      "vote_count": "4",
-      "popularity": "4",
-      "reviews": "vvv",
-      "adult": false
-    },
-    {
-      "id": "2600",
-      "title": "ddd",
-      "original_title": "ddd",
-      "poster_url": "http://dfgfhgfn",
-      "backdrop_url": "http://dfgfhgfn",
-      "release_date": "2025-05-09",
-      "original_language": "ddd",
-      "genres": [
-        "comedy"
-      ],
-      "overview": "gg",
-      "vote_average": "4",
-      "vote_count": "4",
-      "popularity": "4",
-      "reviews": "gg",
-      "adult": false
-    },
-    {
-      "id": "1547",
-      "title": "fff",
-      "original_title": "ff",
-      "poster_url": "http://dfgfhgfn",
-      "backdrop_url": "http://dfgfhgfn",
-      "release_date": "2025-05-02",
-      "original_language": "en",
-      "genres": [
-        "horror"
-      ],
-      "overview": "gg",
-      "vote_average": "4",
-      "vote_count": "4",
-      "popularity": "4",
-      "reviews": "gg",
-      "adult": false
-    },
-    {
-      "id": "4c14",
-      "title": "ff",
-      "original_title": "ff",
-      "poster_url": "http://dfgfhgfn",
-      "backdrop_url": "http://dfgfhgfn",
-      "release_date": "2025-05-08",
-      "original_language": "ff",
-      "genres": [
-        "action"
-      ],
-      "overview": "hh",
-      "vote_average": "3",
-      "vote_count": "3",
-      "popularity": "3",
-      "reviews": "hh",
-      "adult": false
     }
   ],
   "series": [
@@ -4851,6 +5214,134 @@
       "cast": "IU, Park Bo-gum, Moon So-ri, Park Hae-jun, Yeom Hye-ran",
       "category": "top_rated",
       "createdAt": "2025-05-09T18:08:42.935Z"
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7BzmK4MWc0cj4hCxwWURt6TS6UR.jpg",
+      "id": "131378",
+      "original_language": "en",
+      "original_title": "Adventure Time: Fionna & Cake",
+      "overview": "Fionna and Cake – with the help of the former Ice King, Simon Petrikov - embark on a multiverse-hopping adventure and journey of self-discovery. All the while a powerful new antagonist determined to track them down and erase them from existence, lurks in the shadows.",
+      "popularity": 11.5105,
+      "poster_path": "/fi1b6U1kp73xheECzqwzMn8u3mX.jpg",
+      "release_date": "2023-08-31",
+      "title": "Adventure Time: Fionna & Cake",
+      "video": false,
+      "vote_average": 8.79,
+      "vote_count": 229,
+      "poster_url": "https://image.tmdb.org/t/p/original/fi1b6U1kp73xheECzqwzMn8u3mX.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/7BzmK4MWc0cj4hCxwWURt6TS6UR.jpg",
+      "genres": [
+        "Animation",
+        "Unknown",
+        "Unknown",
+        "Comedy"
+      ],
+      "reviews": [
+        {
+          "author": "a7med 3tef",
+          "author_details": {
+            "name": "a7med 3tef",
+            "username": "a7med3tef",
+            "avatar_path": "/4t1W7R7tGhpyxVotWa2kd8HSpIR.jpg",
+            "rating": 9
+          },
+          "content": "What a comeback. This show reminded me of how much I used to love Adventure Time because of the excitement, mystery, laughter, crying, and certainly adventure.I'm writing this review when the first two episodes of the show air, so I'll just review them.\r\n\r\nThe beginning of the first episode shows us the world of Fionna and what the human world would be like if the mushroom bomb had not exploded. I liked in this episode the amount of details present, and this would indicate the extent of the interest of the writers and animators in the work. I also liked that all the new characters retained part of the The original characters’ behaviors.\r\n\r\nThe second episode I can say quite simply that it is one of the best episodes of Adventure Time, if not the best. Knowing how the life of the Ice King became after removing the crown is one of the things that we were looking forward to as fans. Also, in this episode we met a character that we had not met for a long time who brought back what he did.  Nostalgia and love for adventure time. I also liked that this character still maintains his nature.\r\n\r\nAlthough they are only two episodes,they reflect what the program will be like. In the end, I can say that this work is an updated version of Adventure Time.",
+          "created_at": "2023-09-01T20:29:18.548Z",
+          "id": "64f2499e9408ec0100bc591d",
+          "updated_at": "2023-09-05T14:57:59.092Z",
+          "url": "https://www.themoviedb.org/review/64f2499e9408ec0100bc591d"
+        }
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=94gpIscW0Mc",
+      "cast": "Madeleine Martin, Roz Ryan, Tom Kenny",
+      "category": "top_rated",
+      "createdAt": "2025-05-09T18:08:43.251Z"
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wQEW3xLrQAThu1GvqpsKQyejrYS.jpg",
+      "id": "94605",
+      "original_language": "en",
+      "original_title": "Arcane",
+      "overview": "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
+      "popularity": 30.9433,
+      "poster_path": "/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg",
+      "release_date": "2021-11-06",
+      "title": "Arcane",
+      "video": false,
+      "vote_average": 8.777,
+      "vote_count": 5110,
+      "poster_url": "https://image.tmdb.org/t/p/original/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/wQEW3xLrQAThu1GvqpsKQyejrYS.jpg",
+      "genres": [
+        "Animation",
+        "Unknown",
+        "Drama",
+        "Unknown"
+      ],
+      "reviews": [
+        {
+          "author": "Folio Swami",
+          "author_details": {
+            "name": "Folio Swami",
+            "username": "FolioSwami",
+            "avatar_path": "/mHc1I1YnZPvXuWhhB0CXWeVxDyk.png",
+            "rating": 4
+          },
+          "content": "The production team has worked real hard to make something worth the money they were given. The characters are well drawn. And the animation is okay. The effort is obvious seeing the catch lights that are on any character, regardless of lighting.\r\n\r\nThe story is rather boring, and uniform. Stealing is good. Capitalists are bad. Magic exists. It's all a mess. So far Netflix has released only three episodes, and the idea is how good it is to have people live on taxes. Don't worry little serf, your offspring will have a beautiful life thanks to the taxes you paid.",
+          "created_at": "2021-11-10T16:07:45.104Z",
+          "id": "618bee51ddd52d0026c3a184",
+          "updated_at": "2021-11-10T16:07:45.104Z",
+          "url": "https://www.themoviedb.org/review/618bee51ddd52d0026c3a184"
+        },
+        {
+          "author": "JustcallmeT",
+          "author_details": {
+            "name": "",
+            "username": "JustcallmeT",
+            "avatar_path": null,
+            "rating": 10
+          },
+          "content": "So much better than Dragon's Blood.\r\nCharacters are more interesting and the story is more immersive.\r\nVoices are good too. Plus creative animation.",
+          "created_at": "2021-11-24T11:46:56.753Z",
+          "id": "619e26305e12000063c3bf9b",
+          "updated_at": "2021-12-03T21:56:42.139Z",
+          "url": "https://www.themoviedb.org/review/619e26305e12000063c3bf9b"
+        },
+        {
+          "author": "mgenth",
+          "author_details": {
+            "name": "mgenth",
+            "username": "MGenth",
+            "avatar_path": "/mqNnMjimf9CbdottnLfEoUJwhLk.jpg",
+            "rating": 10
+          },
+          "content": "There is a moment of leap.\r\nAbout creative process, it must involve gathering or meeting certain standards at any point given of the chain of production.\r\nWe may define, latu sensu, the resulting quality as the strength of the weakest piece of a chain.\r\nArcane is not about clichés, although injustice, discrimination, ambition, love and hate, being universals of human nature, are, at the same time, in and out the category of ordinary repetition, plagiarism or lack of insight.\r\nThere is nothing ordinary about Arcane.\r\nAll of it is flawless, touching, remaking the animated fiction, between sci-fi and fantasy, as in life,to the next level of realization.\r\nLike, after jumps like The Matrix or Inception, Alita Battle Angel showed the power of animation, maybe a transversal frontier that is leveling up the entire human culture, from 2D animation to virtual and augmented reality, this is about the new \"real\" around entertainment and creative industry.\r\nWhoever cannot see and feel the smell of the Tempest blowing is in lack of common sense. \r\nArcane, like many coming from and to the game entertainment industry, a masterpiece, is a truly beautiful thing. \r\nIt's is not about the script, of good quality, nor about soundtrack or character's animation. \r\nThe question to consider is the feeling it arises on the viewer, that sense of wonder unbound making those pieces constituting a new distinct Art, once called the seventh. \r\nMaybe this should be classified a number above. \r\nFrom Japan, US, EU, China, Canada or Korea, there's a new player in town. \r\nTime must pass to understand the reshaping process the creative human experience is passing through. \r\nCongratulations. \r\nIt was a really good wine, and even the bottle was reshaped, Klein like. \r\nIt is a once in a while event, years, a decade? \r\nWe certainly hope for more. \r\nASAP. \r\nBest don't follow",
+          "created_at": "2021-12-15T06:43:28.334Z",
+          "id": "61b98e90439be1001d6eb328",
+          "updated_at": "2021-12-17T16:10:27.211Z",
+          "url": "https://www.themoviedb.org/review/61b98e90439be1001d6eb328"
+        },
+        {
+          "author": "harshrox2",
+          "author_details": {
+            "name": "",
+            "username": "harshrox2",
+            "avatar_path": null,
+            "rating": 9
+          },
+          "content": "great a and stylish action, beautiful story arc , with great resolution and one the best antagonist , breathtakingly imagery. The story handles the burden of setting up game characters beautifully, not coming off as a series needed to put unnecessary  character to setup game character, except victor part seems to comes out of nowhere, though the two main character and their story chef's kiss . 9/10",
+          "created_at": "2023-12-28T06:49:26.852Z",
+          "id": "658d1a7684448e66d9b51862",
+          "updated_at": "2023-12-28T17:31:03.150Z",
+          "url": "https://www.themoviedb.org/review/658d1a7684448e66d9b51862"
+        }
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=W4gLFBNGgiY",
+      "cast": "Hailee Steinfeld, Ella Purnell",
+      "category": "top_rated",
+      "createdAt": "2025-05-09T18:08:43.505Z"
     },
     {
       "adult": false,
@@ -5033,6 +5524,63 @@
       "cast": "Mayumi Tanaka, Kazuya Nakai, Akemi Okamura, Kappei Yamaguchi, Hiroaki Hirata",
       "category": "top_rated",
       "createdAt": "2025-05-09T18:08:44.679Z"
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jlbUx0aHJupDVDlCo0R7UxSaUUd.jpg",
+      "id": "240411",
+      "original_language": "ja",
+      "original_title": "ダンダダン",
+      "overview": "In a bet to prove whether ghosts or aliens exist, two high schoolers face terrifying paranormal threats, gain superpowers and maybe even fall in love?!",
+      "popularity": 17.1747,
+      "poster_path": "/6qfZAOEUFIrbUH3JvePclx1nXzz.jpg",
+      "release_date": "2024-10-04",
+      "title": "Dan Da Dan",
+      "video": false,
+      "vote_average": 8.7,
+      "vote_count": 478,
+      "poster_url": "https://image.tmdb.org/t/p/original/6qfZAOEUFIrbUH3JvePclx1nXzz.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/jlbUx0aHJupDVDlCo0R7UxSaUUd.jpg",
+      "genres": [
+        "Animation",
+        "Unknown",
+        "Comedy",
+        "Unknown"
+      ],
+      "reviews": [
+        {
+          "author": "Bilal Ahmed Mirza",
+          "author_details": {
+            "name": "Bilal Ahmed Mirza",
+            "username": "bilalmirza71",
+            "avatar_path": null,
+            "rating": null
+          },
+          "content": "I didn't like this show",
+          "created_at": "2024-12-10T20:14:24.155Z",
+          "id": "6758a1207acfd278c6dda55e",
+          "updated_at": "2025-01-02T19:38:10.363Z",
+          "url": "https://www.themoviedb.org/review/6758a1207acfd278c6dda55e"
+        },
+        {
+          "author": "suxpeople",
+          "author_details": {
+            "name": "",
+            "username": "suxpeople",
+            "avatar_path": null,
+            "rating": null
+          },
+          "content": "Dandadan is a manga and anime series that has been criticized for its repetitive formula, which is a common issue in long-running stories. Some fans have expressed their dislike for the series' constant sexual harassment from creatures, which they find gross. However, others have defended the series, stating that the sexual harassment is supposed to be bad and that the series has not run long enough to loop anything.\r\n\r\nThe formula used in Dandadan is not unique to the series, as many new battle shounens use a similar approach. However, what sets Dandadan apart is its execution and the quality associated with it. The series has been compared to other popular anime and manga series, such as Monogatari and One Piece, which also use formulas to move the plot forward.\r\n\r\nSome fans have argued that the formula used in Dandadan is not the problem, but rather how it is executed. They believe that the series has the potential to be engaging, but it needs to evolve and offer more depth as it goes on. The core of the series, which involves the main characters going on adventures and facing challenges, is formulaic, but it can be made more interesting by adding emotional complexity and moral ambiguity.\r\n\r\nOverall, the criticism of Dandadan's repetitive formula is not unique to the series, and many fans believe that it has the potential to be a great series if it can evolve and offer more depth. The series has been defended by some fans, who believe that the sexual harassment is supposed to be bad and that the series has not run long enough to loop anything.\r\n\r\nIt's worth noting that the discussion around Dandadan's formula and its execution is ongoing, and opinions on the series vary widely. Some fans love the series and find it engaging, while others are critical of its formula and execution. Ultimately, whether or not Dandadan is a good series is a matter of personal opinion, and fans will continue to debate its merits.\r\n\r\nIn conclusion, Dandadan is a series that has been criticized for its repetitive formula, but it also has the potential to be a great series if it can evolve and offer more depth. The series has been defended by some fans, who believe that the sexual harassment is supposed to be bad and that the series has not run long enough to loop anything. The discussion around Dandadan's formula and its execution is ongoing, and opinions on the series vary widely.",
+          "created_at": "2025-01-03T08:09:40.648Z",
+          "id": "67779b4438d26a2a6372472f",
+          "updated_at": "2025-01-08T00:01:49.351Z",
+          "url": "https://www.themoviedb.org/review/67779b4438d26a2a6372472f"
+        }
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=0G7HX16YTLU",
+      "cast": "Shion Wakayama, Natsuki Hanae",
+      "category": "top_rated",
+      "createdAt": "2025-05-09T18:08:44.955Z"
     },
     {
       "adult": false,
@@ -5491,24 +6039,6 @@
       "cast": "James Gandolfini, Edie Falco, Jamie-Lynn Sigler, Robert Iler, Lorraine Bracco",
       "category": "top_rated",
       "createdAt": "2025-05-09T18:08:48.146Z"
-    },
-    {
-      "id": "bee3",
-      "title": "rrr",
-      "original_title": "rrr",
-      "poster_url": "http://dfgfhgfn",
-      "backdrop_url": "http://dfgfhgfn",
-      "release_date": "2025-05-27",
-      "original_language": "rr",
-      "genres": [
-        "horror"
-      ],
-      "overview": "tt",
-      "vote_average": "3",
-      "vote_count": "3",
-      "popularity": "3",
-      "reviews": "tt",
-      "adult": false
     }
   ],
   "people": [

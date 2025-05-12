@@ -1,11 +1,4 @@
-import {
-  Table,
-  TableHeader,
-  TableBody,
-  TableHead,
-  TableRow,
-  TableCell
-} from "@/components/ui/table";
+import { Table, TableHeader, TableBody, TableHead, TableRow, TableCell } from "@/components/ui/table";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { FaEye } from "react-icons/fa";
@@ -15,17 +8,28 @@ import { useDispatch } from "react-redux";
 import { deleteMovieAction } from "../../movies/movieSlice";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import { useState } from "react";
+import { deleteSeriesAction } from "../../series/seriesSlice";
+import { MyModal } from "./MyModal"; // Import MyModal
 
-export function MyTable({ type, tableTitle, data, pagination, setPage }) {
-  const { currentPage, totalPages } = pagination;
+export function MyTable({ type, tableTitle, data }) {
   const dispatch = useDispatch();
 
-  const deleteHandler = movieId => {
-    dispatch(deleteMovieAction(movieId));
+  const [selectedMovie, setSelectedMovie] = useState(null);  // Movie data for modal
+  const [showModal, setShowModal] = useState(false);  // Modal visibility
+
+  const deleteHandler = (movieId) => {
+    type === "movie" && dispatch(deleteMovieAction(movieId));
+    type === "series" && dispatch(deleteSeriesAction(movieId));
+  };
+
+  const handleView = (movie) => {
+    setSelectedMovie(movie);
+    setShowModal(true);  // Show modal when movie is selected
   };
 
   return (
-    <div className="max-w-full p-6">
+    <div className="w-full p-6 overflow-x-auto">
       <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-200">
         <h2 className="text-2xl font-semibold mb-7 text-gray-800">
           {tableTitle}
@@ -34,30 +38,27 @@ export function MyTable({ type, tableTitle, data, pagination, setPage }) {
         <Table className="w-full block md:table">
           <TableHeader className="hidden md:table-header-group">
             <TableRow className="bg-gray-100">
-              <TableHead className="text-gray-700 ps-3">
-                {type}
-              </TableHead>
+              <TableHead className="text-gray-700 ps-3">Title</TableHead>
               <TableHead className="text-gray-700">Category</TableHead>
               <TableHead className="text-gray-700">Audience</TableHead>
               <TableHead className="text-gray-700">Rating</TableHead>
-              <TableHead className="text-gray-700 text-center">
-                Actions
-              </TableHead>
+              <TableHead className="text-gray-700 text-center">Actions</TableHead>
             </TableRow>
           </TableHeader>
 
-          <TableBody>
-          {data.length === 0 && (
-  <TableRow>
-    <TableCell colSpan={5} className="text-center text-gray-500">
-      No {type} found.
-    </TableCell>
-  </TableRow>
-)}
-            {data.map(item =>
+          <TableBody className="w-full block md:table-row-group overflow-x-auto">
+            {data.length === 0 && (
+              <TableRow>
+                <TableCell colSpan={5} className="text-center text-gray-500">
+                  No {type} found.
+                </TableCell>
+              </TableRow>
+            )}
+
+            {data.map(item => (
               <TableRow
                 key={item.id}
-                className="flex flex-col md:table-row border border-gray-200 rounded-xl md:rounded-none mb-4 md:mb-0 p-4 md:p-0 shadow-sm md:shadow-none"
+                className="flex flex-col w-full md:table-row border border-gray-200 rounded-xl md:rounded-none mb-4 md:mb-0 p-4 md:p-0 shadow-sm md:shadow-none"
               >
                 {/* Title + Date */}
                 <TableCell className="font-medium break-words whitespace-normal">
@@ -68,7 +69,7 @@ export function MyTable({ type, tableTitle, data, pagination, setPage }) {
                     <Avatar className="h-10 w-10">
                       <AvatarImage src={item.poster_url} alt={item.title} />
                       <AvatarFallback>
-                        {item.title.charAt(0)  }
+                        {item.title.charAt(0)}
                       </AvatarFallback>
                     </Avatar>
                     <div>
@@ -91,7 +92,7 @@ export function MyTable({ type, tableTitle, data, pagination, setPage }) {
                     {item.genres.join(", ")}
                   </p>
                   <p className="text-sm text-gray-500 break-words whitespace-normal">
-                    {item.reviews.map(r => r.author).join(", ")}
+                    {Array.isArray(item.reviews) ? item.reviews.map(r => r.author).join(", ") : "No reviews available"}
                   </p>
                 </TableCell>
 
@@ -101,22 +102,21 @@ export function MyTable({ type, tableTitle, data, pagination, setPage }) {
                     Audience
                   </div>
                   <span
-  className={`inline-flex items-center gap-1 me-4 rounded-full px-2 py-0.5 text-xs font-medium
-    ${item.adult ? "bg-green-100 text-green-700" : "bg-blue-100 text-blue-700"}`}
->
-  {item.adult ? (
-      <>
-      <span className="text-green-500">🔞</span>
-      <span>Adults</span>
-    </>
-  ) : (
-    <>
-        <span className="text-blue-500">🧒</span>
-      <span>General</span>
-    </>
-  )}
-</span>
-
+                    className={`inline-flex items-center gap-1 me-4 rounded-full px-2 py-0.5 text-xs font-medium
+                      ${item.adult ? "bg-green-100 text-green-700" : "bg-blue-100 text-blue-700"}`}
+                  >
+                    {item.adult ? (
+                      <>
+                        <span className="text-green-500">🔞</span>
+                        <span>Adults</span>
+                      </>
+                    ) : (
+                      <>
+                        <span className="text-blue-500">🧒</span>
+                        <span>General</span>
+                      </>
+                    )}
+                  </span>
                 </TableCell>
 
                 {/* Rating */}
@@ -140,63 +140,41 @@ export function MyTable({ type, tableTitle, data, pagination, setPage }) {
                     Actions
                   </div>
                   <div className="flex justify-start md:justify-center items-center gap-2 mt-2">
-                    <Link
-                      to={`/admin/${item.id}`}
+                    <Button
+                      variant="outline"
+                      onClick={() => handleView(item)}  // Open the modal when clicked
                       className="p-2 rounded-md border border-blue-500 text-blue-500 hover:bg-blue-600 hover:text-white transition duration-200"
-                      title="View"
                     >
                       <FaEye size={16} />
-                    </Link>
+                    </Button>
                     <Link
-                      to={`/admin/${item.id}/${type === "movie"
-                        ? "editMovie"
-                        : "editSeries"}`}
+                      to={`/admin/${item.id}/${type === "movie" ? "editMovie" : "editSeries"}`}
                       className="p-2 rounded-md border border-green-500 text-green-500 hover:bg-green-600 hover:text-white transition duration-200"
                       title="Edit"
                     >
                       <TiEdit size={18} />
                     </Link>
                     <Button
+                      onClick={() => deleteHandler(item.id)}
                       variant="outline"
-                      size="icon"
-                      onClick={() => {
-                        if (window.confirm("Are you sure you want to delete it?")) {
-                          deleteHandler(item.id);
-                        }
-                      }}
                       className="p-2 rounded-md border border-red-500 text-red-500 hover:bg-red-600 hover:text-white transition duration-200"
-                      title="Delete"
                     >
                       <MdDelete size={18} />
                     </Button>
                   </div>
                 </TableCell>
               </TableRow>
-            )}
+            ))}
           </TableBody>
         </Table>
-
-        {/* Pagination Controls */}
-        <div className="mt-4 flex justify-center">
-          <Button
-            disabled={currentPage === 1}
-            onClick={() => setPage(currentPage - 1)}
-            className="mx-2"
-          >
-            Previous
-          </Button>
-          <span className="text-sm text-gray-700 mt-2">
-            Page {currentPage} of {totalPages}
-          </span>
-          <Button
-            disabled={currentPage === totalPages}
-            onClick={() => setPage(currentPage + 1)}
-            className="mx-2"
-          >
-            Next
-          </Button>
-        </div>
       </div>
+
+      {/* Modal for Viewing Movie Details */}
+      <MyModal
+        open={showModal}
+        onOpenChange={setShowModal}
+        movie={selectedMovie}  // Pass selected movie to MyModal
+      />
     </div>
   );
 }
@@ -205,6 +183,4 @@ MyTable.propTypes = {
   type: PropTypes.string.isRequired,
   tableTitle: PropTypes.string.isRequired,
   data: PropTypes.array.isRequired,
-  pagination: PropTypes.object.isRequired,
-  setPage: PropTypes.func.isRequired
 };

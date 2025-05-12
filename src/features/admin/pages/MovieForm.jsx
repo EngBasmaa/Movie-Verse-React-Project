@@ -1,15 +1,21 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import { useParams } from "react-router-dom";
+import { useParams,useNavigate } from "react-router-dom";
 import { Textarea } from "@/components/ui/textarea";
 import { Switch } from "@/components/ui/switch";
 import { ExclamationTriangleIcon } from "@radix-ui/react-icons";
 import { MdAddTask } from "react-icons/md";
+import {  getMovieById } from "../../movies/movieApi";
+import { useDispatch } from "react-redux";
+import { addMovieAction, editMovieAction } from "../../movies/movieSlice";
+
 
 export function MovieForm() {
   const { id } = useParams();
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     title: "",
@@ -30,6 +36,14 @@ export function MovieForm() {
   const [formErrors, setFormErrors] = useState({});
   const [submitAttempted, setSubmitAttempted] = useState(false);
 
+  useEffect(() => {
+    if (id != 0) {
+      getMovieById(id).then((response) => {
+        setFormData(response.data);
+      })
+    }
+},[id])
+
   const validateField = (name, value) => {
     let error = "";
     const urlPattern = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i; // URL regex pattern
@@ -41,7 +55,7 @@ export function MovieForm() {
       case "overview":
         if (!value.trim()) {
           error = "This field is required.";
-        } else if (value.trim().length < 3) {
+        } else if (value.trim().length < 2) {
           error = "The name must be at least 3 characters long.";
         }
         break;
@@ -101,12 +115,10 @@ export function MovieForm() {
         [name]: value
       });
     }
-    // Trigger validation on change
     validateField(name, value);
   };
 
   const handleBlur = e => {
-    // Trigger validation when the field loses focus
     const { name, value } = e.target;
     validateField(name, value);
   };
@@ -115,23 +127,72 @@ export function MovieForm() {
     setFormData(prev => ({ ...prev, adult: checked }));
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitAttempted(true);
+  
     const errors = {};
     Object.entries(formData).forEach(([key, value]) => {
       validateField(key, value);
       if (formErrors[key]) errors[key] = formErrors[key];
     });
+  
+    setFormErrors(errors);
+    if (Object.keys(errors).length > 0) return;
+  
+    const movieAction = id && id !== "0" ? editMovieAction({ id, formValues: formData }) : addMovieAction(formData);
 
-    if (Object.keys(errors).length === 0) {
-      console.log("Form submitted:", formData);
-      // هنا ممكن تعمل اللي هتعمله لما الفورم يكون صحيح (إرسال البيانات مثلاً)
+    // logic
+    if (id && id !== "0") {
+      dispatch(movieAction)
+        .then(() => {
+          navigate("/admin/movies");
+          setFormData({
+            title: "",
+            original_title: "",
+            poster_url: "",
+            backdrop_url: "",
+            release_date: "",
+            original_language: "",
+            genres: [],
+            overview: "",
+            vote_average: "",
+            vote_count: "",
+            popularity: "",
+            reviews: "",
+            adult: false,
+          });
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     } else {
-      console.log("Form has errors:", errors);
-      // هنا ممكن تعرض رسالة عامة بوجود أخطاء في الفورم لو عايز
+      dispatch(addMovieAction(formData))
+        .then(() => {
+          navigate("/admin/movies");
+          setFormData({
+            title: "",
+            original_title: "",
+            poster_url: "",
+            backdrop_url: "",
+            release_date: "",
+            original_language: "",
+            genres: [],
+            overview: "",
+            vote_average: "",
+            vote_count: "",
+            popularity: "",
+            reviews: "",
+            adult: false,
+          });
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     }
   };
+  
+  
 
   const renderInput = (label, name, type = "text") =>
     <div className="space-y-2">
