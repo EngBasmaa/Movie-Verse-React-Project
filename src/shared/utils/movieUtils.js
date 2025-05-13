@@ -1,4 +1,3 @@
-// Filters
 export const filterByGenre = (movies, genre) =>
   movies.filter((movie) => movie.genres.includes(genre));
 

@@ -14,7 +14,7 @@ import { SeriesDetails } from "../../features/series/pages/SeriesDetails";
 export default function MainLayout() {
   return (
     <BrowserRouter>
-      <Routes>
+     <Routes>
         <Route path="/" element={<SharedLayout />}>
           {/* HOME */}
           <Route index element={<Home />} />
@@ -39,7 +39,7 @@ export default function MainLayout() {
           {/* NOTFOUND */}
           <Route path="*" element={<NotFound />} />
         </Route>
-      </Routes>
+      </Routes>
     </BrowserRouter>
   );
 }
