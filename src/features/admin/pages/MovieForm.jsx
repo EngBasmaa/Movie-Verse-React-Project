@@ -205,12 +205,12 @@ export function MovieForm() {
         type={type}
         value={formData[name]}
         onInput={handleChange}
-        onBlur={handleBlur} // Add onBlur to trigger validation when leaving the field
-        className={`${formErrors[name] && submitAttempted
-          ? "border-red-500"
-          : ""} ${formErrors[name] && submitAttempted
-          ? "focus-visible:ring-red-500 focus-visible:ring-offset-2"
-          : ""}`}
+        onBlur={handleBlur}
+        className={`bg-zinc-700 text-white ${
+          formErrors[name] && submitAttempted
+            ? "border-red-500 bg-red-100 text-red-800"
+            : "border-zinc-600"
+        }`}
         required={
           name === "title" ||
           name === "original_title" ||
@@ -227,124 +227,111 @@ export function MovieForm() {
           <ExclamationTriangleIcon className="inline-block mr-1 align-text-bottom" />
           {formErrors[name]}
         </p>}
-    </div>;
+    </div>
 
   return (
+    <div className="bg-zinc-800 p-5">
     <form
-      onSubmit={handleSubmit}
-      className="bg-white border border-gray-200 rounded-2xl p-8 shadow-xl w-full max-w-4xl mx-auto"
-    >
-      <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-        {id == 0 ? "🎬 Add New Movie" : "✏️ Edit Movie"}
-      </h3>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {renderInput("Title", "title")}
-        {renderInput("Original Title", "original_title")}
-        {renderInput("Poster URL", "poster_url")}
-        {renderInput("Backdrop URL", "backdrop_url")}
-        {renderInput("Release Date", "release_date", "date")}
-        {renderInput("Original Language", "original_language")}
-
-        <div className="space-y-2">
-          <Label htmlFor="genres">Genres</Label>
-          <select
-            id="genres"
-            name="genres"
-            multiple
-            value={formData.genres}
-            onChange={handleChange}
-            onBlur={handleBlur} // Add onBlur to trigger validation
-            className={`border ${formErrors.genres && submitAttempted
-              ? "border-red-500"
-              : ""}`}
-            required
-          >
-            <option value="action">Action</option>
-            <option value="comedy">Comedy</option>
-            <option value="drama">Drama</option>
-            <option value="horror">Horror</option>
-            <option value="romance">Romance</option>
-          </select>
-          {formErrors.genres &&
-            <p className="text-sm text-red-500">
-              <ExclamationTriangleIcon className="inline-block mr-1 align-text-bottom" />
-              {formErrors.genres}
-            </p>}
-        </div>
-
-        {renderInput("Vote Average", "vote_average", "number")}
-        {renderInput("Vote Count", "vote_count", "number")}
-        {renderInput("Popularity", "popularity", "number")}
-
-        <div className="md:col-span-2 space-y-2">
-          <Label htmlFor="overview">Overview</Label>
-          <Textarea
-            id="overview"
-            name="overview"
-            rows="4"
-            value={formData.overview}
-            onInput={handleChange}
-            onBlur={handleBlur} // Add onBlur to trigger validation
-            className={`${formErrors.overview && submitAttempted
-              ? "border-red-500"
-              : ""} ${formErrors.overview && submitAttempted
-              ? "focus-visible:ring-red-500 focus-visible:ring-offset-2"
-              : ""}`}
-            required
-          />
-          {formErrors.overview &&
-            <p className="text-sm text-red-500">
-              <ExclamationTriangleIcon className="inline-block mr-1 align-text-bottom" />
-              {formErrors.overview}
-            </p>}
-        </div>
-
-        <div className="md:col-span-2 space-y-2">
-          <Label htmlFor="reviews">Review Authors (comma-separated)</Label>
-          <Textarea
-            id="reviews"
-            name="reviews"
-            rows="3"
-            value={formData.reviews}
-            onInput={handleChange}
-            onBlur={handleBlur} // Add onBlur to trigger validation
-            className={
-              formErrors.reviews && submitAttempted ? "border-red-500" : ""
-            }
-          />
-          {formErrors.reviews &&
-            <p className="text-sm text-red-500">
-              <ExclamationTriangleIcon className="inline-block mr-1 align-text-bottom" />
-              {formErrors.reviews}
-            </p>}
-        </div>
-
-        <div className="md:col-span-2 flex items-center gap-3 pt-4">
-          <Switch
-            checked={formData.adult}
-            onCheckedChange={handleSwitch}
-            id="adult"
-          />
-          <Label htmlFor="adult">Adult Only?</Label>
-        </div>
+    onSubmit={handleSubmit}
+    className="bg-red-100 border border-pink-700 rounded-2xl p-8 shadow-xl w-full max-w-4xl mx-auto text-pink-700"
+  >
+    <h3 className="text-2xl font-bold text-pink-700 mb-6 text-center">
+      {id == 0 ? "🎬 Add New Movie" : "✏️ Edit Movie"}
+    </h3>
+  
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {renderInput("Title", "title")}
+      {renderInput("Original Title", "original_title")}
+      {renderInput("Poster URL", "poster_url")}
+      {renderInput("Backdrop URL", "backdrop_url")}
+      {renderInput("Release Date", "release_date", "date")}
+      {renderInput("Original Language", "original_language")}
+  
+      {/* Genres */}
+      <div className="space-y-2">
+        <Label htmlFor="genres" >Genres</Label>
+        <select
+          id="genres"
+          name="genres"
+          multiple
+          value={formData.genres}
+          onChange={handleChange}
+          onBlur={handleBlur}
+          className={`bg-zinc-700 text-white rounded-md px-3 py-2 w-full ${
+            formErrors.genres && submitAttempted ? "border-red-500 bg-red-100 text-red-800" : "border-zinc-600"
+          }`}
+          required
+        >
+          <option value="action">Action</option>
+          <option value="comedy">Comedy</option>
+          <option value="drama">Drama</option>
+          <option value="horror">Horror</option>
+          <option value="romance">Romance</option>
+        </select>
+        {formErrors.genres &&
+          <p className="text-sm text-red-500">
+            <ExclamationTriangleIcon className="inline-block mr-1 align-text-bottom" />
+            {formErrors.genres}
+          </p>}
       </div>
-
-      <div className="text-center mt-8">
+  
+      {renderInput("Vote Average", "vote_average", "number")}
+      {renderInput("Vote Count", "vote_count", "number")}
+      {renderInput("Popularity", "popularity", "number")}
+  
+      {/* Overview */}
+      <div className="md:col-span-2 space-y-2">
+        <Label htmlFor="overview">Overview</Label>
+        <Textarea
+          id="overview"
+          name="overview"
+          rows="4"
+          value={formData.overview}
+          onInput={handleChange}
+          onBlur={handleBlur}
+          className={`${formErrors.overview && submitAttempted
+            ? "border-red-500 "
+            : ""} ${formErrors.overview && submitAttempted
+            ? "focus-visible:ring-red-500 focus-visible:ring-offset-2"
+            : ""}`}
+          required
+        />
+        {formErrors.overview &&
+          <p className="text-sm text-red-500">
+            <ExclamationTriangleIcon className="inline-block mr-1 align-text-bottom" />
+            {formErrors.overview}
+          </p>}
+      </div>
+  
+      
+  
+      {/* Switch */}
+      <div className="md:col-span-2 flex items-center gap-3 pt-4">
+        <Switch
+          checked={formData.adult}
+          onCheckedChange={handleSwitch}
+          id="adult"
+        />
+        <Label htmlFor="adult">Adult Only?</Label>
+      </div>
+    </div>
+  
+    <div className="text-center mt-8">
       <Button
-  type="submit"
-  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl text-sm font-medium"
->
-  {id == 0 ? (
-    <>
-              <MdAddTask className="inline-block mr-2 size-6" />
-      Add Movie
-    </>
-  ) : (
-    "✏️ Edit Movie"
-  )}
-</Button>
-      </div>
-    </form>
+        type="submit"
+        className="bg-pink-700 hover:bg-pink-800 text-white px-6 py-3 rounded-xl text-sm font-medium"
+      >
+        {id == 0 ? (
+          <>
+            <MdAddTask className="inline-block mr-2 size-6" />
+            Add Movie
+          </>
+        ) : (
+          "✏️ Edit Movie"
+        )}
+      </Button>
+    </div>
+  </form>
+  </div>
   );
 }

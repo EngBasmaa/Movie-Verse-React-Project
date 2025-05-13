@@ -196,46 +196,33 @@ export function SeriesForm() {
   
     const renderInput = (label, name, type = "text") =>
       <div className="space-y-2">
-        <Label htmlFor={name}>
-          {label}
-        </Label>
-        <Input
-          id={name}
-          name={name}
-          type={type}
-          value={formData[name]}
-          onInput={handleChange}
-          onBlur={handleBlur} // Add onBlur to trigger validation when leaving the field
-          className={`${formErrors[name] && submitAttempted
-            ? "border-red-500"
-            : ""} ${formErrors[name] && submitAttempted
-            ? "focus-visible:ring-red-500 focus-visible:ring-offset-2"
-            : ""}`}
-          required={
-            name === "title" ||
-            name === "original_title" ||
-            name === "poster_url" ||
-            name === "backdrop_url" ||
-            name === "release_date" ||
-            name === "original_language" ||
-            name === "genres" ||
-            name === "overview"
-          }
-        />
-        {formErrors[name] &&
-          <p className="text-sm text-red-500">
-            <ExclamationTriangleIcon className="inline-block mr-1 align-text-bottom" />
-            {formErrors[name]}
-          </p>}
-      </div>;
+      <Label htmlFor={name}>{label}</Label>
+      <Input
+        id={name}
+        name={name}
+        type={type}
+        value={formData[name]}
+        onInput={handleChange}
+        onBlur={handleBlur}
+        className={`bg-zinc-800 text-white ${formErrors[name] && submitAttempted ? "border-red-500 bg-red-100 text-red-800" : "border-zinc-600"}`}
+        required={["title", "original_title", "poster_url", "backdrop_url", "release_date", "original_language", "genres", "overview"].includes(name)}
+      />
+      {formErrors[name] && (
+        <p className="text-sm text-red-500">
+          <ExclamationTriangleIcon className="inline-block mr-1 align-text-bottom" />
+          {formErrors[name]}
+        </p>
+      )}
+    </div>
   
 
   return (
+    <div className="bg-zinc-800">
     <form
       onSubmit={handleSubmit}
-      className="bg-white border border-gray-200 rounded-2xl p-8 shadow-xl w-full max-w-4xl mx-auto"
+      className="bg-red-100 border text-pink-700 border-gray-200 rounded-2xl p-8 shadow-xl w-full max-w-4xl mx-auto"
     >
-      <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
+      <h3 className="text-2xl font-bold text-pink-700 mb-6 text-center">
         {id == 0 ? "🎬 Add New Series" : "✏️ Edit Series"}
       </h3>
 
@@ -301,25 +288,7 @@ export function SeriesForm() {
             </p>}
         </div>
 
-        <div className="md:col-span-2 space-y-2">
-          <Label htmlFor="reviews">Review Authors (comma-separated)</Label>
-          <Textarea
-            id="reviews"
-            name="reviews"
-            rows="3"
-            value={formData.reviews}
-            onInput={handleChange}
-            onBlur={handleBlur} // Add onBlur to trigger validation
-            className={
-              formErrors.reviews && submitAttempted ? "border-red-500" : ""
-            }
-          />
-          {formErrors.reviews &&
-            <p className="text-sm text-red-500">
-              <ExclamationTriangleIcon className="inline-block mr-1 align-text-bottom" />
-              {formErrors.reviews}
-            </p>}
-        </div>
+        
 
         <div className="md:col-span-2 flex items-center gap-3 pt-4">
           <Switch
@@ -334,7 +303,7 @@ export function SeriesForm() {
       <div className="text-center mt-8">
       <Button
   type="submit"
-  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl text-sm font-medium"
+  className="bg-pink-700 hover:bg-pink-800 text-white px-6 py-3 rounded-xl text-sm font-medium"
 >
   {id == 0 ? (
     <>
@@ -346,6 +315,7 @@ export function SeriesForm() {
   )}
 </Button>
       </div>
-    </form>
+      </form>
+      </div>
   );
 }

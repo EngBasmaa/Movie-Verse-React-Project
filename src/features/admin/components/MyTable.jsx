@@ -23,19 +23,19 @@ export function MyTable({ type, tableTitle, data }) {
     type === "series" && dispatch(deleteSeriesAction(movieId));
   };
 
-  const handleView = (movie) => {
-    setSelectedMovie(movie);
+  const handleView = (item) => {
+    setSelectedMovie(item)
     setShowModal(true);  // Show modal when movie is selected
   };
 
   return (
     <div className="w-full p-6 overflow-x-auto">
-      <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-200">
+      <div className="bg-red-100 rounded-2xl shadow-lg p-6 border border-gray-200">
         <h2 className="text-2xl font-semibold mb-7 text-gray-800">
           {tableTitle}
         </h2>
 
-        <Table className="w-full block md:table">
+        <Table className="w-full block  md:table bg-white">
           <TableHeader className="hidden md:table-header-group">
             <TableRow className="bg-gray-100">
               <TableHead className="text-gray-700 ps-3">Title</TableHead>

@@ -9,12 +9,12 @@ export function SeriesDetails() {
     (store) => store.seriesSlice
   );
   const dispatch = useDispatch();
-  
+
   useEffect(() => {
     dispatch(getSeriesByIdAction(id));
-  }, [id, dispatch]);
-  
-  console.log(selectedSeries, isLoading, errors);
+  }, [id]);
+
+  console.log(selectedSeries);
 
   // UI
   if (isLoading) {
@@ -24,7 +24,7 @@ export function SeriesDetails() {
       </div>
     );
   }
-  
+
   if (errors) {
     return (
       <div>

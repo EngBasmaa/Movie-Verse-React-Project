@@ -8,12 +8,14 @@ import { MyFilters } from "../components/MyFilters";
 import { MyHeader } from "../components/MyHeader";
 import { MyChart } from "../components/MyChart";
 import { MyPie } from "../components/MyPie";
+import { MyBar } from "../components/MyBar";
+import {Button} from "../../../shared/components/MyButton";
 
 import {
   filterByGenre,
   filterBySearch,
   sortByRating,
-  sortByReleaseDate
+  filterReleased
 } from "../../../shared/utils/movieUtils";
 
 import {
@@ -25,7 +27,7 @@ import {
 import { getAllMoviesAction } from "../../movies/movieSlice";
 import { getAllSeriesAction } from "../../series/seriesSlice";
 
-// دوال الفلترة حسب الفئة العمرية
+// فلترة حسب الفئة العمرية
 function filterMovieByAudience(data, category) {
   if (category === "general") return data.filter(item => !item.adult);
   if (category === "adults") return data.filter(item => item.adult);
@@ -41,8 +43,10 @@ function filterSeriesByAudience(data, category) {
 export function AdminLayout() {
   const { tab } = useParams();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   const [activeTab, setActiveTab] = useState(
-    tab === "series" ? "series" : "movies"
+    tab === "series" || tab === "dashboard" ? tab : "movies"
   );
   const [filters, setFilters] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
@@ -50,136 +54,206 @@ export function AdminLayout() {
 
   const { movies = [] } = useSelector(state => state.movieSlice || {});
   const { series = [] } = useSelector(state => state.seriesSlice || {});
+  console.log(movies)
+  console.log(series)
+  useEffect(() => {
+    if (tab === "movies" || tab === "series" || tab === "dashboard") {
+      setActiveTab(tab);
+    } else {
+      setActiveTab("movies");
+    }
 
-  // استخدم useMemo لحساب البيانات حسب التبويب النشط (movies أو series)
-  const rawData = useMemo(
-    () => {
-      return activeTab === "movies" ? movies : series;
-    },
-    [activeTab, movies, series]
-  );
+    if (tab === "movies") {
+      dispatch(getAllMoviesAction());
+    } else if (tab === "series") {
+      dispatch(getAllSeriesAction());
+    } else {
+      dispatch(getAllMoviesAction());
+      dispatch(getAllSeriesAction());
+    }
 
-  // إعادة تعيين الصفحة الأولى عند تغيير الفلاتر أو التبويب
-  const dispatch = useDispatch();
-  useEffect(
-    () => {
-      setCurrentPage(1);
-      setActiveTab(tab === "series" ? "series" : (tab === "movies"?"movies":"dashboard"));
-      if (tab === "movies") {
-        dispatch(getAllMoviesAction());
-      } else if (tab === "series") {
-        dispatch(getAllSeriesAction());
-      } else {
-        dispatch(getAllMoviesAction());
-        dispatch(getAllSeriesAction());
-      }
-    },
-    [tab, dispatch]
-  );
+    setCurrentPage(1);
+  }, [tab, dispatch]);
 
-  // استخدم useMemo لتطبيق الفلاتر والفرز على البيانات
-  const filteredData = useMemo(
-    () => {
-      let result = [...rawData];
+  // البيانات الأولية حسب التبويب
+  const rawData = useMemo(() => {
+    return activeTab === "movies" ? movies : series;
+  }, [activeTab, movies, series]);
 
-      // فلتر الفئة Genre
-      if (filters.genre) {
-        result =
-          activeTab === "movies"
-            ? filterByGenre(result, filters.genre)
-            : filterSeriesByGenre(result, filters.genre);
-      }
+  // فلترة وفرز البيانات
+  const filteredData = useMemo(() => {
+    let result = [...rawData];
 
-      // فلتر الفئة العمرية Category
-      if (filters.category) {
-        result =
-          activeTab === "movies"
-            ? filterMovieByAudience(result, filters.category)
-            : filterSeriesByAudience(result, filters.category);
-      }
+    if (filters.genre) {
+      result =
+        activeTab === "movies"
+          ? filterByGenre(result, filters.genre)
+          : filterSeriesByGenre(result, filters.genre);
+    }
 
-      // فلتر البحث Search
-      if (filters.searchQuery) {
-        result = filterBySearch(result, filters.searchQuery);
-      }
+    if (filters.category) {
+      result =
+        activeTab === "movies"
+          ? filterMovieByAudience(result, filters.category)
+          : filterSeriesByAudience(result, filters.category);
+    }
 
-      // فلتر التصنيف Rating
-      if (filters.sortBy === "rating") {
-        result =
-          activeTab === "movies"
-            ? sortByRating(result)
-            : sortSeriesByRating(result);
-      }
+    if (filters.searchQuery) {
+      result = filterBySearch(result, filters.searchQuery);
+    }
 
-      // فلتر تاريخ الإصدار Release Date
-      if (filters.sortBy === "releaseDate") {
-        result =
-          activeTab === "movies"
-            ? sortByReleaseDate(result)
-            : sortSeriesByReleaseDate(result);
-      }
+    if (filters.sortBy === "rating") {
+      result =
+        activeTab === "movies"
+          ? sortByRating(result)
+          : sortSeriesByRating(result);
+    }
 
-      return result;
-    },
-    [rawData, filters, activeTab]
-  );
+    if (filters.sortBy === "releaseDate") {
+      result =
+        activeTab === "movies"
+          ? filterReleased(result)
+          : sortSeriesByReleaseDate(result);
+    }
 
-  // حساب البيانات المعروضة حسب الصفحة الحالية
-  const paginatedData = useMemo(
-    () => {
-      const startIndex = (currentPage - 1) * itemsPerPage;
-      const endIndex = startIndex + itemsPerPage;
-      return filteredData.slice(startIndex, endIndex);
-    },
-    [filteredData, currentPage]
-  );
+    return result;
+  }, [rawData, filters, activeTab]);
+
+  const paginatedData = useMemo(() => {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    return filteredData.slice(startIndex, endIndex);
+  }, [filteredData, currentPage]);
 
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
-  return <div className="flex">
-      <main className="flex-1 p-6 bg-gray-100 min-h-screen">
+  const isMoviesTab = activeTab === "movies";
+  const isSeriesTab = activeTab === "series";
+  const isDashboard = activeTab === "dashboard";
+
+  const newItemPath = `/admin/0/${isMoviesTab ? "editMovie" : "editSeries"}`;
+
+
+  
+  return (
+    <div className="flex">
+      <main className="flex-1 p-6 bg-zinc-800 w-full"  >
         <MyHeader activeTab={activeTab} onTabChange={tab => navigate(`/admin/${tab}`)} />
-        <div className="flex justify-around items-center mb-4 align-items-center align-content-center">
-          <MyFilters filters={filters} setFilters={setFilters} onFilterChange={setFilters} />
-        </div>
-        <Link to={`/admin/0/${activeTab === "movies" ? "editMovie" : "editSeries"}`} className="flex items-center gap-2 w-50 ms-auto me-6 px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition">
-          <MdAddToPhotos className="inline-block mr-2 size-6" />
-          Add New {activeTab === "movies" ? "Movie" : "Series"}
-        </Link>
 
-        {activeTab === "movies" && <MyChart movies={filteredData} />}
-        {activeTab === "movies" && <MyPie movies={filteredData} />}
-        {activeTab === "series" && <MyChart series={filteredData} />}
-        {activeTab === "series" && <MyPie series={filteredData} />}
+        {!isDashboard && (
+          <div className="flex justify-around items-center mb-4 align-items-center align-content-center">
+            <MyFilters filters={filters} setFilters={setFilters} onFilterChange={setFilters}  />
+          </div>
+        )}
 
-      {activeTab === "dashboard" &&
-        (<>
-          {activeTab === "movies" && <MyChart movies={filteredData} />}
-        {activeTab === "movies" && <MyPie movies={filteredData} />}
-        {activeTab === "series" && <MyChart series={filteredData} />}
-        {activeTab === "series" && <MyPie series={filteredData} />}
+        {!isDashboard && (
+         
+          <Link to={newItemPath} className="flex items-center gap-2 w-50 ms-auto me-6 px-4 py-2  rounded-3xl bg-pink-700 text-white hover:text-red-200   hover:bg-pink-900 transition">
+            <MdAddToPhotos className="inline-block mr-2 size-6" />
+            Add New {isMoviesTab ? "Movie" : "Series"}
+          </Link>
+        )}
 
-      </>)
-      
-      }
+{isMoviesTab && (
+  <div className="px-6 py-8">
+    <h2 className="text-4xl font-semibold text-pink-600 mb-6 border-b pb-2 border-gray-300 mt-6">
+      🎬 Movies Statistics
+    </h2>
 
-        <MyTable type={activeTab === "movies" ? "movie" : "series"} tableTitle={activeTab === "movies" ? "All Movies" : "All Series"} data={paginatedData} pagination={{ currentPage, totalPages }} setPage={setCurrentPage} />
-        {/* Pagination Controls */}
-        <div className="flex justify-center mt-6">
-          <button className="px-4 py-2 mr-2 bg-gray-300 rounded-md" disabled={currentPage === 1} onClick={() => setCurrentPage(
-                prev => Math.max(prev - 1, 1)
-              )}>
-            Previous
-          </button>
-          <span className="px-4 py-2">
-            {currentPage} of {totalPages}
-          </span>
-          <button className="px-4 py-2 ml-2 bg-gray-300 rounded-md" disabled={currentPage === totalPages} onClick={() => setCurrentPage(
-                prev => Math.min(prev + 1, totalPages)
-              )}>
-            Next
-          </button>
-        </div>
+    <div className="bg-red-100 shadow-md rounded-lg p-4 mb-6">
+      <MyChart movies={filteredData} />
+    </div>
+  </div>
+)}
+
+{isSeriesTab && (
+  <div className="px-6 py-8">
+    <h2 className="text-4xl font-semibold text-pink-600 mb-6 border-b pb-2 border-gray-300 mt-6">
+      📺 Series Statistics
+    </h2>
+
+    {/* Line Chart */}
+    <div className="bg-red-100 shadow-md rounded-lg p-4 mb-6">
+      <MyChart series={filteredData} />
+    </div>
+  </div>
+)}
+
+
+        {isDashboard && (
+          <>
+          {isDashboard && (
+  <div className="px-6 py-8">
+            <h2 className="text-4xl font-semibold text-pink-600 mb-6 border-b pb-2 border-gray-300 mt-6">
+  📊 Movies vs Series Comparison
+</h2>
+<div className="bg-red-100 shadow-md rounded-lg p-4 mb-6">
+  <MyBar movies={movies} series={series} />
+</div>
+    <h2 className="text-4xl font-semibold text-pink-600 mb-6 border-b pb-2 border-gray-300">
+      🎬 Movies Stats
+    </h2>
+
+    <div className="bg-red-100 shadow-md rounded-lg p-4 mb-6">
+      <MyChart movies={movies} />
+    </div>
+
+    <div className="bg-red-100 shadow-md rounded-lg p-6 mb-6">
+      <MyPie movies={movies} />
+    </div>
+
+    <h2 className="text-4xl font-semibold text-pink-600 mb-6 border-b pb-2 border-gray-300 mt-10">
+      📺 Series Stats
+    </h2>
+
+    <div className="bg-red-100 shadow-md rounded-lg p-4 mb-6">
+      <MyChart series={series} />
+    </div>
+
+    <div className="bg-red-100 shadow-md rounded-lg p-6 mb-6">
+        <MyPie  series={series} />
+      </div>
+     
+   
+  </div>
+)}
+
+          </>
+        )}
+
+        {!isDashboard && (
+          <>
+            <MyTable
+              type={isMoviesTab ? "movie" : "series"}
+              tableTitle={isMoviesTab ? "All Movies" : "All Series"}
+              data={paginatedData}
+              pagination={{ currentPage, totalPages }}
+              setPage={setCurrentPage}
+            />
+
+            {/* Pagination Controls */}
+            <div className="flex justify-center mt-6">
+              <button
+                className="px-4 py-2 mr-2  rounded-3xl bg-pink-700 text-white hover:text-red-200   hover:bg-pink-900 transition"
+                disabled={currentPage === 1}
+                onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+              >
+                Previous
+              </button>
+              <span className="px-4 py-2 text-white">
+                {currentPage} of {totalPages}
+              </span>
+              <button
+                className="px-4 py-2 mr-2  rounded-3xl bg-pink-700 text-white hover:text-red-200   hover:bg-pink-900 transition"
+                disabled={currentPage === totalPages}
+                onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+              >
+                Next
+              </button>
+            </div>
+          </>
+        )}
       </main>
     </div>
+  );
 }
