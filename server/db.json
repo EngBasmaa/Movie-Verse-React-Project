@@ -3,7 +3,7 @@
     {
       "adult": false,
       "backdrop_path": "/bVm6udIB6iKsRqgMdQh6HywuEBj.jpg",
-      "id": 1233069,
+      "id": "1233069",
       "original_language": "de",
       "original_title": "Exterritorial",
       "overview": "When her son vanishes inside a US consulate, ex-special forces soldier Sara does everything in her power to find him — and uncovers a dark conspiracy.",
@@ -28,7 +28,7 @@
     {
       "adult": false,
       "backdrop_path": "/cJvUJEEQ86LSjl4gFLkYpdCJC96.jpg",
-      "id": 1241436,
+      "id": "1241436",
       "original_language": "en",
       "original_title": "Warfare",
       "overview": "A platoon of Navy SEALs embarks on a dangerous mission in Ramadi, Iraq, with the chaos and brotherhood of war retold through their memories of the event.",
@@ -110,7 +110,7 @@
     {
       "adult": false,
       "backdrop_path": "/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
-      "id": 986056,
+      "id": "986056",
       "original_language": "en",
       "original_title": "Thunderbolts*",
       "overview": "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
@@ -221,7 +221,7 @@
     {
       "adult": false,
       "backdrop_path": "/fTrQsdMS2MUw00RnzH0r3JWHhts.jpg",
-      "id": 1197306,
+      "id": "1197306",
       "original_language": "en",
       "original_title": "A Working Man",
       "overview": "Levon Cade left behind a decorated military career in the black ops to live a simple life working construction. But when his boss's daughter, who is like family to him, is taken by human traffickers, his search to bring her home uncovers a world of corruption far greater than he ever could have imagined.",
@@ -322,6 +322,18 @@
           "id": "67f17796a7336870ee994c8b",
           "updated_at": "2025-04-05T18:35:38.418Z",
           "url": "https://www.themoviedb.org/review/67f17796a7336870ee994c8b"
+        },
+        {
+          "author": "das",
+          "author_details": {
+            "name": "das",
+            "username": "das",
+            "avatar_path": null,
+            "rating": 5.1
+          },
+          "content": "mid",
+          "created_at": "2025-05-13T12:23:34.679Z",
+          "id": "zmvip4fxm"
         }
       ],
       "trailer_url": "https://www.youtube.com/watch?v=mdfrG2cLK58",
@@ -332,7 +344,7 @@
     {
       "adult": false,
       "backdrop_path": "/4A5HH9HkCPqAwyYL6CnA0mxbYjn.jpg",
-      "id": 1144430,
+      "id": "1144430",
       "original_language": "fr",
       "original_title": "Balle perdue 3",
       "overview": "Car genius Lino returns to conclude his vendetta against Areski and the corrupt commander who ruined their lives in this turbo-charged trilogy finale.",
@@ -358,7 +370,7 @@
     {
       "adult": false,
       "backdrop_path": "/12tEzU0bNYKIjXXEwI5abuOotHF.jpg",
-      "id": 710258,
+      "id": "710258",
       "original_language": "en",
       "original_title": "Rust",
       "overview": "Infamous outlaw Harland Rust breaks his estranged grandson Lucas out of prison, after Lucas is convicted to hang for an accidental murder. The two must outrun legendary U.S Marshal Wood Helm and bounty hunter Fenton \"Preacher\" Lang who are hot on their tails. Deeply buried secrets rise from the ashes and an unexpected familial bond begins to form as the mismatched duo tries to survive the merciless American Frontier.",
@@ -382,7 +394,7 @@
     {
       "adult": false,
       "backdrop_path": "/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
-      "id": 950387,
+      "id": "950387",
       "original_language": "en",
       "original_title": "A Minecraft Movie",
       "overview": "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
@@ -442,6 +454,18 @@
           "id": "67fd1a1cde5e4dec62ae3f22",
           "updated_at": "2025-04-14T14:24:56.356Z",
           "url": "https://www.themoviedb.org/review/67fd1a1cde5e4dec62ae3f22"
+        },
+        {
+          "author": "moa",
+          "author_details": {
+            "name": "moa",
+            "username": "moa",
+            "avatar_path": null,
+            "rating": 1
+          },
+          "content": "very bad",
+          "created_at": "2025-05-12T20:42:20.374Z",
+          "id": "se8u0j9kg"
         }
       ],
       "trailer_url": "https://www.youtube.com/watch?v=8B1EtVPBSMw",
@@ -452,7 +476,7 @@
     {
       "adult": false,
       "backdrop_path": "/86z1Yrwj7yN1xehSa0gIwHnR7xl.jpg",
-      "id": 37135,
+      "id": "37135",
       "original_language": "en",
       "original_title": "Tarzan",
       "overview": "Tarzan was a small orphan who was raised by an ape named Kala since he was a child. He believed that this was his family, but on an expedition Jane Porter is rescued by Tarzan. He then finds out that he's human. Now Tarzan must make the decision as to which family he should belong to...",
@@ -526,6 +550,18 @@
           "id": "64ec73611feac100c46fed0e",
           "updated_at": "2023-08-28T10:13:53.696Z",
           "url": "https://www.themoviedb.org/review/64ec73611feac100c46fed0e"
+        },
+        {
+          "author": "lol",
+          "author_details": {
+            "name": "lol",
+            "username": "lol",
+            "avatar_path": null,
+            "rating": 5.2
+          },
+          "content": "dasdas",
+          "created_at": "2025-05-12T21:28:35.608Z",
+          "id": "tichhy2mb"
         }
       ],
       "trailer_url": "https://www.youtube.com/watch?v=JYOMf4SS2oA",
@@ -536,7 +572,7 @@
     {
       "adult": false,
       "backdrop_path": "/65MVgDa6YjSdqzh7YOA04mYkioo.jpg",
-      "id": 668489,
+      "id": "668489",
       "original_language": "en",
       "original_title": "Havoc",
       "overview": "When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.",
@@ -591,7 +627,7 @@
     {
       "adult": false,
       "backdrop_path": "/8eifdha9GQeZAkexgtD45546XKx.jpg",
-      "id": 822119,
+      "id": "822119",
       "original_language": "en",
       "original_title": "Captain America: Brave New World",
       "overview": "After meeting with newly elected U.S. President Thaddeus Ross, Sam finds himself in the middle of an international incident. He must discover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red.",
@@ -702,7 +738,7 @@
     {
       "adult": false,
       "backdrop_path": "/eDBZN0TbWkxoAB0qIDFagVcPPTN.jpg",
-      "id": 1153714,
+      "id": "1153714",
       "original_language": "en",
       "original_title": "Death of a Unicorn",
       "overview": "A father and daughter accidentally hit and kill a unicorn while en route to a weekend retreat, where his billionaire boss seeks to exploit the creature’s miraculous curative properties.",
@@ -758,7 +794,7 @@
     {
       "adult": false,
       "backdrop_path": "/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
-      "id": 324544,
+      "id": "324544",
       "original_language": "en",
       "original_title": "In the Lost Lands",
       "overview": "A queen sends the powerful and feared sorceress Gray Alys to the ghostly wilderness of the Lost Lands in search of a magical power, where she and her guide, the drifter Boyce, must outwit and outfight both man and demon.",
@@ -827,7 +863,7 @@
     {
       "adult": false,
       "backdrop_path": "/kFXtAwJYbRTqiyQpE9kDc8qEP3X.jpg",
-      "id": 1225915,
+      "id": "1225915",
       "original_language": "hi",
       "original_title": "ज्वेल थीफ: द हीस्ट बिगिन्स",
       "overview": "In this high-octane battle of wits and wills, ingenious con artist Rehan devises a diamond heist while trying to outsmart Rajan, his sadistic adversary.",
@@ -852,7 +888,7 @@
     {
       "adult": false,
       "backdrop_path": "/z3edlTX9YDBrVMoYupMsc8qdiUw.jpg",
-      "id": 974573,
+      "id": "974573",
       "original_language": "en",
       "original_title": "Another Simple Favor",
       "overview": "Stephanie and Emily reunite on the beautiful island of Capri, Italy for Emily's extravagant wedding to a rich Italian businessman. Along with the glamorous guests, expect murder and betrayal to RSVP for a wedding with more twists and turns than the road from the Marina Grande to the Capri town square.",
@@ -878,7 +914,7 @@
     {
       "adult": false,
       "backdrop_path": "/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
-      "id": 1233413,
+      "id": "1233413",
       "original_language": "en",
       "original_title": "Sinners",
       "overview": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
@@ -961,7 +997,7 @@
     {
       "adult": false,
       "backdrop_path": "/svLj9iyRmmeNVRsMreANn7DPPZE.jpg",
-      "id": 1356236,
+      "id": "1356236",
       "original_language": "en",
       "original_title": "Saint Catherine",
       "overview": "An orphaned girl is rescued from a satanic ritual and taken to Saint Catherine Institute for homeless youth. There she will learn new skills while facing demons that stalk her.",
@@ -985,7 +1021,7 @@
     {
       "adult": false,
       "backdrop_path": "/1AWjIUgbZYaKbwUH5qoJaKCcRkf.jpg",
-      "id": 1471014,
+      "id": "1471014",
       "original_language": "fr",
       "original_title": "Van Gogh by Vincent",
       "overview": "In a career that lasted only ten years, Vincent Van Gogh painted one subject more than any other: himself. This is the story of Vincent told using eight of his most iconic self-portraits.",
@@ -1000,7 +1036,32 @@
       "genres": [
         "Documentary"
       ],
-      "reviews": [],
+      "reviews": [
+        {
+          "author": "vxa",
+          "author_details": {
+            "name": "vxa",
+            "username": "vxa",
+            "avatar_path": null,
+            "rating": 6.9
+          },
+          "content": "very strange",
+          "created_at": "2025-05-12T21:00:18.462Z",
+          "id": "99e3se2du"
+        },
+        {
+          "author": "a",
+          "author_details": {
+            "name": "a",
+            "username": "a",
+            "avatar_path": null,
+            "rating": 9.8
+          },
+          "content": "good",
+          "created_at": "2025-05-12T21:09:38.791Z",
+          "id": "b7tkt8481"
+        }
+      ],
       "trailer_url": null,
       "cast": "Zahra Ahmadi, Jack Etchells, Adam Woolley, Frances Christie, Neil Lebeter",
       "category": "popular",
@@ -1009,7 +1070,7 @@
     {
       "adult": false,
       "backdrop_path": "/6azpBJGcLx9SKif8h9VMnflBfa.jpg",
-      "id": 497698,
+      "id": "497698",
       "original_language": "en",
       "original_title": "Black Widow",
       "overview": "Natasha Romanoff, also known as Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
@@ -1232,7 +1293,7 @@
     {
       "adult": false,
       "backdrop_path": "/6dC7ULfiutxwEAs7LjWHL2Tc7Zv.jpg",
-      "id": 1124620,
+      "id": "1124620",
       "original_language": "en",
       "original_title": "The Monkey",
       "overview": "When twin brothers find a mysterious wind-up monkey, a series of outrageous deaths tear their family apart. Twenty-five years later, the monkey begins a new killing spree forcing the estranged brothers to confront the cursed toy.",
@@ -1300,7 +1361,7 @@
     {
       "adult": false,
       "backdrop_path": "/1hBtO9tXP60IFBZD27OsbaBmxs5.jpg",
-      "id": 1414048,
+      "id": "1414048",
       "original_language": "en",
       "original_title": "Day of Reckoning",
       "overview": "Put-upon lawman John Dorsey is on the verge of losing his wife and his job as sheriff, so he posses up with bullish U.S. Marshall Butch Hayden to hold outlaw Emily Rusk hostage. A battle of wills ensues as Emily turns the posse on themselves, but as her marauding husband and his gang approach, Emily and John realize they will need each other to survive.",
@@ -1325,7 +1386,7 @@
     {
       "adult": false,
       "backdrop_path": "/bFmziv84NfEVEGTK8c6EVY3bxve.jpg",
-      "id": 1180906,
+      "id": "1180906",
       "original_language": "en",
       "original_title": "Desert Dawn",
       "overview": "A newly appointed small-town sheriff and his begrudging deputy get tangled up in a web of lies and corruption involving shady businessmen and the cartel while investigating the murder of a mysterious woman.",
@@ -1352,7 +1413,7 @@
     {
       "adult": false,
       "backdrop_path": "/rdxdvXQGqCj2Vb7SvTL8gdxlSzI.jpg",
-      "id": 870028,
+      "id": "870028",
       "original_language": "en",
       "original_title": "The Accountant²",
       "overview": "When an old acquaintance is murdered, Wolff is compelled to solve the case. Realizing more extreme measures are necessary, Wolff recruits his estranged and highly lethal brother, Brax, to help. In partnership with Marybeth Medina, they uncover a deadly conspiracy, becoming targets of a ruthless network of killers who will stop at nothing to keep their secrets buried.",
@@ -1421,7 +1482,7 @@
     {
       "adult": false,
       "backdrop_path": "/7wKnf6ILtRmKXV8eJWk0P6ZXnQ.jpg",
-      "id": 574475,
+      "id": "574475",
       "original_language": "en",
       "original_title": "Final Destination Bloodlines",
       "overview": "Plagued by a violent recurring nightmare, college student Stefanie heads home to track down the one person who might be able to break the cycle and save her family from the grisly demise that inevitably awaits them all.",
@@ -1446,7 +1507,7 @@
     {
       "adult": false,
       "backdrop_path": "/7ONMDhnErvpkKvkZqM82ud7bzcT.jpg",
-      "id": 575265,
+      "id": "575265",
       "original_language": "en",
       "original_title": "Mission: Impossible - The Final Reckoning",
       "overview": "Ethan Hunt and the IMF team continue their search for the terrifying AI known as the Entity — which has infiltrated intelligence networks all over the globe — with the world's governments and a mysterious ghost from Ethan's past on their trail. Joined by new allies and armed with the means to shut the Entity down for good, Hunt is in a race against time to prevent the world as we know it from changing forever.",
@@ -1472,7 +1533,7 @@
     {
       "adult": false,
       "backdrop_path": "/3lEV4CoKoeT2cZ4fbKEJugZcw6Z.jpg",
-      "id": 1244944,
+      "id": "1244944",
       "original_language": "en",
       "original_title": "The Woman in the Yard",
       "overview": "In the aftermath of her husband's death, widow Ramona's struggle to raise her two kids is hindered by the arrival of a mysterious woman with supernatural abilities.",
@@ -1526,7 +1587,7 @@
     {
       "adult": false,
       "backdrop_path": "/kXxriYfAWtMJNHGHVYr09c37L07.jpg",
-      "id": 650033,
+      "id": "650033",
       "original_language": "ru",
       "original_title": "Свободное падение",
       "overview": "In the near future, humanity has successfully colonized space and build a giant orbital station \"Delta\". Max is a repairman working on the station. After a disaster caused by a proton storm, he is left alone without his crew members, drifting into space. His space suit is broken, he is exhausted, and he lacks communication with people. But suddenly a dispatcher named Anna comes to help. She is the only one who can guide Max through difficulties and get him to the station. Max has to risk everything to save his life, but he has no idea what Anna is up to.",
@@ -1551,7 +1612,7 @@
     {
       "adult": false,
       "backdrop_path": "/tGjo4L15aELqZGqQH3ThZQGMKmL.jpg",
-      "id": 1011477,
+      "id": "1011477",
       "original_language": "en",
       "original_title": "Karate Kid: Legends",
       "overview": "After a family tragedy, kung fu prodigy Li Fong is uprooted from his home in Beijing and forced to move to New York City with his mother. When a new friend needs his help, Li enters a karate competition – but his skills alone aren't enough. Li's kung fu teacher Mr. Han enlists original Karate Kid Daniel LaRusso for help, and Li learns a new way to fight, merging their two styles into one for the ultimate martial arts showdown.",
@@ -1577,7 +1638,7 @@
     {
       "adult": false,
       "backdrop_path": "/r4X2xRrWleVgx0kahP27xRmm3ia.jpg",
-      "id": 1083968,
+      "id": "1083968",
       "original_language": "en",
       "original_title": "Locked",
       "overview": "When Eddie breaks into a luxury SUV, he steps into a deadly trap set by William, a self-proclaimed vigilante delivering his own brand of twisted justice. With no means of escape, Eddie must fight to survive in a ride where escape is an illusion, survival is a nightmare, and justice shifts into high gear.",
@@ -1616,7 +1677,7 @@
     {
       "adult": false,
       "backdrop_path": "/jl2YIADk391yc6Qjy9JhgCRkHJk.jpg",
-      "id": 1064486,
+      "id": "1064486",
       "original_language": "en",
       "original_title": "Memoir of a Snail",
       "overview": "Forcibly separated from her twin brother when they are orphaned, a melancholic misfit learns how to find confidence within herself amid the clutter of misfortunes and everyday life.",
@@ -1699,7 +1760,7 @@
     {
       "adult": false,
       "backdrop_path": "/b3mdmjYTEL70j7nuXATUAD9qgu4.jpg",
-      "id": 823219,
+      "id": "823219",
       "original_language": "lv",
       "original_title": "Straume",
       "overview": "A solitary cat, displaced by a great flood, finds refuge on a boat with various species and must navigate the challenges of adapting to a transformed world together.",
@@ -1810,7 +1871,7 @@
     {
       "adult": false,
       "backdrop_path": "/jRvhP4AfFnJ03lCQhp1fie7XPSd.jpg",
-      "id": 977294,
+      "id": "977294",
       "original_language": "en",
       "original_title": "Tin Soldier",
       "overview": "An ex-special forces operative seeks revenge against a cult leader who has corrupted his former comrades, the Shinjas. This leader, known as The Bokushi, promises veterans a purpose and protection, but is revealed to be a destructive influence. The ex-soldier, Nash Cavanaugh, joins forces with military operative Emmanuel Ashburn to infiltrate the Bokushi's fortress and expose his reign of terror",
@@ -1835,7 +1896,7 @@
     {
       "adult": false,
       "backdrop_path": "/1nn7nCFRTKeWOXbtjrFxfSvf1EI.jpg",
-      "id": 1122099,
+      "id": "1122099",
       "original_language": "en",
       "original_title": "The Ballad of Wallis Island",
       "overview": "Eccentric lottery winner Charles lives alone on a remote island but dreams of hiring his favourite musician, Herb McGwyer, to play an exclusive, private gig. Unbeknownst to Herb, Charles has also hired Herb’s ex-bandmate and ex-girlfriend, Nell, with her new husband in tow, to perform the old favourites. As tempers flare and old tensions resurface, the stormy weather traps them all on the island and Charles desperately looks for a way to salvage his dream gig.",
@@ -1876,7 +1937,7 @@
     {
       "adult": false,
       "backdrop_path": "/eCqIpFpYIcZpCBexU3y8BfZKR7f.jpg",
-      "id": 552524,
+      "id": "552524",
       "original_language": "en",
       "original_title": "Lilo & Stitch",
       "overview": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
@@ -1902,7 +1963,7 @@
     {
       "adult": false,
       "backdrop_path": "/3ExQ28MVRaBbJFI2br5NjLyXVO1.jpg",
-      "id": 1212855,
+      "id": "1212855",
       "original_language": "en",
       "original_title": "Fight or Flight",
       "overview": "A mercenary takes on the job of tracking down a target on a plane but must protect her when they're surrounded by people trying to kill both of them.",
@@ -1928,7 +1989,7 @@
     {
       "adult": false,
       "backdrop_path": "/9OO6I25MHhCDd0XwNk4oZl0fpwB.jpg",
-      "id": 1261050,
+      "id": "1261050",
       "original_language": "da",
       "original_title": "De lydløse",
       "overview": "In 2008, a group of men from Denmark and across Europe pull off the biggest heist of all time on Danish soil. Kasper, a boxer with few chances left in life, is offered the opportunity to plan the robbery by its foreign initiators.",
@@ -1953,7 +2014,7 @@
     {
       "adult": false,
       "backdrop_path": "/jTOeWjamUKGxWVUO1TMZXqQUarw.jpg",
-      "id": 402431,
+      "id": "402431",
       "original_language": "en",
       "original_title": "Wicked",
       "overview": "In the land of Oz, ostracized and misunderstood green-skinned Elphaba is forced to share a room with the popular aristocrat Glinda at Shiz University, and the two's unlikely friendship is tested as they begin to fulfill their respective destinies as Glinda the Good and the Wicked Witch of the West.",
@@ -2106,7 +2167,7 @@
     {
       "adult": false,
       "backdrop_path": "/8btfz81bOJ2lC7cujYBTw03wzg3.jpg",
-      "id": 980477,
+      "id": "980477",
       "original_language": "zh",
       "original_title": "哪吒之魔童闹海",
       "overview": "Following the Tribulation, although the souls of Ne Zha and Ao Bing were preserved, their physical bodies will soon be destroyed. Tai Yi Zhen Ren plans to use the Seven Colored Lotus to reshape their physical forms, but encounters numerous difficulties. What will become of Ne Zha and Ao Bing?",
@@ -2147,7 +2208,7 @@
     {
       "adult": false,
       "backdrop_path": "/wi2CEFSyoxoBWdFeVmTeqnlX3qI.jpg",
-      "id": 1233575,
+      "id": "1233575",
       "original_language": "en",
       "original_title": "Black Bag",
       "overview": "When intelligence agent Kathryn Woodhouse is suspected of betraying the nation, her husband – also a legendary agent – faces the ultimate test of whether to be loyal to his marriage, or his country.",
@@ -2230,7 +2291,7 @@
     {
       "adult": false,
       "backdrop_path": "/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
-      "id": 278,
+      "id": "278",
       "original_language": "en",
       "original_title": "The Shawshank Redemption",
       "overview": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
@@ -2494,7 +2555,7 @@
     {
       "adult": false,
       "backdrop_path": "/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
-      "id": 238,
+      "id": "238",
       "original_language": "en",
       "original_title": "The Godfather",
       "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
@@ -2604,7 +2665,7 @@
     {
       "adult": false,
       "backdrop_path": "/kGzFbGhp99zva6oZODW5atUtnqi.jpg",
-      "id": 240,
+      "id": "240",
       "original_language": "en",
       "original_title": "The Godfather Part II",
       "overview": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
@@ -2686,7 +2747,7 @@
     {
       "adult": false,
       "backdrop_path": "/zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
-      "id": 424,
+      "id": "424",
       "original_language": "en",
       "original_title": "Schindler's List",
       "overview": "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.",
@@ -2755,7 +2816,7 @@
     {
       "adult": false,
       "backdrop_path": "/bxgTSUenZDHNFerQ1whRKplrMKF.jpg",
-      "id": 389,
+      "id": "389",
       "original_language": "en",
       "original_title": "12 Angry Men",
       "overview": "The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young Spanish-American is guilty or innocent of murdering his father. What begins as an open and shut case soon becomes a mini-drama of each of the jurors' prejudices and preconceptions about the trial, the accused, and each other.",
@@ -2892,7 +2953,7 @@
     {
       "adult": false,
       "backdrop_path": "/6oaL4DP75yABrd5EbC4H2zq5ghc.jpg",
-      "id": 129,
+      "id": "129",
       "original_language": "ja",
       "original_title": "千と千尋の神隠し",
       "overview": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
@@ -2947,7 +3008,7 @@
     {
       "adult": false,
       "backdrop_path": "/oOv2oUXcAaNXakRqUPxYq5lJURz.jpg",
-      "id": 155,
+      "id": "155",
       "original_language": "en",
       "original_title": "The Dark Knight",
       "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
@@ -3185,7 +3246,7 @@
     {
       "adult": false,
       "backdrop_path": "/90ez6ArvpO8bvpyIngBuwXOqJm5.jpg",
-      "id": 19404,
+      "id": "19404",
       "original_language": "hi",
       "original_title": "दिलवाले दुल्हनिया ले जायेंगे",
       "overview": "Raj is a rich, carefree, happy-go-lucky second generation NRI. Simran is the daughter of Chaudhary Baldev Singh, who in spite of being an NRI is very strict about adherence to Indian values. Simran has left for India to be married to her childhood fiancé. Raj leaves for India with a mission at his hands, to claim his lady love under the noses of her whole family. Thus begins a saga.",
@@ -3226,7 +3287,7 @@
     {
       "adult": false,
       "backdrop_path": "/amZavErrjrdgDwhsIdpWxHNenIx.jpg",
-      "id": 497,
+      "id": "497",
       "original_language": "en",
       "original_title": "The Green Mile",
       "overview": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution.",
@@ -3295,7 +3356,7 @@
     {
       "adult": false,
       "backdrop_path": "/hiKmpZMGZsrkA3cdce8a7Dpos1j.jpg",
-      "id": 496243,
+      "id": "496243",
       "original_language": "ko",
       "original_title": "기생충",
       "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
@@ -3532,7 +3593,7 @@
     {
       "adult": false,
       "backdrop_path": "/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
-      "id": 680,
+      "id": "680",
       "original_language": "en",
       "original_title": "Pulp Fiction",
       "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
@@ -3642,7 +3703,7 @@
     {
       "adult": false,
       "backdrop_path": "/8x9iKH8kWA0zdkgNdpAew7OstYe.jpg",
-      "id": 372058,
+      "id": "372058",
       "original_language": "ja",
       "original_title": "君の名は。",
       "overview": "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
@@ -3767,7 +3828,7 @@
     {
       "adult": false,
       "backdrop_path": "/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg",
-      "id": 122,
+      "id": "122",
       "original_language": "en",
       "original_title": "The Lord of the Rings: The Return of the King",
       "overview": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​",
@@ -3892,7 +3953,7 @@
     {
       "adult": false,
       "backdrop_path": "/ghgfzbEV7kbpbi1O8eIILKVXEA8.jpg",
-      "id": 13,
+      "id": "13",
       "original_language": "en",
       "original_title": "Forrest Gump",
       "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
@@ -3961,7 +4022,7 @@
     {
       "adult": false,
       "backdrop_path": "/x4biAVdPVCghBlsVIzB6NmbghIz.jpg",
-      "id": 429,
+      "id": "429",
       "original_language": "it",
       "original_title": "Il buono, il brutto, il cattivo",
       "overview": "While the Civil War rages on between the Union and the Confederacy, three men – a quiet loner, a ruthless hitman, and a Mexican bandit – comb the American Southwest in search of a strongbox containing $200,000 in stolen gold.",
@@ -4126,7 +4187,7 @@
     {
       "adult": false,
       "backdrop_path": "/sJNNMCc6B7KZIY3LH3JMYJJNH5j.jpg",
-      "id": 346,
+      "id": "346",
       "original_language": "ja",
       "original_title": "七人の侍",
       "overview": "A samurai answers a village's request for protection after he falls on hard times. The town needs protection from bandits, so the samurai gathers six others to help him teach the people how to defend themselves, and the villagers provide the soldiers with food.",
@@ -4222,7 +4283,7 @@
     {
       "adult": false,
       "backdrop_path": "/l33oR0mnvf20avWyIMxW02EtQxn.jpg",
-      "id": 157336,
+      "id": "157336",
       "original_language": "en",
       "original_title": "Interstellar",
       "overview": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
@@ -4487,7 +4548,7 @@
     {
       "adult": false,
       "backdrop_path": "/7TF4p86ZafnxFuNqWdhpHXFO244.jpg",
-      "id": 769,
+      "id": "769",
       "original_language": "en",
       "original_title": "GoodFellas",
       "overview": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
@@ -4597,7 +4658,7 @@
     {
       "adult": false,
       "backdrop_path": "/tDFvXn4tane9lUvFAFAUkMylwSr.jpg",
-      "id": 12477,
+      "id": "12477",
       "original_language": "ja",
       "original_title": "火垂るの墓",
       "overview": "In the final months of World War II, 14-year-old Seita and his sister Setsuko are orphaned when their mother is killed during an air raid in Kobe, Japan. After a falling out with their aunt, they move into an abandoned bomb shelter. With no surviving relatives and their emergency rations depleted, Seita and Setsuko struggle to survive.",
@@ -4652,7 +4713,7 @@
     {
       "adult": false,
       "backdrop_path": "/6aNKD81RHR1DqUUa8kOZ1TBY1Lp.jpg",
-      "id": 637,
+      "id": "637",
       "original_language": "it",
       "original_title": "La vita è bella",
       "overview": "A touching story of an Italian book seller of Jewish ancestry who lives in his own little fairy tale. His creative and happy life would come to an abrupt halt when his entire family is deported to a concentration camp during World War II. While locked up he tries to convince his son that the whole thing is just a game.",
@@ -4692,7 +4753,7 @@
     {
       "adult": false,
       "backdrop_path": "/1YMrOtrW7b4pL2lfD8UciZPOJGs.jpg",
-      "id": 974576,
+      "id": "974576",
       "original_language": "en",
       "original_title": "Conclave",
       "overview": "After the unexpected death of the Pope, Cardinal Lawrence is tasked with managing the covert and ancient ritual of electing a new one. Sequestered in the Vatican with the Catholic Church’s most powerful leaders until the process is complete, Lawrence finds himself at the center of a conspiracy that could lead to its downfall.",
@@ -4803,7 +4864,7 @@
     {
       "adult": false,
       "backdrop_path": "/Zes06xI18u47pblwRGTtqRm0R8.jpg",
-      "id": 1276073,
+      "id": "1276073",
       "original_language": "ja",
       "original_title": "新幹線大爆破",
       "overview": "When panic erupts on a Tokyo-bound bullet train that will explode if it slows below 100 kph, authorities race against time to save everyone on board.",
@@ -4859,7 +4920,7 @@
     {
       "adult": false,
       "backdrop_path": "/2CcMG34v4PCynvxwmBUwVtNqsKL.jpg",
-      "id": 1249213,
+      "id": "1249213",
       "original_language": "en",
       "original_title": "Drop",
       "overview": "Violet, a widowed mother on her first date in years, arrives at an upscale restaurant where she is relieved that her date, Henry, is more charming and handsome than she expected. But their chemistry begins to curdle as Violet begins being irritated and then terrorized by a series of anonymous drops to her phone.",
@@ -4927,7 +4988,7 @@
     {
       "adult": false,
       "backdrop_path": "/iznPd7PLnCBA1G50M4DuA9wvCIy.jpg",
-      "id": 1307520,
+      "id": "1307520",
       "original_language": "es",
       "original_title": "La más fan",
       "overview": "Canceled in Hollywood, star Lana Cruz heads to her hometown for a comeback. Enter Polly, her fan-turned-frenemy. Can Lana dodge drama and reclaim her fame?",
@@ -4951,7 +5012,7 @@
     {
       "adult": false,
       "backdrop_path": "/sNx1A3822kEbqeUxvo5A08o4N7o.jpg",
-      "id": 1195506,
+      "id": "1195506",
       "original_language": "en",
       "original_title": "Novocaine",
       "overview": "When the girl of his dreams is kidnapped, everyman Nate turns his inability to feel pain into an unexpected strength in his fight to get her back.",
@@ -5020,7 +5081,7 @@
     {
       "adult": false,
       "backdrop_path": "/k32XKMjmXMGeydykD32jfER3BVI.jpg",
-      "id": 1045938,
+      "id": "1045938",
       "original_language": "en",
       "original_title": "G20",
       "overview": "After the G20 Summit is overtaken by terrorists, President Danielle Sutton must bring all her statecraft and military experience to defend her family and her fellow leaders.",
@@ -5077,7 +5138,7 @@
     {
       "adult": false,
       "backdrop_path": "/9faGSFi5jam6pDWGNd0p8JcJgXQ.jpg",
-      "id": 1396,
+      "id": "1396",
       "original_language": "en",
       "original_title": "Breaking Bad",
       "overview": "Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.",
@@ -5150,6 +5211,18 @@
           "id": "6429b5168de0ae00978d836a",
           "updated_at": "2023-04-03T16:45:23.650Z",
           "url": "https://www.themoviedb.org/review/6429b5168de0ae00978d836a"
+        },
+        {
+          "author": "moashraf",
+          "author_details": {
+            "name": "moashraf",
+            "username": "moashraf",
+            "avatar_path": null,
+            "rating": 10
+          },
+          "content": "مسلسل رايق",
+          "created_at": "2025-05-12T15:25:04.044Z",
+          "id": "lbbezuc3t"
         }
       ],
       "trailer_url": "https://www.youtube.com/watch?v=XZ8daibM3AE",
@@ -5160,7 +5233,7 @@
     {
       "adult": false,
       "backdrop_path": "/5yk3QwnQxzwKfhU1tlDkV2PSIBz.jpg",
-      "id": 219246,
+      "id": "219246",
       "original_language": "ko",
       "original_title": "폭싹 속았수다",
       "overview": "In Jeju, a spirited girl and a steadfast boy's island story blossoms into a lifelong tale of setbacks and triumphs — proving love endures across time.",
@@ -5200,7 +5273,7 @@
     {
       "adult": false,
       "backdrop_path": "/7BzmK4MWc0cj4hCxwWURt6TS6UR.jpg",
-      "id": 131378,
+      "id": "131378",
       "original_language": "en",
       "original_title": "Adventure Time: Fionna & Cake",
       "overview": "Fionna and Cake – with the help of the former Ice King, Simon Petrikov - embark on a multiverse-hopping adventure and journey of self-discovery. All the while a powerful new antagonist determined to track them down and erase them from existence, lurks in the shadows.",
@@ -5233,6 +5306,18 @@
           "id": "64f2499e9408ec0100bc591d",
           "updated_at": "2023-09-05T14:57:59.092Z",
           "url": "https://www.themoviedb.org/review/64f2499e9408ec0100bc591d"
+        },
+        {
+          "author": "ahmed",
+          "author_details": {
+            "name": "ahmed",
+            "username": "ahmed",
+            "avatar_path": null,
+            "rating": 6
+          },
+          "content": "bad",
+          "created_at": "2025-05-12T15:44:39.311Z",
+          "id": "u12gkcqgm"
         }
       ],
       "trailer_url": "https://www.youtube.com/watch?v=94gpIscW0Mc",
@@ -5243,7 +5328,7 @@
     {
       "adult": false,
       "backdrop_path": "/wQEW3xLrQAThu1GvqpsKQyejrYS.jpg",
-      "id": 94605,
+      "id": "94605",
       "original_language": "en",
       "original_title": "Arcane",
       "overview": "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
@@ -5318,6 +5403,30 @@
           "id": "658d1a7684448e66d9b51862",
           "updated_at": "2023-12-28T17:31:03.150Z",
           "url": "https://www.themoviedb.org/review/658d1a7684448e66d9b51862"
+        },
+        {
+          "author": "jinx",
+          "author_details": {
+            "name": "jinx",
+            "username": "jinx",
+            "avatar_path": null,
+            "rating": 9
+          },
+          "content": "the best animation ever",
+          "created_at": "2025-05-12T15:26:27.104Z",
+          "id": "lpfwgklza"
+        },
+        {
+          "author": "lll",
+          "author_details": {
+            "name": "lll",
+            "username": "lll",
+            "avatar_path": null,
+            "rating": 8
+          },
+          "content": "very good",
+          "created_at": "2025-05-12T15:29:46.573Z",
+          "id": "3pwmxftl0"
         }
       ],
       "trailer_url": "https://www.youtube.com/watch?v=W4gLFBNGgiY",
@@ -5328,7 +5437,7 @@
     {
       "adult": false,
       "backdrop_path": "/96RT2A47UdzWlUfvIERFyBsLhL2.jpg",
-      "id": 209867,
+      "id": "209867",
       "original_language": "ja",
       "original_title": "葬送のフリーレン",
       "overview": "After the party of heroes defeated the Demon King, they restored peace to the land and returned to lives of solitude. Generations pass, and the elven mage Frieren comes face to face with humanity’s mortality. She takes on a new apprentice and promises to fulfill old friends’ dying wishes. Can an elven mind make peace with the nature of life and death? Frieren embarks on her quest to find out.",
@@ -5361,6 +5470,18 @@
           "id": "6764ae4b8e9d9ccdeb90bb72",
           "updated_at": "2024-12-24T02:54:05.730Z",
           "url": "https://www.themoviedb.org/review/6764ae4b8e9d9ccdeb90bb72"
+        },
+        {
+          "author": "ads",
+          "author_details": {
+            "name": "ads",
+            "username": "ads",
+            "avatar_path": null,
+            "rating": 5
+          },
+          "content": "mid",
+          "created_at": "2025-05-12T15:59:43.395Z",
+          "id": "2gvfzeexq"
         }
       ],
       "trailer_url": "https://www.youtube.com/watch?v=01WEqntM1NI",
@@ -5371,7 +5492,7 @@
     {
       "adult": false,
       "backdrop_path": "/kU98MbVVgi72wzceyrEbClZmMFe.jpg",
-      "id": 246,
+      "id": "246",
       "original_language": "en",
       "original_title": "Avatar: The Last Airbender",
       "overview": "In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.",
@@ -5431,6 +5552,18 @@
           "id": "660350177f6c8d017c753f9d",
           "updated_at": "2024-04-08T16:17:38.175Z",
           "url": "https://www.themoviedb.org/review/660350177f6c8d017c753f9d"
+        },
+        {
+          "author": "sasa",
+          "author_details": {
+            "name": "sasa",
+            "username": "sasa",
+            "avatar_path": null,
+            "rating": 5
+          },
+          "content": "mid",
+          "created_at": "2025-05-12T15:58:20.770Z",
+          "id": "126yh9xoh"
         }
       ],
       "trailer_url": "https://www.youtube.com/watch?v=IyZ0xetSb9s",
@@ -5441,7 +5574,7 @@
     {
       "adult": false,
       "backdrop_path": "/tuCU2yVRM2iZxFkpqlPUyvd6tSu.jpg",
-      "id": 94954,
+      "id": "94954",
       "original_language": "en",
       "original_title": "Hazbin Hotel",
       "overview": "In attempt to find a non-violent alternative for reducing Hell's overpopulation, the daughter of Lucifer opens a rehabilitation hotel that offers a group of misfit demons a chance at redemption.",
@@ -5473,6 +5606,42 @@
           "id": "67591e6f26b9b8adaffeef44",
           "updated_at": "2025-03-27T17:10:08.419Z",
           "url": "https://www.themoviedb.org/review/67591e6f26b9b8adaffeef44"
+        },
+        {
+          "author": "axx",
+          "author_details": {
+            "name": "axx",
+            "username": "axx",
+            "avatar_path": null,
+            "rating": 2
+          },
+          "content": "bad",
+          "created_at": "2025-05-12T15:53:02.622Z",
+          "id": "fg5b1lcij"
+        },
+        {
+          "author": "kk",
+          "author_details": {
+            "name": "kk",
+            "username": "kk",
+            "avatar_path": null,
+            "rating": 5
+          },
+          "content": "mid",
+          "created_at": "2025-05-12T15:53:18.967Z",
+          "id": "efrpi6ysf"
+        },
+        {
+          "author": "qws",
+          "author_details": {
+            "name": "qws",
+            "username": "qws",
+            "avatar_path": null,
+            "rating": 10
+          },
+          "content": "goooooooooooooooooood",
+          "created_at": "2025-05-12T15:54:51.776Z",
+          "id": "0bkammvzy"
         }
       ],
       "trailer_url": "https://www.youtube.com/watch?v=OLSWVCwy88g",
@@ -5483,7 +5652,7 @@
     {
       "adult": false,
       "backdrop_path": "/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-      "id": 37854,
+      "id": "37854",
       "original_language": "ja",
       "original_title": "ワンピース",
       "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
@@ -5510,7 +5679,7 @@
     {
       "adult": false,
       "backdrop_path": "/jlbUx0aHJupDVDlCo0R7UxSaUUd.jpg",
-      "id": 240411,
+      "id": "240411",
       "original_language": "ja",
       "original_title": "ダンダダン",
       "overview": "In a bet to prove whether ghosts or aliens exist, two high schoolers face terrifying paranormal threats, gain superpowers and maybe even fall in love?!",
@@ -5567,7 +5736,7 @@
     {
       "adult": false,
       "backdrop_path": "/A6tMQAo6t6eRFCPhsrShmxZLqFB.jpg",
-      "id": 31911,
+      "id": "31911",
       "original_language": "ja",
       "original_title": "鋼の錬金術師 FULLMETAL ALCHEMIST",
       "overview": "Disregard for alchemy’s laws ripped half of Edward Elric’s limbs from his body and left his brother Alphonse’s soul clinging to a suit of armor. To restore what was lost, the brothers seek the Philosopher’s Stone. Enemies and allies – the corrupt military, the Homunculi, and foreign alchemists – will alter the Elric brothers course, but their purpose will remain unchanged and their bond unbreakable.",
@@ -5595,7 +5764,7 @@
     {
       "adult": false,
       "backdrop_path": "/hPea3Qy5Gd6z4kJLUruBbwAH8Rm.jpg",
-      "id": 60059,
+      "id": "60059",
       "original_language": "en",
       "original_title": "Better Call Saul",
       "overview": "Six years before Saul Goodman meets Walter White. We meet him when the man who will become Saul Goodman is known as Jimmy McGill, a small-time lawyer searching for his destiny, and, more immediately, hustling to make ends meet. Working alongside, and, often, against Jimmy, is “fixer” Mike Ehrmantraut. The series tracks Jimmy’s transformation into Saul Goodman, the man who puts “criminal” in “criminal lawyer\".",
@@ -5636,7 +5805,7 @@
     {
       "adult": false,
       "backdrop_path": "/rBF8wVQN8hTWHspVZBlI3h7HZJ.jpg",
-      "id": 60625,
+      "id": "60625",
       "original_language": "en",
       "original_title": "Rick and Morty",
       "overview": "Rick is a mentally-unbalanced but scientifically gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.",
@@ -5693,7 +5862,7 @@
     {
       "adult": false,
       "backdrop_path": "/20eIP9o5ebArmu2HxJutaBjhLf4.jpg",
-      "id": 87108,
+      "id": "87108",
       "original_language": "en",
       "original_title": "Chernobyl",
       "overview": "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
@@ -5775,7 +5944,7 @@
     {
       "adult": false,
       "backdrop_path": "/gffVOVZ2Y9cmVIZ26Gt9ByMGCYH.jpg",
-      "id": 220542,
+      "id": "220542",
       "original_language": "ja",
       "original_title": "薬屋のひとりごと",
       "overview": "Maomao lived a peaceful life with her apothecary father. Until one day, she's sold as a lowly servant to the emperor's palace. But she wasn't meant for a compliant life among royalty. So when imperial heirs fall ill, she decides to step in and find a cure! This catches the eye of Jinshi, a handsome palace official who promotes her. Now, she's making a name for herself solving medical mysteries!",
@@ -5802,7 +5971,7 @@
     {
       "adult": false,
       "backdrop_path": "/aok7IhrbA83josNz9Dqh8tNA0Ao.jpg",
-      "id": 1429,
+      "id": "1429",
       "original_language": "ja",
       "original_title": "進撃の巨人",
       "overview": "Many years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress. Only the heroic members of the Scouting Legion dared to stray beyond the safety of the walls – but even those brave warriors seldom returned alive. Those within the city clung to the illusion of a peaceful existence until the day that dream was shattered, and their slim chance at survival was reduced to one horrifying choice: kill – or be devoured!",
@@ -5834,6 +6003,18 @@
           "id": "65891f1468b7660b532cc0d5",
           "updated_at": "2023-12-27T18:50:36.579Z",
           "url": "https://www.themoviedb.org/review/65891f1468b7660b532cc0d5"
+        },
+        {
+          "author": "mo",
+          "author_details": {
+            "name": "mo",
+            "username": "mo",
+            "avatar_path": null,
+            "rating": 10
+          },
+          "content": "best anime",
+          "created_at": "2025-05-12T15:46:35.771Z",
+          "id": "f8pm16i5m"
         }
       ],
       "trailer_url": "https://www.youtube.com/watch?v=bT9csxkth8g",
@@ -5844,7 +6025,7 @@
     {
       "adult": false,
       "backdrop_path": "/mGHrUSt2uA5RaIheSmBfRnRHPS8.jpg",
-      "id": 92685,
+      "id": "92685",
       "original_language": "en",
       "original_title": "The Owl House",
       "overview": "An animated fantasy-comedy series that follows Luz, a self-assured teenage girl who accidentally stumbles upon a portal to a magical world where she befriends a rebellious witch, Eda, and an adorably tiny warrior, King. Despite not having magical abilities, Luz pursues her dream of becoming a witch by serving as Eda's apprentice at the Owl House and ultimately finds a new family in an unlikely setting.",
@@ -5889,7 +6070,7 @@
     {
       "adult": false,
       "backdrop_path": "/ywQtHG17LZhAFZyZtBflhtFMtJ7.jpg",
-      "id": 70785,
+      "id": "70785",
       "original_language": "en",
       "original_title": "Anne with an E",
       "overview": "A coming-of-age story about an outsider who, against all odds and numerous challenges, fights for love and acceptance and for her place in the world. The series centers on a young orphaned girl in the late 1890’s, who, after an abusive childhood spent in orphanages and the homes of strangers, is mistakenly sent to live with an elderly woman and her aging brother. Over time, 13-year-old Anne will transform their lives and eventually the small town in which they live with her unique spirit, fierce intellect and brilliant imagination.",
@@ -5930,7 +6111,7 @@
     {
       "adult": false,
       "backdrop_path": "/6U0e6OHklJAcMAuIoGXjTBS5zsI.jpg",
-      "id": 46298,
+      "id": "46298",
       "original_language": "ja",
       "original_title": "HUNTER×HUNTER",
       "overview": "To fulfill his dreams of becoming a legendary Hunter like his dad, a young boy must pass a rigorous examination and find his missing father.",
@@ -5957,7 +6138,7 @@
     {
       "adult": false,
       "backdrop_path": "/2w8FaLwwJTWr6ExUMeVgT2Th5YT.jpg",
-      "id": 42705,
+      "id": "42705",
       "original_language": "ja",
       "original_title": "はじめの一歩",
       "overview": "Makunouchi Ippo is an ordinary high school student in Japan. Since he spends most of his time away from school helping his mother run the family business, he doesn't get to enjoy his younger years like most teenagers. Always a target for bullying at school (the family fishing business grants him a distinct odor), Ippo's life is one of hardship. One of these after-school bullying sessions turns Ippo's life around for the better, as he is saved by a boxer named Takamura. He decides to follow in Takamura's footsteps and train to become a boxer, giving his life direction and purpose. Ippo's path to perfecting his pugilistic prowess is just beginning...",
@@ -5985,7 +6166,7 @@
     {
       "adult": false,
       "backdrop_path": "/lNpkvX2s8LGB0mjGODMT4o6Up7j.jpg",
-      "id": 1398,
+      "id": "1398",
       "original_language": "en",
       "original_title": "The Sopranos",
       "overview": "The story of New Jersey-based Italian-American mobster Tony Soprano and the difficulties he faces as he tries to balance the conflicting requirements of his home life and the criminal organization he heads. Those difficulties are often highlighted through his ongoing professional relationship with psychiatrist Jennifer Melfi. The show features Tony's family members and Mafia associates in prominent roles and story arcs, most notably his wife Carmela and his cousin and protégé Christopher Moltisanti.",
@@ -6027,7 +6208,7 @@
     {
       "adult": false,
       "gender": 1,
-      "id": 1182816,
+      "id": "1182816",
       "known_for_department": "Acting",
       "name": "Kimberly Alexander",
       "original_name": "Kimberly Alexander",
@@ -6137,7 +6318,7 @@
     {
       "adult": false,
       "gender": 2,
-      "id": 976,
+      "id": "976",
       "known_for_department": "Acting",
       "name": "Jason Statham",
       "original_name": "Jason Statham",
@@ -6444,7 +6625,7 @@
     {
       "adult": false,
       "gender": 1,
-      "id": 974169,
+      "id": "974169",
       "known_for_department": "Acting",
       "name": "Jenna Ortega",
       "original_name": "Jenna Ortega",
@@ -6839,7 +7020,7 @@
     {
       "adult": false,
       "gender": 1,
-      "id": 1245,
+      "id": "1245",
       "known_for_department": "Acting",
       "name": "Scarlett Johansson",
       "original_name": "Scarlett Johansson",
@@ -7300,7 +7481,7 @@
     {
       "adult": false,
       "gender": 2,
-      "id": 6384,
+      "id": "6384",
       "known_for_department": "Acting",
       "name": "Keanu Reeves",
       "original_name": "Keanu Reeves",
@@ -7859,7 +8040,7 @@
     {
       "adult": false,
       "gender": 1,
-      "id": 115440,
+      "id": "115440",
       "known_for_department": "Acting",
       "name": "Sydney Sweeney",
       "original_name": "Sydney Sweeney",
@@ -8084,7 +8265,7 @@
     {
       "adult": false,
       "gender": 2,
-      "id": 64,
+      "id": "64",
       "known_for_department": "Acting",
       "name": "Gary Oldman",
       "original_name": "Gary Oldman",
@@ -8601,7 +8782,7 @@
     {
       "adult": false,
       "gender": 1,
-      "id": 109513,
+      "id": "109513",
       "known_for_department": "Acting",
       "name": "Alexandra Daddario",
       "original_name": "Alexandra Daddario",
@@ -8838,7 +9019,7 @@
     {
       "adult": false,
       "gender": 2,
-      "id": 1253360,
+      "id": "1253360",
       "known_for_department": "Acting",
       "name": "Pedro Pascal",
       "original_name": "Pedro Pascal",
@@ -9221,7 +9402,7 @@
     {
       "adult": false,
       "gender": 1,
-      "id": 18277,
+      "id": "18277",
       "known_for_department": "Acting",
       "name": "Sandra Bullock",
       "original_name": "Sandra Bullock",
@@ -9500,7 +9681,7 @@
     {
       "adult": false,
       "gender": 1,
-      "id": 1373737,
+      "id": "1373737",
       "known_for_department": "Acting",
       "name": "Florence Pugh",
       "original_name": "Florence Pugh",
@@ -10045,7 +10226,7 @@
     {
       "adult": false,
       "gender": 1,
-      "id": 10990,
+      "id": "10990",
       "known_for_department": "Acting",
       "name": "Emma Watson",
       "original_name": "Emma Watson",
@@ -10310,7 +10491,7 @@
     {
       "adult": false,
       "gender": 2,
-      "id": 1269,
+      "id": "1269",
       "known_for_department": "Acting",
       "name": "Kevin Costner",
       "original_name": "Kevin Costner",
@@ -10519,7 +10700,7 @@
     {
       "adult": false,
       "gender": 1,
-      "id": 224513,
+      "id": "224513",
       "known_for_department": "Acting",
       "name": "Ana de Armas",
       "original_name": "Ana de Armas",
@@ -10994,7 +11175,7 @@
     {
       "adult": false,
       "gender": 1,
-      "id": 1522703,
+      "id": "1522703",
       "known_for_department": "Acting",
       "name": "Hande Erçel",
       "original_name": "Hande Erçel",
@@ -11095,7 +11276,7 @@
     {
       "adult": false,
       "gender": 2,
-      "id": 117642,
+      "id": "117642",
       "known_for_department": "Acting",
       "name": "Jason Momoa",
       "original_name": "Jason Momoa",
@@ -11682,7 +11863,7 @@
     {
       "adult": false,
       "gender": 1,
-      "id": 28782,
+      "id": "28782",
       "known_for_department": "Acting",
       "name": "Monica Bellucci",
       "original_name": "Monica Bellucci",
@@ -11933,7 +12114,7 @@
     {
       "adult": false,
       "gender": 2,
-      "id": 2524,
+      "id": "2524",
       "known_for_department": "Acting",
       "name": "Tom Hardy",
       "original_name": "Tom Hardy",
@@ -12492,7 +12673,7 @@
     {
       "adult": false,
       "gender": 2,
-      "id": 1190668,
+      "id": "1190668",
       "known_for_department": "Acting",
       "name": "Timothée Chalamet",
       "original_name": "Timothée Chalamet",
@@ -13023,7 +13204,7 @@
     {
       "adult": false,
       "gender": 2,
-      "id": 2349355,
+      "id": "2349355",
       "known_for_department": "Acting",
       "name": "Michele Morrone",
       "original_name": "Michele Morrone",

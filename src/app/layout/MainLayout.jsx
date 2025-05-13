@@ -10,6 +10,7 @@ import { People } from "../../features/people/pages/People";
 import { PersonDetails } from "../../features/people/pages/PersonDetails";
 import { Series } from "../../features/series/pages/Series";
 import { SeriesDetails } from "../../features/series/pages/SeriesDetails";
+import { MediaDetails } from "../../features/movies/pages/MediaDetails";
 
 export default function MainLayout() {
   return (
