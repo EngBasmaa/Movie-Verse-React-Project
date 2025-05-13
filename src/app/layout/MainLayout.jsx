@@ -10,6 +10,7 @@ import { People } from "../../features/people/pages/People";
 import { PersonDetails } from "../../features/people/pages/PersonDetails";
 import { Series } from "../../features/series/pages/Series";
 import { SeriesDetails } from "../../features/series/pages/SeriesDetails";
+import { MediaDetails } from "../../features/movies/pages/MediaDetails";
 
 export default function MainLayout() {
   return (
@@ -20,14 +21,20 @@ export default function MainLayout() {
           <Route index element={<Home />} />
           {/* MOVIES */}
           <Route path="movies" element={<Movies />} />
-          <Route path="movies/:id" element={<MovieDetails />} />
           {/* SERIES */}
           <Route path="series" element={<Series />} />
-          <Route path="series/:id" element={<SeriesDetails />} />
-          {/* PEOPLE */}
-          <Route path="admin" element={<AdminLayout />} />
-          <Route path="admin/:id" element={<MovieDetails />} />
-          {/* ADMIN */}
+
+          {/* admin */}
+          <Route
+            path="admin"
+            element={<Navigate to="admin/dashbord" replace />}
+          />
+          <Route path="admin/:tab" element={<AdminLayout />} />
+          <Route path="admin/:id/editMovie" element={<MovieForm />} />
+          <Route path="admin/:id/editSeries" element={<SeriesForm />} />
+          {/* Media Details */}
+          <Route path="media/:type/:id" element={<MediaDetails />} />
+          {/* people */}
           <Route path="people" element={<People />} />
           <Route path="people/:id" element={<PersonDetails />} />
           {/* NOTFOUND */}
