@@ -14,26 +14,32 @@ import { SeriesDetails } from "../../features/series/pages/SeriesDetails";
 export default function MainLayout() {
   return (
     <BrowserRouter>
-      <Routes>
+     <Routes>
         <Route path="/" element={<SharedLayout />}>
           {/* HOME */}
           <Route index element={<Home />} />
           {/* MOVIES */}
           <Route path="movies" element={<Movies />} />
-          <Route path="movies/:id" element={<MovieDetails />} />
           {/* SERIES */}
           <Route path="series" element={<Series />} />
-          <Route path="series/:id" element={<SeriesDetails />} />
-          {/* PEOPLE */}
-          <Route path="admin" element={<AdminLayout />} />
-          <Route path="admin/:id" element={<MovieDetails />} />
-          {/* ADMIN */}
+
+          {/* admin */}
+          <Route
+            path="admin"
+            element={<Navigate to="admin/dashbord" replace />}
+          />
+          <Route path="admin/:tab" element={<AdminLayout />} />
+          <Route path="admin/:id/editMovie" element={<MovieForm />} />
+          <Route path="admin/:id/editSeries" element={<SeriesForm />} />
+          {/* Media Details */}
+          <Route path="media/:type/:id" element={<MediaDetails />} />
+          {/* people */}
           <Route path="people" element={<People />} />
           <Route path="people/:id" element={<PersonDetails />} />
           {/* NOTFOUND */}
           <Route path="*" element={<NotFound />} />
         </Route>
-      </Routes>
+      </Routes>
     </BrowserRouter>
   );
 }
