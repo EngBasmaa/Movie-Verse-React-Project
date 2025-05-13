@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { getMovieByIdAction } from "../movieSlice";
 import { getSeriesByIdAction } from "../../series/seriesSlice";
 import { filterByCategory } from "../../../shared/utils/movieUtils";
-import { filterByGenre } from "../../../shared/utils/seriesUtils";
+import { filterSeriesByGenre } from "../../../shared/utils/seriesUtils";
 import { Dialog } from "@/components/ui/dialog";
 import { motion } from "framer-motion";
 import { DialogTrigger } from "@/components/ui/dialog";

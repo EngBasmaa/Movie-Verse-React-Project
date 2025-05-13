@@ -1,21 +1,20 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import { SharedLayout } from "./SharedLayout";
 import { Home } from "../../features/home";
 import { NotFound } from "../../shared/components";
 import { AdminLayout } from "../../features/admin/pages/AdminLayout";
-import { MovieDetails, Movies } from "../../features/movies";
-import MovieForm from "../../features/admin/pages/MovieForm";
+import { Movies } from "../../features/movies";
 import { People } from "../../features/people/pages/People";
 import { PersonDetails } from "../../features/people/pages/PersonDetails";
 import { Series } from "../../features/series/pages/Series";
-import { SeriesDetails } from "../../features/series/pages/SeriesDetails";
+import { MovieForm } from "../../features/admin/pages/MovieForm";
+import { SeriesForm } from "../../features/admin/pages/SeriesForm";
 import { MediaDetails } from "../../features/movies/pages/MediaDetails";
 
 export default function MainLayout() {
   return (
     <BrowserRouter>
-     <Routes>
+      <Routes>
         <Route path="/" element={<SharedLayout />}>
           {/* HOME */}
           <Route index element={<Home />} />
@@ -25,10 +24,7 @@ export default function MainLayout() {
           <Route path="series" element={<Series />} />
 
           {/* admin */}
-          <Route
-            path="admin"
-            element={<Navigate to="admin/dashbord" replace />}
-          />
+          <Route path="admin" element={<AdminLayout />} />
           <Route path="admin/:tab" element={<AdminLayout />} />
           <Route path="admin/:id/editMovie" element={<MovieForm />} />
           <Route path="admin/:id/editSeries" element={<SeriesForm />} />
@@ -40,7 +36,8 @@ export default function MainLayout() {
           {/* NOTFOUND */}
           <Route path="*" element={<NotFound />} />
         </Route>
-      </Routes>
+              
+      </Routes>
     </BrowserRouter>
   );
 }
