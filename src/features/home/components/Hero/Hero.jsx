@@ -48,7 +48,7 @@ export function Hero() {
                 to="/"
                 className="hover:text-red-500 ease-in-out duration-300 text-white-400 hover:underline font-semibold text-base"
               >
-                Sebastian Stan
+                Sebastian stan
               </Link>
             </div>
             {/* description */}
