@@ -118,6 +118,7 @@ export function MovieCard({
         </div>
       </div>
 
+      {/* Play button */}
       {showPlayButton &&
         (typeOfCard === "movie" ? (
           <Link

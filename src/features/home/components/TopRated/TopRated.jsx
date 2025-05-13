@@ -1,6 +1,6 @@
 import React from "react";
 import { MovieSection } from "../shared/MovieSection";
-import { getTrendingMovies } from "../../homeSlice";
+import { getTrendingMovies } from "../../../../shared/utils/movieUtils";
 
 export default function TopRated() {
   return (

@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { MovieSection } from "../shared/MovieSection";
-import { getTrendingMovies } from "../../homeSlice";
+import { getTrendingMovies } from "../../../../shared/utils/movieUtils";
 
 export function TrendingMovies() {
   return (
