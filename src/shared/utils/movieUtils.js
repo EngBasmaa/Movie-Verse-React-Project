@@ -1,4 +1,3 @@
-// Filters
 export const filterByGenre = (movies, genre) =>
   movies.filter((movie) => movie.genres.includes(genre));
 
@@ -26,13 +25,11 @@ export const filterUpcoming = (movies) => {
 export const filterUpcomingByCategory = (movies) =>
   movies.filter((movie) => movie.category === "upcoming");
 // SORT
-export const sortByPopularity = (movies) => [
-  ...movies.sort((a, b) => b.popularity - a.popularity),
-];
+export const sortByPopularity = (movies) =>
+  [...movies].sort((a, b) => b.popularity - a.popularity);
 
-export const sortByRating = (movies) => [
-  ...movies.sort((a, b) => b.vote_average - a.vote_average),
-];
+export const sortByRating = (movies) =>
+  [...movies].sort((a, b) => b.vote_average - a.vote_average);
 
 export const sortByReleaseDate = (movies, order = "desc") =>
   [...movies].sort((a, b) =>
@@ -56,5 +53,5 @@ export const getByFunctionLimit = (fun, movies, limit = 10) => {
 // Paginate
 export const paginate = (movies, page, limit) => {
   const start = (page - 1) * limit;
-  return movies.slice(start, start + limit);
+  return movies.slice(start, start + limit);
 };
