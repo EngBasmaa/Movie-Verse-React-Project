@@ -53,5 +53,5 @@ export const getByFunctionLimit = (fun, movies, limit = 10) => {
 // Paginate
 export const paginate = (movies, page, limit) => {
   const start = (page - 1) * limit;
-  return movies.slice(start, start + limit);
+  return movies.slice(start, start + limit);
 };
