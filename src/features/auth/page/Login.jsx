@@ -27,7 +27,9 @@ import { AuthContext } from "../AuthContext.js";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 export default function Login() {
-  const { login } = useContext(AuthContext);
+  const { login, setIsHeader } = useContext(AuthContext);
+
+  setIsHeader(false);
   const navigate = useNavigate();
   const [loginError, setLoginError] = useState("");
 

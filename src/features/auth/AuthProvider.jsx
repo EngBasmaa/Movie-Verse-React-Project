@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
     return Cookies.get("isLoggedIn") === "true";
   });
-
+  const [isHeader, setIsHeader] = useState(false);
   useEffect(() => {
     const stored = Cookies.get("isLoggedIn");
     if (stored === "true") {
@@ -20,7 +20,7 @@ export const AuthProvider = ({ children }) => {
     // Fixed admin credentials
     if (email === "admin@movie.com" && password === "admin@12345") {
       // Set cookie with expiration (7 days) and path
-      Cookies.set("isLoggedIn", "true", { expires: 7, path: "/" });
+      Cookies.set("isLoggedIn", "true", { path: "/" });
       setIsAuthenticated(true);
       return { success: true };
     }
@@ -35,7 +35,14 @@ export const AuthProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider
-      value={{ isAuthenticated, setIsAuthenticated, login, logout }}
+      value={{
+        isAuthenticated,
+        setIsAuthenticated,
+        login,
+        logout,
+        isHeader,
+        setIsHeader,
+      }}
     >
       {children}
     </AuthContext.Provider>

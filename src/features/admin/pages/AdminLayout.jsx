@@ -54,6 +54,7 @@ export function AdminLayout() {
 
   const { movies = [] } = useSelector((state) => state.movieSlice || {});
   const { series = [] } = useSelector((state) => state.seriesSlice || {});
+
   useEffect(() => {
     if (tab === "movies" || tab === "series" || tab === "dashboard") {
       setActiveTab(tab);
