@@ -10,17 +10,20 @@ import { MyChart } from "../components/MyChart";
 import { MyPie } from "../components/MyPie";
 import { MyBar } from "../components/MyBar";
 import { Button } from "../../../shared/components/MyButton";
+import { Button } from "../../../shared/components/MyButton";
 
 import {
   filterByGenre,
   filterBySearch,
   sortByRating,
   filterReleased,
+  filterReleased,
 } from "../../../shared/utils/movieUtils";
 
 import {
   filterSeriesByGenre,
   sortSeriesByRating,
+  sortSeriesByReleaseDate,
   sortSeriesByReleaseDate,
 } from "../../../shared/utils/seriesUtils";
 
@@ -31,10 +34,14 @@ import { getAllSeriesAction } from "../../series/seriesSlice";
 function filterMovieByAudience(data, category) {
   if (category === "general") return data.filter((item) => !item.adult);
   if (category === "adults") return data.filter((item) => item.adult);
+  if (category === "general") return data.filter((item) => !item.adult);
+  if (category === "adults") return data.filter((item) => item.adult);
   return data;
 }
 
 function filterSeriesByAudience(data, category) {
+  if (category === "general") return data.filter((item) => !item.adult);
+  if (category === "adults") return data.filter((item) => item.adult);
   if (category === "general") return data.filter((item) => !item.adult);
   if (category === "adults") return data.filter((item) => item.adult);
   return data;
@@ -133,8 +140,14 @@ export function AdminLayout() {
 
   const newItemPath = `/admin/0/${isMoviesTab ? "editMovie" : "editSeries"}`;
 
+
   return (
     <div className="flex">
+      <main className="flex-1 p-6 bg-zinc-800 w-full">
+        <MyHeader
+          activeTab={activeTab}
+          onTabChange={(tab) => navigate(`/admin/${tab}`)}
+        />
       <main className="flex-1 p-6 bg-zinc-800 w-full">
         <MyHeader
           activeTab={activeTab}
@@ -148,10 +161,19 @@ export function AdminLayout() {
               setFilters={setFilters}
               onFilterChange={setFilters}
             />
+            <MyFilters
+              filters={filters}
+              setFilters={setFilters}
+              onFilterChange={setFilters}
+            />
           </div>
         )}
 
         {!isDashboard && (
+          <Link
+            to={newItemPath}
+            className="flex items-center gap-2 w-50 ms-auto me-6 px-4 py-2  rounded-3xl bg-pink-700 text-white hover:text-red-200   hover:bg-pink-900 transition"
+          >
           <Link
             to={newItemPath}
             className="flex items-center gap-2 w-50 ms-auto me-6 px-4 py-2  rounded-3xl bg-pink-700 text-white hover:text-red-200   hover:bg-pink-900 transition"
@@ -163,10 +185,20 @@ export function AdminLayout() {
 
         {isMoviesTab && (
           <div className="px-6 py-8">
+            <h2 className="text-4xl font-semibold text-pink-600 mb-6 border-b pb-2 border-gray-300 mt-6">
+              🎬 Movies Statistics
+            </h2>
+        {isMoviesTab && (
+          <div className="px-6 py-8">
             <h2 className="text-4xl font-semibold text-white mb-6 border-b pb-2 border-gray-300 mt-6">
               🎬 Movies Statistics
             </h2>
 
+            <div className="bg-red-100 shadow-md rounded-lg p-4 mb-6">
+              <MyChart movies={filteredData} />
+            </div>
+          </div>
+        )}
             <div className=" p-4 mb-6">
               <MyChart movies={filteredData} />
             </div>
@@ -175,10 +207,21 @@ export function AdminLayout() {
 
         {isSeriesTab && (
           <div className="px-6 py-8">
+            <h2 className="text-4xl font-semibold text-pink-600 mb-6 border-b pb-2 border-gray-300 mt-6">
+              📺 Series Statistics
+            </h2>
+        {isSeriesTab && (
+          <div className="px-6 py-8">
             <h2 className="text-4xl font-semibold text-white mb-6 border-b pb-2 border-gray-300 mt-6">
               📺 Series Statistics
             </h2>
 
+            {/* Line Chart */}
+            <div className="bg-red-100 shadow-md rounded-lg p-4 mb-6">
+              <MyChart series={filteredData} />
+            </div>
+          </div>
+        )}
             {/* Line Chart */}
             <div className=" p-4 mb-6">
               <MyChart series={filteredData} />
@@ -188,6 +231,21 @@ export function AdminLayout() {
 
         {isDashboard && (
           <>
+            {isDashboard && (
+              <div className="px-6 py-8">
+                <h2 className="text-4xl font-semibold text-pink-600 mb-6 border-b pb-2 border-gray-300 mt-6">
+                  📊 Movies vs Series Comparison
+                </h2>
+                <div className="bg-red-100 shadow-md rounded-lg p-4 mb-6">
+                  <MyBar movies={movies} series={series} />
+                </div>
+                <h2 className="text-4xl font-semibold text-pink-600 mb-6 border-b pb-2 border-gray-300">
+                  🎬 Movies Stats
+                </h2>
+
+                <div className="bg-red-100 shadow-md rounded-lg p-4 mb-6">
+                  <MyChart movies={movies} />
+                </div>
             {isDashboard && (
               <div className="px-4 md:px-6 py-6 space-y-8 overflow-hidden">
                 {/* Comparison Section */}
@@ -211,6 +269,23 @@ export function AdminLayout() {
                     </div>
                   </div>
 
+                <div className="bg-red-100 shadow-md rounded-lg p-6 mb-6">
+                  <MyPie movies={movies} />
+                </div>
+
+                <h2 className="text-4xl font-semibold text-pink-600 mb-6 border-b pb-2 border-gray-300 mt-10">
+                  📺 Series Stats
+                </h2>
+
+                <div className="bg-red-100 shadow-md rounded-lg p-4 mb-6">
+                  <MyChart series={series} />
+                </div>
+
+                <div className="bg-red-100 shadow-md rounded-lg p-6 mb-6">
+                  <MyPie series={series} />
+                </div>
+              </div>
+            )}
                   <div className="p-3 md:p-4 overflow-hidden">
                     <MyPie movies={movies} />
                   </div>
@@ -252,6 +327,7 @@ export function AdminLayout() {
                 className="px-4 py-2 mr-2  rounded-3xl bg-pink-700 text-white hover:text-red-200   hover:bg-pink-900 transition"
                 disabled={currentPage === 1}
                 onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
               >
                 Previous
               </button>
@@ -261,6 +337,9 @@ export function AdminLayout() {
               <button
                 className="px-4 py-2 mr-2  rounded-3xl bg-pink-700 text-white hover:text-red-200   hover:bg-pink-900 transition"
                 disabled={currentPage === totalPages}
+                onClick={() =>
+                  setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+                }
                 onClick={() =>
                   setCurrentPage((prev) => Math.min(prev + 1, totalPages))
                 }

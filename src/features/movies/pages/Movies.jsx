@@ -21,8 +21,6 @@ export function Movies() {
   const filteredAndSortedMovies = useMemo(() => {
     // تحديد مصدر البيانات بناءً على النوع المختار
     const dataSource = selectedGenre === "TV Movie" ? series : movies;
-
-    // تنظيف البيانات لضمان أن genres هي مصفوفة
     const cleanedData = dataSource.map((item) => ({
       ...item,
       genres: Array.isArray(item.genres)
@@ -35,6 +33,7 @@ export function Movies() {
     // تصفية البيانات حسب النوع المختار
     const filtered =
       selectedGenre === "Everything" || selectedGenre === "TV Movie"
+
         ? cleanedData
         : filterByGenre(cleanedData, selectedGenre);
 
@@ -98,7 +97,9 @@ export function Movies() {
             <button
               key={i}
               className={`px-3 py-1 border rounded ${
+
                 currentPage === i + 1 ? "bg-sky-600 text-white" : "bg-white"
+
               }`}
               onClick={() => handlePageChange(i + 1)}
             >

@@ -11,6 +11,9 @@ import { MovieForm } from "../../features/admin/pages/MovieForm";
 import { SeriesForm } from "../../features/admin/pages/SeriesForm";
 import { MediaDetails } from "../../features/movies/pages/MediaDetails";
 import WatchlistPage from "../../features/movies/pages/WatchlistPage/WatchlistPage";
+import Login from "../../features/auth/page/Login.jsx";
+import ProtectedRoute from "../../shared/components/ProtectedRoute.jsx";
+import { SeriesDetails } from "../../features/series/pages/SeriesDetails.jsx";
 
 export default function MainLayout() {
   return (
@@ -23,12 +26,42 @@ export default function MainLayout() {
           <Route path="movies" element={<Movies />} />
           {/* SERIES */}
           <Route path="series" element={<Series />} />
-
+          <Route path="series/:id" element={<SeriesDetails />} />
+          {/* Auth */}
+          <Route path="login" element={<Login />} />
           {/* admin */}
-          <Route path="admin" element={<AdminLayout />} />
-          <Route path="admin/:tab" element={<AdminLayout />} />
-          <Route path="admin/:id/editMovie" element={<MovieForm />} />
-          <Route path="admin/:id/editSeries" element={<SeriesForm />} />
+          <Route
+            path="admin"
+            element={
+              <ProtectedRoute>
+                <AdminLayout />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="admin/:tab"
+            element={
+              <ProtectedRoute>
+                <AdminLayout />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="admin/:id/editMovie"
+            element={
+              <ProtectedRoute>
+                <MovieForm />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="admin/:id/editSeries"
+            element={
+              <ProtectedRoute>
+                <SeriesForm />
+              </ProtectedRoute>
+            }
+          />
           {/* Media Details */}
           <Route path="media/:type/:id" element={<MediaDetails />} />
           {/* Watchlist */}
