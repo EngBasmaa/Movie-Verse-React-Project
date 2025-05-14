@@ -79,7 +79,7 @@ export function MediaDetails() {
       ? filterByCategory(movies, selectedMedia?.category)?.filter(
           (movie) => movie.id !== selectedMedia?.id
         )
-      : filterByGenre(series, selectedMedia?.genres?.[0])?.filter(
+      : filterSeriesByGenre(series, selectedMedia?.genres?.[0])?.filter(
           (series) => series.id !== selectedMedia?.id
         );
 

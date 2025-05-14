@@ -1,113 +1,109 @@
-import { useMemo, useState } from "react";
+import React, { useState, useMemo } from "react";
 import { useSelector } from "react-redux";
+import { Sidebar } from "../../../components/moviesCompnents/sidebar.component.jsx";
+import { MovieGrid } from "../../../components/moviesCompnents/movieGrid.component.jsx";
 import {
   filterSeriesByGenre,
-  filterBySearch,
-  paginate,
   sortSeriesByPopularity,
-  sortSeriesByRating
-} from "../../../shared/utils/seriesUtils";
-import { Button } from "../../../shared/components/MyButton";
+  sortSeriesByRating,
+  sortSeriesByReleaseDate,
+} from "../../../shared/utils/seriesUtils.js";
 
 export function Series() {
-  const { series, isLoading, errors } = useSelector(store => store.seriesSlice);
+  const { series, isLoading } = useSelector((store) => store.seriesSlice);
+  const { movies } = useSelector((store) => store.movieSlice);
 
-  // Local Filters
-  const [genre, setGenre] = useState("All");
-  const [sortType, setSortType] = useState("rating");
-  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedGenre, setSelectedGenre] = useState("Everything");
+  const [sortOrder, setSortOrder] = useState("popularity");
   const [currentPage, setCurrentPage] = useState(1);
-  const limit = 10;
+  const itemsPerPage = 8;
 
-  const filteredSeries = useMemo(
-    () => {
-      let result = [...series];
-      if (genre !== "All") {
-        result = filterSeriesByGenre(result, genre);
-      }
+  const filteredAndSortedSeries = useMemo(() => {
+    const dataSource = selectedGenre === "Movie" ? movies : series;
+    const cleanedData = dataSource.map((item) => ({
+      ...item,
+      genres: Array.isArray(item.genres)
+        ? item.genres
+        : typeof item.genres === "string"
+        ? [item.genres]
+        : ["Unknown"],
+    }));
 
-      if (searchQuery) {
-        result = filterBySearch(result, searchQuery);
-      }
+    // Filter data by selected genre
+    const filtered =
+      selectedGenre === "Everything"
+        ? cleanedData
+        : filterSeriesByGenre(cleanedData, selectedGenre);
 
-      if (sortType === "rating") {
-        result = sortSeriesByRating(result);
-      } else if (sortType === "popularity") {
-        result = sortSeriesByPopularity(result);
-      }
+    // Sort data by selected option
+    switch (sortOrder) {
+      case "popularity":
+        return sortSeriesByPopularity(filtered);
+      case "rating":
+        return sortSeriesByRating(filtered);
+      case "releaseDateAsc":
+        return sortSeriesByReleaseDate(filtered, "asc");
+      case "releaseDateDesc":
+        return sortSeriesByReleaseDate(filtered, "desc");
+      default:
+        return filtered;
+    }
+  }, [series, movies, selectedGenre, sortOrder]);
 
-      return result;
-    },
-    [series, genre, searchQuery, sortType]
-  );
+  const totalPages = Math.ceil(filteredAndSortedSeries.length / itemsPerPage);
 
-  const paginatedSeries = useMemo(
-    () => {
-      return paginate(filteredSeries, currentPage, limit);
-    },
-    [filteredSeries, currentPage]
-  );
+  const currentSeries = useMemo(() => {
+    const start = (currentPage - 1) * itemsPerPage;
+    return filteredAndSortedSeries.slice(start, start + itemsPerPage);
+  }, [filteredAndSortedSeries, currentPage]);
 
-  if (isLoading) return <h1>Loading...</h1>;
-  if (errors)
-    return (
-      <h1>
-        Error: {errors}
-      </h1>
-    );
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
-    <div>
-      {/* Filter + Sort Controls */}
-      <select onChange={e => setGenre(e.target.value)}>
-        <option value="All">All</option>
-        <option value="Action">Action</option>
-        <option value="Drama">Drama</option>
-        <option value="Science Fiction">Science Fiction</option>
-      </select>
+    <div className="min-h-screen bg-gray-100 p-4 bg-zinc-900">
+      {/* Content */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+        <Sidebar
+          selectedGenre={selectedGenre}
+          setSelectedGenre={(genre) => {
+            setSelectedGenre(genre);
+            setCurrentPage(1);
+          }}
+          sortOrder={sortOrder}
+          setSortOrder={(order) => {
+            setSortOrder(order);
+            setCurrentPage(1);
+          }}
+        />
+        {isLoading ? (
+          "loading..."
+        ) : (
+          <MovieGrid
+            movies={currentSeries}
+            isSeries={selectedGenre !== "Movie"}
+          />
+        )}
+      </div>
 
-      <select onChange={e => setSortType(e.target.value)}>
-        <option value="rating">Rating</option>
-        <option value="popularity">Popularity</option>
-      </select>
-
-      <input
-        placeholder="Search..."
-        value={searchQuery}
-        onChange={e => setSearchQuery(e.target.value)}
-      />
-
-      {/* Display Series */}
-      {paginatedSeries.map(series =>
-        <div key={series.id}>
-          <h3>
-            {series.title}
-          </h3>
-          <p>
-            {series.genres.join(", ")}
-          </p>
+      {/* Pagination */}
+      {!isLoading && totalPages > 1 && (
+        <div className="mt-8 flex justify-center gap-2 flex-wrap">
+          {Array.from({ length: totalPages }, (_, i) => (
+            <button
+              key={i}
+              className={`px-3 py-1 border rounded ${
+                currentPage === i + 1 ? "bg-red-600 text-white" : "bg-white"
+              }`}
+              onClick={() => handlePageChange(i + 1)}
+            >
+              {i + 1}
+            </button>
+          ))}
         </div>
       )}
-
-      {/* Pagination Controls */}
-      <Button
-        onClick={() => setCurrentPage(p => Math.max(p - 1, 1))}
-        disabled={currentPage === 1}
-      >
-        Prev
-      </Button>
-      <span>
-        Page {currentPage}
-      </span>
-      <Button
-        onClick={() =>
-          setCurrentPage(
-            p => (p < Math.ceil(filteredSeries.length / limit) ? p + 1 : p)
-          )}
-        disabled={currentPage === Math.ceil(filteredSeries.length / limit)}
-      >
-        Next
-      </Button>
     </div>
   );
 }

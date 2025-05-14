@@ -12,6 +12,7 @@ import { SeriesForm } from "../../features/admin/pages/SeriesForm";
 import { MediaDetails } from "../../features/movies/pages/MediaDetails";
 import Login from "../../features/auth/page/Login.jsx";
 import ProtectedRoute from "../../shared/components/ProtectedRoute.jsx";
+import { SeriesDetails } from "../../features/series/pages/SeriesDetails.jsx";
 
 export default function MainLayout() {
   return (
@@ -24,6 +25,7 @@ export default function MainLayout() {
           <Route path="movies" element={<Movies />} />
           {/* SERIES */}
           <Route path="series" element={<Series />} />
+          <Route path="series/:id" element={<SeriesDetails />} />
           {/* Auth */}
           <Route path="login" element={<Login />} />
           {/* admin */}
