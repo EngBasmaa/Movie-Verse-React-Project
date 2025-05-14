@@ -1,15 +1,16 @@
 // src/features/auth/context/AuthProvider.jsx
 import { useState, useEffect } from "react";
 import { AuthContext } from "./AuthContext";
+import Cookies from "js-cookie";
 
 export const AuthProvider = ({ children }) => {
+  // Initialize state from cookie directly
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
-    // Initialize state from localStorage directly
-    return localStorage.getItem("isLoggedIn") === "true";
+    return Cookies.get("isLoggedIn") === "true";
   });
 
   useEffect(() => {
-    const stored = localStorage.getItem("isLoggedIn");
+    const stored = Cookies.get("isLoggedIn");
     if (stored === "true") {
       setIsAuthenticated(true);
     }
@@ -18,7 +19,8 @@ export const AuthProvider = ({ children }) => {
   const login = ({ email, password }) => {
     // Fixed admin credentials
     if (email === "admin@movie.com" && password === "admin@12345") {
-      localStorage.setItem("isLoggedIn", "true");
+      // Set cookie with expiration (7 days) and path
+      Cookies.set("isLoggedIn", "true", { expires: 7, path: "/" });
       setIsAuthenticated(true);
       return { success: true };
     }
@@ -26,7 +28,8 @@ export const AuthProvider = ({ children }) => {
   };
 
   const logout = () => {
-    localStorage.removeItem("isLoggedIn");
+    // Remove the cookie
+    Cookies.remove("isLoggedIn", { path: "/" });
     setIsAuthenticated(false);
   };
 
