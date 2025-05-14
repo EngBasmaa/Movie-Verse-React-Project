@@ -4970,6 +4970,27 @@
       "cast": "KAROL G, Shakira, Ovy on the Drums, Becky G, Feid",
       "category": "now_playing",
       "createdAt": "2025-05-13T01:11:21.580Z"
+    },
+    {
+      "title": "TEST",
+      "original_title": "TEST",
+      "poster_url": "http://localhost:5173/admin/0/editSeries",
+      "backdrop_url": "http://localhost:5173/admin/0/editSeries",
+      "release_date": "2025-05-14T00:00:00.000Z",
+      "original_language": "TEST",
+      "genres": [
+        "comedy"
+      ],
+      "overview": "",
+      "vote_average": 4,
+      "vote_count": 6,
+      "popularity": 5,
+      "reviews": [],
+      "adult": false,
+      "trailer_url": "http://localhost:5173/admin/0/editSeries",
+      "cast": "TEST",
+      "category": "upcoming",
+      "id": "78616bf3-bab4-4baa-98c5-d66c64309abb"
     }
   ],
   "series": [
@@ -13842,6 +13863,27 @@
       "cast": "Florence Pugh, Sebastian Stan, Julia Louis-Dreyfus, Lewis Pullman, David Harbour",
       "category": "popular",
       "createdAt": "2025-05-13T01:10:59.675Z"
+    },
+    {
+      "title": "TEST",
+      "original_title": "TEST",
+      "poster_url": "http://localhost:5173/admin/0/editSeries",
+      "backdrop_url": "http://localhost:5173/admin/0/editSeries",
+      "release_date": "2025-05-14T00:00:00.000Z",
+      "original_language": "TEST",
+      "genres": [
+        "comedy"
+      ],
+      "overview": "",
+      "vote_average": 4,
+      "vote_count": 6,
+      "popularity": 5,
+      "reviews": [],
+      "adult": false,
+      "trailer_url": "http://localhost:5173/admin/0/editSeries",
+      "cast": "TEST",
+      "category": "upcoming",
+      "id": "78616bf3-bab4-4baa-98c5-d66c64309abb"
     }
   ]
 }

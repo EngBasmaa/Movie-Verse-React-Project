@@ -119,6 +119,13 @@ export function Header() {
               Movies
             </Link>
             <Link
+              to="/series"
+              className="text-base font-medium text-gray-300 hover:text-white transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Series
+            </Link>
+            <Link
               to="/people"
               className="text-base font-medium text-gray-300 hover:text-white transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -157,6 +164,13 @@ export function Header() {
           >
             Movies
           </Link>
+          <Link
+            to="/series"
+            className="text-base font-medium text-gray-300 hover:text-white transition-colors"
+          >
+            Series
+          </Link>
+
           <Link
             to="/people"
             className="text-base font-medium text-gray-300 hover:text-white transition-colors"
