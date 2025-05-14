@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+
 import { Button } from "../../../shared/components/MyButton";
 import { MovieCard } from "../../../shared/components/MovieCard";
+import { useDispatch } from "react-redux";
+import { addToWatchlistAction } from "../watchlistSlice";
+import { useSelector } from "react-redux";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -25,6 +30,15 @@ export default function MediaInfo({
   onReviewClick,
   watchTrailerButton,
 }) {
+  const dispatch = useDispatch();
+  const { items } = useSelector((state) => state.watchlistSlice);
+  const [isInWatchlist, setIsInWatchlist] = useState(false);
+
+  useEffect(() => {
+    const exists = items.some((item) => item.id === selectedMedia.id);
+    setIsInWatchlist(exists);
+  }, [items, selectedMedia.id]);
+
   return (
     <div className="flex flex-col items-center md:flex-row gap-8">
       {/* Poster Section */}
@@ -157,7 +171,13 @@ export default function MediaInfo({
           className="flex gap-4 flex-wrap"
         >
           {watchTrailerButton}
-          <Button variant="secondary">👀 Add To WatchList</Button>
+          <Button
+            variant="secondary"
+            onClick={() => dispatch(addToWatchlistAction(selectedMedia))}
+            disabled={isInWatchlist}
+          >
+            {isInWatchlist ? "✓ Already Added" : "👀 Add To Watchlist"}
+          </Button>
           <Button variant="primary" onClick={onReviewClick}>
             ✍️ Add Review
           </Button>

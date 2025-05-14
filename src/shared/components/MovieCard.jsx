@@ -107,7 +107,7 @@ export function MovieCard({
                   else return <FaRegStar key={i} className="shrink-0" />;
                 })}
                 <span className="text-white text-xs ml-2 truncate">
-                  ({rating.toFixed(1)}/10)
+                  ({typeof rating === "number" ? rating.toFixed(1) : rating}/10)
                 </span>
               </div>
               <span className="shrink-0 whitespace-nowrap">

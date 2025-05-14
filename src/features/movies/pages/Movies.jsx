@@ -1,7 +1,7 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo } from "react";
 import { useSelector } from "react-redux";
-import { Sidebar } from '../../../components/moviesCompnents/sidebar.component.jsx';
-import { MovieGrid } from '../../../components/moviesCompnents/movieGrid.component.jsx';
+import { Sidebar } from "../../../components/moviesCompnents/sidebar.component.jsx";
+import { MovieGrid } from "../../../components/moviesCompnents/movieGrid.component.jsx";
 import {
   filterByGenre,
   sortByPopularity,
@@ -19,21 +19,24 @@ export function Movies() {
   const itemsPerPage = 8;
 
   const filteredAndSortedMovies = useMemo(() => {
+    // تحديد مصدر البيانات بناءً على النوع المختار
     const dataSource = selectedGenre === "TV Movie" ? series : movies;
-    console.log(dataSource);
-    const cleanedData = dataSource.map(item => ({
+
+    // تنظيف البيانات لضمان أن genres هي مصفوفة
+    const cleanedData = dataSource.map((item) => ({
       ...item,
       genres: Array.isArray(item.genres)
         ? item.genres
-        : typeof item.genres === 'string'
-          ? [item.genres]
-          : ['Unknown']
+        : typeof item.genres === "string"
+        ? [item.genres]
+        : ["Unknown"],
     }));
 
     // تصفية البيانات حسب النوع المختار
-    const filtered = selectedGenre === "Everything"
-      ? cleanedData
-      : filterByGenre(cleanedData, selectedGenre);
+    const filtered =
+      selectedGenre === "Everything" || selectedGenre === "TV Movie"
+        ? cleanedData
+        : filterByGenre(cleanedData, selectedGenre);
 
     // ترتيب البيانات حسب الخيار المحدد
     switch (sortOrder) {
@@ -94,7 +97,9 @@ export function Movies() {
           {Array.from({ length: totalPages }, (_, i) => (
             <button
               key={i}
-              className={`px-3 py-1 border rounded ${currentPage === i + 1 ? "bg-sky-600 text-white" : "bg-white"}`}
+              className={`px-3 py-1 border rounded ${
+                currentPage === i + 1 ? "bg-sky-600 text-white" : "bg-white"
+              }`}
               onClick={() => handlePageChange(i + 1)}
             >
               {i + 1}

@@ -25,9 +25,9 @@ export function Hero() {
               <div className="bg-red-600 text-white px-2 py-1 rounded-md text-xs font-semibold flex items-center gap-1">
                 <span>7.8/10</span>
               </div>
-              <span className="text-gray-400 text-sm">Sci-Fi</span>
-              <span className="text-gray-400 text-sm">Apr 17, 2016</span>
-              <div className="border border-gray-400 text-gray-300 px-2 py-1 rounded-md text-xs font-medium">
+              <span className="text-white text-sm">Sci-Fi</span>
+              <span className="text-white text-sm">Apr 17, 2016</span>
+              <div className="border bg-zinc-950 border-gray-400 text-gray-300 px-2 py-1 rounded-md text-xs font-medium">
                 13+
               </div>
             </div>
@@ -60,13 +60,15 @@ export function Hero() {
           </div>
           {/* button */}
           <div className="flex items-start gap-5">
-            <Button
-              variant="secondary"
-              size="lg"
-              className=" flex items-center gap-2 "
-            >
-              <Play className="w-4 h-4" /> WATCH TRAILER
-            </Button>
+            <Link to="/media/movie/986056">
+              <Button
+                variant="secondary"
+                size="lg"
+                className=" flex items-center gap-2 "
+              >
+                <Play className="w-4 h-4" /> Movie Details
+              </Button>
+            </Link>
           </div>
         </div>
       </RouteLayout>

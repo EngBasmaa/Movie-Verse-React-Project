@@ -19,11 +19,14 @@ export function Home() {
         {/* Hero */}
         <Hero></Hero>
         {/* Trending movies */}
-        <TrendingMovies></TrendingMovies>
-        <UpComing></UpComing>
-        <FreeContentSection></FreeContentSection>
-        <NewReleas></NewReleas>
         <TopRated></TopRated>
+
+        <TrendingMovies></TrendingMovies>
+        <FreeContentSection></FreeContentSection>
+
+        <UpComing></UpComing>
+
+        <NewReleas></NewReleas>
       </div>
     </>
   );

@@ -1,4 +1,11 @@
-import { Table, TableHeader, TableBody, TableHead, TableRow, TableCell } from "@/components/ui/table";
+import {
+  Table,
+  TableHeader,
+  TableBody,
+  TableHead,
+  TableRow,
+  TableCell,
+} from "@/components/ui/table";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { FaEye } from "react-icons/fa";
@@ -15,8 +22,8 @@ import { MyModal } from "./MyModal"; // Import MyModal
 export function MyTable({ type, tableTitle, data }) {
   const dispatch = useDispatch();
 
-  const [selectedMovie, setSelectedMovie] = useState(null);  // Movie data for modal
-  const [showModal, setShowModal] = useState(false);  // Modal visibility
+  const [selectedMovie, setSelectedMovie] = useState(null); // Movie data for modal
+  const [showModal, setShowModal] = useState(false); // Modal visibility
 
   const deleteHandler = (movieId) => {
     type === "movie" && dispatch(deleteMovieAction(movieId));
@@ -24,25 +31,25 @@ export function MyTable({ type, tableTitle, data }) {
   };
 
   const handleView = (item) => {
-    setSelectedMovie(item)
-    setShowModal(true);  // Show modal when movie is selected
+    setSelectedMovie(item);
+    setShowModal(true); // Show modal when movie is selected
   };
 
   return (
     <div className="w-full p-6 overflow-x-auto">
-      <div className="bg-red-100 rounded-2xl shadow-lg p-6 border border-gray-200">
-        <h2 className="text-2xl font-semibold mb-7 text-gray-800">
-          {tableTitle}
-        </h2>
+      <div className="  p-6 ">
+        <h2 className="text-2xl font-semibold mb-7 text-white">{tableTitle}</h2>
 
-        <Table className="w-full block  md:table bg-white">
+        <Table className="w-full block  md:table bg-white ">
           <TableHeader className="hidden md:table-header-group">
             <TableRow className="bg-gray-100">
               <TableHead className="text-gray-700 ps-3">Title</TableHead>
               <TableHead className="text-gray-700">Category</TableHead>
               <TableHead className="text-gray-700">Audience</TableHead>
               <TableHead className="text-gray-700">Rating</TableHead>
-              <TableHead className="text-gray-700 text-center">Actions</TableHead>
+              <TableHead className="text-gray-700 text-center">
+                Actions
+              </TableHead>
             </TableRow>
           </TableHeader>
 
@@ -55,7 +62,7 @@ export function MyTable({ type, tableTitle, data }) {
               </TableRow>
             )}
 
-            {data.map(item => (
+            {data.map((item) => (
               <TableRow
                 key={item.id}
                 className="flex flex-col w-full md:table-row border border-gray-200 rounded-xl md:rounded-none mb-4 md:mb-0 p-4 md:p-0 shadow-sm md:shadow-none"
@@ -68,9 +75,7 @@ export function MyTable({ type, tableTitle, data }) {
                   <div className="flex items-center space-x-3 me-2">
                     <Avatar className="h-10 w-10">
                       <AvatarImage src={item.poster_url} alt={item.title} />
-                      <AvatarFallback>
-                        {item.title.charAt(0)}
-                      </AvatarFallback>
+                      <AvatarFallback>{item.title.charAt(0)}</AvatarFallback>
                     </Avatar>
                     <div>
                       <p className="text-sm font-medium mb-2 text-gray-900 break-words whitespace-normal">
@@ -92,7 +97,9 @@ export function MyTable({ type, tableTitle, data }) {
                     {item.genres.join(", ")}
                   </p>
                   <p className="text-sm text-gray-500 break-words whitespace-normal">
-                    {Array.isArray(item.reviews) ? item.reviews.map(r => r.author).join(", ") : "No reviews available"}
+                    {Array.isArray(item.reviews)
+                      ? item.reviews.map((r) => r.author).join(", ")
+                      : "No reviews available"}
                   </p>
                 </TableCell>
 
@@ -103,7 +110,11 @@ export function MyTable({ type, tableTitle, data }) {
                   </div>
                   <span
                     className={`inline-flex items-center gap-1 me-4 rounded-full px-2 py-0.5 text-xs font-medium
-                      ${item.adult ? "bg-green-100 text-green-700" : "bg-blue-100 text-blue-700"}`}
+                      ${
+                        item.adult
+                          ? "bg-green-100 text-green-700"
+                          : "bg-blue-100 text-blue-700"
+                      }`}
                   >
                     {item.adult ? (
                       <>
@@ -142,13 +153,15 @@ export function MyTable({ type, tableTitle, data }) {
                   <div className="flex justify-start md:justify-center items-center gap-2 mt-2">
                     <Button
                       variant="outline"
-                      onClick={() => handleView(item)}  // Open the modal when clicked
+                      onClick={() => handleView(item)} // Open the modal when clicked
                       className="p-2 rounded-md border border-blue-500 text-blue-500 hover:bg-blue-600 hover:text-white transition duration-200"
                     >
                       <FaEye size={16} />
                     </Button>
                     <Link
-                      to={`/admin/${item.id}/${type === "movie" ? "editMovie" : "editSeries"}`}
+                      to={`/admin/${item.id}/${
+                        type === "movie" ? "editMovie" : "editSeries"
+                      }`}
                       className="p-2 rounded-md border border-green-500 text-green-500 hover:bg-green-600 hover:text-white transition duration-200"
                       title="Edit"
                     >
@@ -173,7 +186,7 @@ export function MyTable({ type, tableTitle, data }) {
       <MyModal
         open={showModal}
         onOpenChange={setShowModal}
-        movie={selectedMovie}  // Pass selected movie to MyModal
+        movie={selectedMovie} // Pass selected movie to MyModal
       />
     </div>
   );

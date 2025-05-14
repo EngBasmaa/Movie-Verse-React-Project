@@ -1,15 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Navigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { getMovieByIdAction } from "../movieSlice";
 import { getSeriesByIdAction } from "../../series/seriesSlice";
 import { filterByCategory } from "../../../shared/utils/movieUtils";
+import { fetchWatchlistAction } from "../../movies/watchlistSlice";
 import { filterSeriesByGenre } from "../../../shared/utils/seriesUtils";
 import { Dialog } from "@/components/ui/dialog";
 import { motion } from "framer-motion";
 import { DialogTrigger } from "@/components/ui/dialog";
 
-// استيراد الكومبوننتات الجديدة
 import MediaInfo from "./MediaInfo";
 import TrailerDialog from "./TrailerDialog";
 import AddReviewDialog from "./AddReviewDialog";
@@ -19,6 +20,7 @@ import { Button } from "../../../shared/components/MyButton";
 
 export function MediaDetails() {
   const { id, type } = useParams();
+
   const dispatch = useDispatch();
 
   const {
@@ -48,7 +50,9 @@ export function MediaDetails() {
       dispatch(getSeriesByIdAction(id));
     }
   }, [id, type]);
-
+  useEffect(() => {
+    dispatch(fetchWatchlistAction());
+  }, [dispatch]);
   useEffect(() => {
     if (initialLoad.current) {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -79,9 +83,15 @@ export function MediaDetails() {
       ? filterByCategory(movies, selectedMedia?.category)?.filter(
           (movie) => movie.id !== selectedMedia?.id
         )
-      : filterByGenre(series, selectedMedia?.genres?.[0])?.filter(
+      : filterSeriesByGenre(series, selectedMedia?.genres?.[0])?.filter(
           (series) => series.id !== selectedMedia?.id
         );
+  const validTypes = ["movie", "series"];
+  const isValidType = validTypes.includes(type);
+
+  if (!isValidType) {
+    return <Navigate to="/NotFound" />;
+  }
 
   if (isLoading) {
     return (
@@ -128,9 +138,7 @@ export function MediaDetails() {
         whileInView="visible"
         className="relative max-w-7xl mx-auto px-4 py-12"
       >
-        {/* Dialog عرض التريلر */}
         <Dialog>
-          {/* الزرار بيتبعت كـ prop، لكن يفضل داخل DialogTrigger */}
           <MediaInfo
             selectedMedia={selectedMedia}
             type={type}
@@ -147,7 +155,6 @@ export function MediaDetails() {
             }
           />
 
-          {/* محتوى عرض التريلر */}
           <TrailerDialog
             open={!!videoId}
             videoId={videoId}
@@ -155,7 +162,6 @@ export function MediaDetails() {
           />
         </Dialog>
 
-        {/* Dialog إضافة الريڤيو */}
         <AddReviewDialog
           open={isReviewDialogOpen}
           onOpenChange={setIsReviewDialogOpen}
@@ -164,10 +170,8 @@ export function MediaDetails() {
           id={id}
         />
 
-        {/* قسم الريڤيوهات */}
         <ReviewsSection reviews={selectedMedia?.reviews} />
 
-        {/* قسم المحتوى المشابه */}
         <RelatedMediaSlider relatedMedia={relatedMedia} type={type} />
       </motion.div>
     </div>

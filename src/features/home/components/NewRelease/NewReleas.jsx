@@ -1,12 +1,12 @@
 import React from "react";
 import { MovieSection } from "../shared/MovieSection";
-import { filterReleased } from "../../../../shared/utils/movieUtils";
+import { filterAnimation } from "../../../../shared/utils/movieUtils";
 
 export default function NewReleas() {
   return (
     <MovieSection
-      title="New Realesed"
-      getMovies={filterReleased}
+      title="Animation"
+      getMovies={filterAnimation}
       limit={20}
       navigationId="New-swiper-nav"
       overlayVariant="grey"

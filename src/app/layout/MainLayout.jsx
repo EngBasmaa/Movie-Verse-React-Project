@@ -5,11 +5,12 @@ import { NotFound } from "../../shared/components";
 import { AdminLayout } from "../../features/admin/pages/AdminLayout";
 import { Movies } from "../../features/movies";
 import { People } from "../../features/people/pages/People";
-import { PersonDetails } from "../../features/people/pages/PersonDetails";
+import { ActorDetails } from "../../features/people/pages/PersonDetails";
 import { Series } from "../../features/series/pages/Series";
 import { MovieForm } from "../../features/admin/pages/MovieForm";
 import { SeriesForm } from "../../features/admin/pages/SeriesForm";
 import { MediaDetails } from "../../features/movies/pages/MediaDetails";
+import WatchlistPage from "../../features/movies/pages/WatchlistPage/WatchlistPage";
 
 export default function MainLayout() {
   return (
@@ -30,13 +31,15 @@ export default function MainLayout() {
           <Route path="admin/:id/editSeries" element={<SeriesForm />} />
           {/* Media Details */}
           <Route path="media/:type/:id" element={<MediaDetails />} />
+          {/* Watchlist */}
+          <Route path="/watchlist" element={<WatchlistPage />} />
+
           {/* people */}
           <Route path="people" element={<People />} />
-          <Route path="people/:id" element={<PersonDetails />} />
+          <Route path="people/:id" element={<ActorDetails />} />
           {/* NOTFOUND */}
           <Route path="*" element={<NotFound />} />
         </Route>
-              
       </Routes>
     </BrowserRouter>
   );

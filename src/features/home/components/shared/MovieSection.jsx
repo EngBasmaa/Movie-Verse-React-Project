@@ -56,7 +56,6 @@ export function MovieSection({
       1024: { slidesPerView: 4 },
       1280: { slidesPerView: 5 },
     },
-    loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,

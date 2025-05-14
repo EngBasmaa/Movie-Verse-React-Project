@@ -22,6 +22,12 @@ export const filterUpcoming = (movies) => {
   const now = new Date();
   return movies.filter((movie) => new Date(movie.release_date) > now);
 };
+export const filterHighRated = (movies) => {
+  return movies.filter((movie) => movie.vote_average >= 8.5);
+};
+export const filterAnimation = (movies) => {
+  return movies.filter((movie) => movie.genres.includes("Animation"));
+};
 
 export const filterUpcomingByCategory = (movies) =>
   movies.filter((movie) => movie.category === "upcoming");
