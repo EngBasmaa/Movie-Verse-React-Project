@@ -62,7 +62,7 @@ export function MovieCard({
       className={clsx(
         "relative group overflow-hidden rounded-3xl shadow-2xl",
         "transition-transform duration-300 hover:scale-[1.02]",
-        "w-full h-full aspect-[2/3]",
+        "w-full h-full max-h-[500px] aspect-[2/3]",
         className
       )}
     >

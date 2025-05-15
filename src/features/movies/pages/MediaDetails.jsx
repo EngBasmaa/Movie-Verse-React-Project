@@ -7,6 +7,7 @@ import { getSeriesByIdAction } from "../../series/seriesSlice";
 import { filterByCategory } from "../../../shared/utils/movieUtils";
 import { fetchWatchlistAction } from "../../movies/watchlistSlice";
 import { filterSeriesByGenre } from "../../../shared/utils/seriesUtils";
+import { getAllPeopleAction } from "../../people/peopleSlice";
 import { Dialog } from "@/components/ui/dialog";
 import { motion } from "framer-motion";
 import { DialogTrigger } from "@/components/ui/dialog";
@@ -20,7 +21,6 @@ import { Button } from "../../../shared/components/MyButton";
 
 export function MediaDetails() {
   const { id, type } = useParams();
-
   const dispatch = useDispatch();
 
   const {
@@ -35,8 +35,9 @@ export function MediaDetails() {
     isLoading: seriesLoading,
     errors: seriesErrors,
   } = useSelector((store) => store.seriesSlice);
+  const { people } = useSelector((store) => store.peopleSlice);
 
-  const selectedMedia = type === "movie" ? selectedMovie : selectedSeries;
+  const [selectedMedia, setSelectedMedia] = useState(null);
   const isLoading = type === "movie" ? movieLoading : seriesLoading;
   const errors = type === "movie" ? movieErrors : seriesErrors;
 
@@ -44,15 +45,40 @@ export function MediaDetails() {
   const initialLoad = useRef(true);
 
   useEffect(() => {
+    dispatch(getAllPeopleAction());
+  }, [dispatch]);
+
+  useEffect(() => {
     if (type === "movie") {
-      dispatch(getMovieByIdAction(id));
+      dispatch(getMovieByIdAction(id))
+        .unwrap()
+        .catch((error) => {
+          console.log("Fallback to people data...");
+        });
     } else {
       dispatch(getSeriesByIdAction(id));
     }
-  }, [id, type]);
+  }, [id, type, dispatch]);
+
+  useEffect(() => {
+    if (type === "movie") {
+      if (selectedMovie) {
+        setSelectedMedia(selectedMovie);
+      } else if (people.length > 0) {
+        const foundMovie = people
+          .flatMap((person) => person.known_for)
+          .find((movie) => movie?.id === parseInt(id));
+        setSelectedMedia(foundMovie || null);
+      }
+    } else {
+      setSelectedMedia(selectedSeries);
+    }
+  }, [selectedMovie, selectedSeries, people, id, type]);
+
   useEffect(() => {
     dispatch(fetchWatchlistAction());
   }, [dispatch]);
+
   useEffect(() => {
     if (initialLoad.current) {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -86,6 +112,7 @@ export function MediaDetails() {
       : filterSeriesByGenre(series, selectedMedia?.genres?.[0])?.filter(
           (series) => series.id !== selectedMedia?.id
         );
+
   const validTypes = ["movie", "series"];
   const isValidType = validTypes.includes(type);
 
@@ -112,7 +139,7 @@ export function MediaDetails() {
   if (!selectedMedia) {
     return (
       <div className="min-h-screen bg-zinc-900 flex items-center justify-center">
-        <h1 className="text-white text-2xl">No media selected</h1>
+        <h1 className="text-white text-2xl">Media not found</h1>
       </div>
     );
   }
@@ -128,7 +155,7 @@ export function MediaDetails() {
         className="fixed inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${selectedMedia?.backdrop_url})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/90 to-gray-900/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/60 to-gray-900/50" />
       </motion.div>
 
       {/* Content */}

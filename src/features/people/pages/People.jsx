@@ -19,15 +19,15 @@ export function People() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-zinc-950">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-zinc-950 to-zinc-900">
         <motion.div
           animate={{ opacity: [0.3, 1, 0.3] }}
           transition={{ duration: 1.8, repeat: Infinity }}
-          className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent"
+          className="text-4xl font-bold bg-gradient-to-r from-amber-400 to-pink-500 bg-clip-text text-transparent"
         >
-          <div className="flex items-center gap-3">
-            <FaTheaterMasks className="animate-spin-slow" />
-            Loading Stellar Cast...
+          <div className="flex items-center gap-4">
+            <FaTheaterMasks className="animate-pulse text-5xl" />
+            <span>Loading Stellar Cast...</span>
           </div>
         </motion.div>
       </div>
@@ -36,102 +36,103 @@ export function People() {
 
   if (errors) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-zinc-950">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-zinc-950 to-zinc-900">
         <motion.div
           initial={{ scale: 0.5 }}
           animate={{ scale: 1 }}
-          className="text-red-400 text-xl bg-zinc-900/80 backdrop-blur-lg p-8 rounded-2xl border border-red-400/30 shadow-xl"
+          className="text-red-400 text-2xl bg-zinc-900/90 backdrop-blur-lg p-8 rounded-3xl border border-pink-500/30 shadow-2xl"
         >
-          ⚠️ Error: {errors}
+          <div className="flex items-center gap-3">
+            <span className="text-3xl">⚠️</span>
+            <span>Error: {errors}</span>
+          </div>
         </motion.div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-zinc-950 p-8">
+    <div className="min-h-screen bg-gradient-to-br from-zinc-950 to-zinc-900 p-6 md:p-10">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
         className="max-w-7xl mx-auto space-y-12"
       >
         {/* Header Section */}
         <motion.div
           initial={{ y: -50 }}
           animate={{ y: 0 }}
-          className="text-center space-y-4"
+          transition={{ type: "spring", stiffness: 100 }}
+          className="text-center space-y-6"
         >
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-amber-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
             Galaxy of Stars
           </h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
+          <p className="text-zinc-300 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             Explore the brilliant constellation of talent shaping the cinematic
             universe
           </p>
         </motion.div>
 
         {/* Actors Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           <AnimatePresence>
             {people.map((person, index) => (
               <motion.div
                 key={person.id}
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="group relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-[0_8px_30px_rgba(59,130,246,0.2)] transition-all duration-500"
+                transition={{ delay: index * 0.08, type: "spring" }}
+                whileHover={{ y: -10 }}
+                className="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-[0_10px_40px_rgba(245,158,11,0.2)] transition-all duration-300"
               >
                 {/* Image Container */}
                 <div className="relative aspect-[3/4] overflow-hidden">
                   <motion.img
                     src={person.profile_url}
                     alt={person.name}
-                    className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
                     onError={(e) => {
                       e.target.src = "/placeholder-actor.jpg";
                       e.target.className =
-                        "w-full h-full object-contain bg-zinc-800 p-4";
+                        "w-full h-full object-contain bg-zinc-800 p-8";
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/90 via-zinc-900/40 to-transparent" />
 
                   {/* Popularity Badge */}
-                  <div className="absolute top-4 right-4 flex items-center gap-1 bg-zinc-900/80 backdrop-blur-sm px-3 py-1 rounded-full text-sm text-cyan-400">
+                  <div className="absolute top-4 right-4 flex items-center gap-1 bg-zinc-900/80 backdrop-blur-sm px-3 py-1 rounded-full text-sm text-amber-400 border border-amber-400/30">
                     <FaStar className="text-yellow-400" />
                     <span>{Math.round(person.popularity)}</span>
                   </div>
                 </div>
 
                 {/* Info Overlay */}
-                <motion.div
-                  className="absolute bottom-0 left-0 right-0 p-6 space-y-4 bg-gradient-to-t from-zinc-900 via-zinc-900/90 to-transparent backdrop-blur-lg"
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                >
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5 flex flex-col justify-end">
                   {/* Department Tag */}
-                  <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/20 rounded-full border border-blue-400/30">
-                    <FaTheaterMasks className="text-blue-400 text-sm" />
-                    <span className="text-blue-300 text-sm font-medium">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 bg-pink-500/20 rounded-full border border-pink-400/30 mb-3 w-fit">
+                    <FaTheaterMasks className="text-pink-400 text-sm" />
+                    <span className="text-pink-300 text-sm font-medium">
                       {person.known_for_department}
                     </span>
                   </div>
 
                   {/* Name */}
-                  <h2 className="text-2xl font-bold text-white">
+                  <h2 className="text-2xl font-bold text-white mb-3">
                     {person.name}
                   </h2>
 
                   {/* Known For Works */}
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {person.known_for?.slice(0, 3).map((work) => (
                       <div
                         key={work.id}
-                        className="text-xs px-3 py-1.5 rounded-xl bg-zinc-800/50 hover:bg-blue-500/20 border border-zinc-700 hover:border-blue-400 transition-all"
+                        className="text-xs px-3 py-1.5 rounded-xl bg-zinc-800/70 hover:bg-pink-500/30 border border-zinc-700 hover:border-pink-400 transition-all"
                       >
-                        <span className="text-blue-400 me-1">✦</span>
+                        <span className="text-pink-400 me-1">✦</span>
                         <span className="truncate text-white">
-                          {work.title}
+                          {work.title || work.name}
                         </span>
                       </div>
                     ))}
@@ -139,12 +140,12 @@ export function People() {
 
                   {/* View Profile Button */}
                   <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
                   >
                     <Button
                       variant="primary"
-                      className="w-full mt-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-400 hover:to-purple-400 shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]"
+                      className="w-full bg-gradient-to-r from-amber-500 to-pink-600 hover:from-amber-400 hover:to-pink-500 shadow-[0_0_15px_rgba(245,158,11,0.3)] hover:shadow-[0_0_25px_rgba(245,158,11,0.5)]"
                       asChild
                     >
                       <Link
@@ -152,11 +153,11 @@ export function People() {
                         className="flex items-center justify-center gap-2"
                       >
                         <FaTheaterMasks />
-                        View Stellar Profile
+                        View Profile
                       </Link>
                     </Button>
                   </motion.div>
-                </motion.div>
+                </div>
               </motion.div>
             ))}
           </AnimatePresence>

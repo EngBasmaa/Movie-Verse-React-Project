@@ -226,6 +226,18 @@
           "id": "681c8a7cfa53de5d8c6e36fe",
           "updated_at": "2025-05-08T10:42:04.824Z",
           "url": "https://www.themoviedb.org/review/681c8a7cfa53de5d8c6e36fe"
+        },
+        {
+          "author": "moashraf",
+          "author_details": {
+            "name": "moashraf",
+            "username": "moashraf",
+            "avatar_path": null,
+            "rating": 10
+          },
+          "content": "very good",
+          "created_at": "2025-05-15T11:40:48.402Z",
+          "id": "e9i7hmfdp"
         }
       ],
       "trailer_url": "https://www.youtube.com/watch?v=-sAOWhvheK8",
@@ -1036,7 +1048,20 @@
       "genres": [
         "Horror"
       ],
-      "reviews": [],
+      "reviews": [
+        {
+          "author": "يس",
+          "author_details": {
+            "name": "يس",
+            "username": "يس",
+            "avatar_path": null,
+            "rating": 4
+          },
+          "content": "jkdsjk",
+          "created_at": "2025-05-15T00:03:13.815Z",
+          "id": "p2r2wil33"
+        }
+      ],
       "trailer_url": "https://www.youtube.com/watch?v=EiCrTCeNo5k",
       "cast": "Rodrigo Prieto, Cris Gallego, Miki Cidoncha, Jesus Ruiz, Mar P. Soler",
       "category": "popular",
@@ -4947,50 +4972,25 @@
       "createdAt": "2025-05-13T01:11:20.437Z"
     },
     {
-      "adult": false,
-      "backdrop_path": "/kpyXnnyO7UiK7FZFHJ5Ae7DRAIF.jpg",
-      "id": "1469239",
-      "original_language": "es",
-      "original_title": "Karol G: Mañana fue muy bonito",
-      "overview": "Karol G pulls back the curtain on her rise to stardom while navigating a sold-out stadium tour, creating new music and releasing a new album.",
-      "popularity": 83.4907,
-      "poster_path": "/5aXoQYwaQ7JJVUWclHAEXJgiS2M.jpg",
-      "release_date": "2025-04-30",
-      "title": "Karol G: Tomorrow Was Beautiful",
-      "vote_average": 8.146,
-      "vote_count": 65,
-      "poster_url": "https://image.tmdb.org/t/p/original/5aXoQYwaQ7JJVUWclHAEXJgiS2M.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/original/kpyXnnyO7UiK7FZFHJ5Ae7DRAIF.jpg",
+      "id": "e9155627-880a-423d-9225-63a3cec69b9d",
+      "title": "incendies",
+      "original_title": "incendies",
+      "poster_url": "https://m.media-amazon.com/images/I/51yE80LoQSL._AC_UF894,1000_QL80_.jpg",
+      "backdrop_url": "https://m.media-amazon.com/images/I/51yE80LoQSL._AC_UF894,1000_QL80_.jpg",
+      "release_date": "2025-05-15T00:00:00.000Z",
+      "original_language": "ar",
       "genres": [
-        "Music",
-        "Documentary"
+        "horror"
       ],
+      "overview": "Twins journey to the Middle East to discover their family history and fulfill their mother's last wishes.",
+      "vote_average": 9,
+      "vote_count": 20000,
+      "popularity": 30000,
       "reviews": [],
-      "trailer_url": "https://www.youtube.com/watch?v=qE6Lez9aGHA",
-      "cast": "KAROL G, Shakira, Ovy on the Drums, Becky G, Feid",
-      "category": "now_playing",
-      "createdAt": "2025-05-13T01:11:21.580Z"
-    },
-    {
-      "title": "TEST",
-      "original_title": "TEST",
-      "poster_url": "http://localhost:5173/admin/0/editSeries",
-      "backdrop_url": "http://localhost:5173/admin/0/editSeries",
-      "release_date": "2025-05-14T00:00:00.000Z",
-      "original_language": "TEST",
-      "genres": [
-        "comedy"
-      ],
-      "overview": "",
-      "vote_average": 4,
-      "vote_count": 6,
-      "popularity": 5,
-      "reviews": [],
-      "adult": false,
-      "trailer_url": "http://localhost:5173/admin/0/editSeries",
-      "cast": "TEST",
-      "category": "upcoming",
-      "id": "78616bf3-bab4-4baa-98c5-d66c64309abb"
+      "adult": true,
+      "trailer_url": "https://www.youtube.com/watch?v=XJ69WnwvZhE",
+      "cast": "Mustafa Kamel",
+      "category": "general"
     }
   ],
   "series": [
@@ -5785,7 +5785,7 @@
       "overview": "Many years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress. Only the heroic members of the Scouting Legion dared to stray beyond the safety of the walls – but even those brave warriors seldom returned alive. Those within the city clung to the illusion of a peaceful existence until the day that dream was shattered, and their slim chance at survival was reduced to one horrifying choice: kill – or be devoured!",
       "popularity": 29.7814,
       "poster_path": "/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg",
-      "release_date": "2013-04-07T00:00:00.000Z",
+      "release_date": "2025-05-07T00:00:00.000Z",
       "title": "Attack on Titan",
       "video": false,
       "vote_average": 10,
@@ -5795,8 +5795,8 @@
       "genres": [
         "action"
       ],
-      "number_of_seasons": 4,
-      "number_of_episodes": 88,
+      "number_of_seasons": 8,
+      "number_of_episodes": 100,
       "reviews": [
         {
           "author": "veller",
@@ -13079,248 +13079,40 @@
   ],
   "watchlist": [
     {
-      "id": "278",
+      "id": "1276073",
       "adult": false,
-      "backdrop_path": "/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
-      "original_language": "en",
-      "original_title": "The Shawshank Redemption",
-      "overview": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
-      "popularity": 31.3783,
-      "poster_path": "/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
-      "release_date": "1994-09-23",
-      "title": "The Shawshank Redemption",
-      "vote_average": 8.71,
-      "vote_count": 28267,
-      "poster_url": "https://image.tmdb.org/t/p/original/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/original/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
+      "backdrop_path": "/Zes06xI18u47pblwRGTtqRm0R8.jpg",
+      "original_language": "ja",
+      "original_title": "新幹線大爆破",
+      "overview": "When panic erupts on a Tokyo-bound bullet train that will explode if it slows below 100 kph, authorities race against time to save everyone on board.",
+      "popularity": 89.0298,
+      "poster_path": "/jmzxlDBwgvRbpPJzNQwizyn9UEn.jpg",
+      "release_date": "2025-04-23",
+      "title": "Bullet Train Explosion",
+      "vote_average": 6.867,
+      "vote_count": 162,
+      "poster_url": "https://image.tmdb.org/t/p/original/jmzxlDBwgvRbpPJzNQwizyn9UEn.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/Zes06xI18u47pblwRGTtqRm0R8.jpg",
       "genres": [
-        "Drama",
-        "Crime"
+        "Action",
+        "Thriller",
+        "Crime",
+        "Drama"
       ],
       "reviews": [
         {
-          "author": "elshaarawy",
+          "author": "Manuel São Bento",
           "author_details": {
-            "name": "",
-            "username": "elshaarawy",
-            "avatar_path": null,
-            "rating": 9
-          },
-          "content": "very good movie 9.5/10 محمد الشعراوى",
-          "created_at": "2016-04-29T18:08:41.892Z",
-          "id": "5723a329c3a3682e720005db",
-          "updated_at": "2021-06-23T15:57:47.190Z",
-          "url": "https://www.themoviedb.org/review/5723a329c3a3682e720005db"
-        },
-        {
-          "author": "John Chard",
-          "author_details": {
-            "name": "",
-            "username": "John Chard",
-            "avatar_path": "/utEXl2EDiXBK6f41wCLsvprvMg4.jpg",
-            "rating": 10
-          },
-          "content": "Some birds aren't meant to be caged.\r\n\r\nThe Shawshank Redemption is written and directed by Frank Darabont. It is an adaptation of the Stephen King novella Rita Hayworth and Shawshank Redemption. Starring Tim Robbins and Morgan Freeman, the film portrays the story of Andy Dufresne (Robbins), a banker who is sentenced to two life sentences at Shawshank State Prison for apparently murdering his wife and her lover. Andy finds it tough going but finds solace in the friendship he forms with fellow inmate Ellis \"Red\" Redding (Freeman). While things start to pick up when the warden finds Andy a prison job more befitting his talents as a banker. However, the arrival of another inmate is going to vastly change things for all of them.\r\n\r\nThere was no fanfare or bunting put out for the release of the film back in 94, with a title that didn't give much inkling to anyone about what it was about, and with Columbia Pictures unsure how to market it, Shawshank Redemption barely registered at the box office. However, come Academy Award time the film received several nominations, and although it won none, it stirred up interest in the film for its home entertainment release. The rest, as they say, is history. For the film finally found an audience that saw the film propelled to almost mythical proportions as an endearing modern day classic. Something that has delighted its fans, whilst simultaneously baffling its detractors. One thing is for sure, though, is that which ever side of the Shawshank fence you sit on, the film continues to gather new fans and simply will never go away or loose that mythical status.\r\n\r\nIt's possibly the simplicity of it all that sends some haters of the film into cinematic spasms. The implausible plot and an apparent sentimental edge that makes a nonsense of prison life, are but two chief complaints from those that dislike the film with a passion. Yet when characters are this richly drawn, and so movingly performed, it strikes me as churlish to do down a human drama that's dealing in hope, friendship and faith. The sentimental aspect is indeed there, but that acts as a counterpoint to the suffering, degradation and shattering of the soul involving our protagonist. Cosy prison life you say? No chance. The need for human connection is never more needed than during incarceration, surely? And given the quite terrific performances of Robbins (never better) & Freeman (sublimely making it easy), it's the easiest thing in the world to warm to Andy and Red.\r\n\r\nThose in support aren't faring too bad either. Bob Gunton is coiled spring smarm as Warden Norton, James Whitmore is heart achingly great as the \"Birdman Of Shawshank,\" Clancy Brown is menacing as antagonist Capt. Byron Hadley, William Sadler amusing as Heywood & Mark Rolston is impressively vile as Bogs Diamond. Then there's Roger Deakins' lush cinematography as the camera gracefully glides in and out of the prison offering almost ethereal hope to our characters (yes, they are ours). The music pings in conjunction with the emotional flow of the movie too. Thomas Newman's score is mostly piano based, dovetailing neatly with Andy's state of mind, while the excellently selected soundtrack ranges from the likes of Hank Williams to the gorgeous Le Nozze di Figaro by Mozart.\r\n\r\nIf you love Shawshank then it's a love that lasts a lifetime. Every viewing brings the same array of emotions - anger - revilement - happiness - sadness - inspiration and a warmth that can reduce the most hardened into misty eyed wonderment. Above all else, though, Shawshank offers hope - not just for characters in a movie - but for a better life and a better world for all of us. 10/10",
-          "created_at": "2016-07-10T00:16:50.561Z",
-          "id": "578193f29251417c28001764",
-          "updated_at": "2024-05-16T15:22:14.028Z",
-          "url": "https://www.themoviedb.org/review/578193f29251417c28001764"
-        },
-        {
-          "author": "tmdb73913433",
-          "author_details": {
-            "name": "",
-            "username": "tmdb73913433",
+            "name": "Manuel São Bento",
+            "username": "msbreviews",
             "avatar_path": null,
             "rating": 6
           },
-          "content": "Make way for the best film ever made people. **Make way.**",
-          "created_at": "2017-11-11T15:09:34.114Z",
-          "id": "5a0712aec3a3687914014a4b",
-          "updated_at": "2021-06-23T15:58:02.682Z",
-          "url": "https://www.themoviedb.org/review/5a0712aec3a3687914014a4b"
-        },
-        {
-          "author": "thommo_nz",
-          "author_details": {
-            "name": "",
-            "username": "thommo_nz",
-            "avatar_path": null,
-            "rating": 10
-          },
-          "content": "There is a reason why this movie is at the top of any popular list your will find.\r\nVery strong performances from lead actors and a story line from the literary brilliance of Stephen King (and no, its not a horror).\r\nSufficient drama and depth to keep you interested and occupied without stupefying your brain. It is the movie that has something for everyone.",
-          "created_at": "2018-05-01T05:51:13.756Z",
-          "id": "5ae800510e0a264fa7000c70",
-          "updated_at": "2021-06-23T15:58:08.245Z",
-          "url": "https://www.themoviedb.org/review/5ae800510e0a264fa7000c70"
-        },
-        {
-          "author": "Andrew Gentry",
-          "author_details": {
-            "name": "Andrew Gentry",
-            "username": "AndrewGentry",
-            "avatar_path": "/vVGgWZe3bDdy0fsODYDtrL8J51b.jpg",
-            "rating": null
-          },
-          "content": "It's still puzzling to me why this movie exactly continues to appear in every single best-movies-of-all-time chart. There's a great story, perfect cast, and acting. It really moves me in times when I'm finding myself figuring out things with my annual tax routine reading <a href=\"https://www.buzzfeed.com/davidsmithjd/what-is-form-w-2-and-how-does-it-work-3n31d\">this article</a>, and accidentally catching myself wondering what my life should be if circumstances had changed so drastically. This movie worth a rewatch by all means, but yet, there's no unique vibe or something - there are thousands of other ones as good as this one.",
-          "created_at": "2018-10-18T15:08:48.777Z",
-          "id": "5bc8a200c3a36829c8019817",
-          "updated_at": "2021-06-23T15:58:13.726Z",
-          "url": "https://www.themoviedb.org/review/5bc8a200c3a36829c8019817"
-        },
-        {
-          "author": "Matthew Dixon",
-          "author_details": {
-            "name": "Matthew Dixon",
-            "username": "matthewdixon",
-            "avatar_path": "/Af7sJr2dLx38npWMIaDzVmdzwd4.jpg",
-            "rating": null
-          },
-          "content": "I will not say that the film is predictable, because it is not quite so, due to the fact that we only know Andy’s intentions at the end, and during the film, it is important to understand that there was not a hint of it, but let's not forget our guys who so imprudently localized it. I will not be the first, but the word 'redemption' is translated as 'redemption'. I don’t know the reason why our localizers decided to spoil the impression to all Russian-speaking people.",
-          "created_at": "2019-07-30T08:25:48.402Z",
-          "id": "5d3fff0c34e1521fb8e86abf",
-          "updated_at": "2021-06-23T15:58:24.933Z",
-          "url": "https://www.themoviedb.org/review/5d3fff0c34e1521fb8e86abf"
-        },
-        {
-          "author": "JPV852",
-          "author_details": {
-            "name": "",
-            "username": "JPV852",
-            "avatar_path": "/xNLOqXXVJf9m7WngUMLIMFsjKgh.jpg",
-            "rating": 10
-          },
-          "content": "First time seeing this in probably close to 20 years, maybe longer. Forgot how excellent of a movie this was, amazing all around from the performances, Morgan Freeman and Tim Robbins especially, with a roller coaster of emotions. The writing (from Stephen King's novel) direction from Frank Darabont was precise and just all around fantastic. This is the very rare 5 star movies I've given but it is easily one of the best movies, right up there in my book with The Godfather. **5.0/5**",
-          "created_at": "2021-09-18T19:56:48.348Z",
-          "id": "6146448055c9260067f415ab",
-          "updated_at": "2021-09-18T19:56:48.348Z",
-          "url": "https://www.themoviedb.org/review/6146448055c9260067f415ab"
-        },
-        {
-          "author": "LƛȤƛƦꪡƬƑ",
-          "author_details": {
-            "name": "",
-            "username": "LƛȤƛƦꪡƬƑ",
-            "avatar_path": null,
-            "rating": null
-          },
-          "content": "No 1 movie for all the time",
-          "created_at": "2023-01-14T18:44:02.525Z",
-          "id": "63c2f7f28efe7300a0eb7304",
-          "updated_at": "2023-01-17T15:15:23.905Z",
-          "url": "https://www.themoviedb.org/review/63c2f7f28efe7300a0eb7304"
-        },
-        {
-          "author": "drystyx",
-          "author_details": {
-            "name": "",
-            "username": "drystyx",
-            "avatar_path": "/hLLsAvAnVT0cFU7JuuaaItTWXv8.jpg",
-            "rating": 3
-          },
-          "content": "This is much more predictable and Hollywood than a King novel.\r\nThis story of another man wrongfully in prison for murder joins the list of about every other movie about a man sent to prison for murdering his wife.\r\nAnd therein lies the problem. Most of the time, the killer is the husband, and most of the time the right man is in prison.\r\nJuries are now doomed to consist of several people who are brainwashed by this constant propaganda Hollywood gives us and think accordingly.\r\nPeople are not gods. They are souls and spirits that can only withstand so much brainwashing. \r\nAdd to that, the story plods along with really nothing new to add. It's a very formula movie.\r\nI won't say it is a \"bad movie\". Those are ones I give 1 or 2 out of 10. But 3/10 is what I call the very boring, unimaginative, safe, non thought provoking movies that you forget about quite quickly.",
-          "created_at": "2023-04-03T15:38:39.540Z",
-          "id": "642af2ffc0a30800774eb399",
-          "updated_at": "2023-04-03T16:46:12.393Z",
-          "url": "https://www.themoviedb.org/review/642af2ffc0a30800774eb399"
-        },
-        {
-          "author": "Sanjeev0805",
-          "author_details": {
-            "name": "",
-            "username": "Sanjeev0805",
-            "avatar_path": null,
-            "rating": null
-          },
-          "content": "This movie is great",
-          "created_at": "2023-06-29T17:48:41.064Z",
-          "id": "649dc3f9c072a2014faf13ce",
-          "updated_at": "2023-07-07T17:19:18.678Z",
-          "url": "https://www.themoviedb.org/review/649dc3f9c072a2014faf13ce"
-        },
-        {
-          "author": "CinemaSerf",
-          "author_details": {
-            "name": "CinemaSerf",
-            "username": "Geronimo1967",
-            "avatar_path": "/yz2HPme8NPLne0mM8tBnZ5ZWJzf.jpg",
-            "rating": 8
-          },
-          "content": "Tim Robbins is wealthy banker \"Andy Dufresne\" who finds himself sentenced to life imprisonment after his wife and her lover are found murdered. The handsome \"new fish\" is initially the target of the \"sisters\" who would use him as they would like - but he fights back and gradually establishes a friendship with prison \"scrounger\" Morgan Freeman (\"Red\"). When he overhears the beastly prison guard captain bemoaning some tax problems, he, rather riskily, volunteers to help find a tax-free solution and is soon advising pretty much the whole place - including \"Warden Norton\" (Bob Gunton) on all things financial - some above board, some less so. The film is set over a period of over ten years, and depicts some of the most brutal aspects of prison life; but also some it's more hopeful. It deals with violence and desperation but also of bonding and lasting friendships and loyalties that long term close-confinement engender. Frank Darabont elicits the best from his three principals superbly, with added venom provided by guard captain Clancy Brown and humanity from prison librarian James Whitmore - one of the few who actually does make parole. The last half hour is up there with the best cinema has ever had to offer, and this - again on a big screen - is a must see adaptation of one of Stephen King's lesser known, but better, stories that delivers a redemption never, quite, anticipated by the prison service!",
-          "created_at": "2023-08-26T15:36:08.834Z",
-          "id": "64ea1be8839018011f8d90b8",
-          "updated_at": "2023-08-26T15:36:08.924Z",
-          "url": "https://www.themoviedb.org/review/64ea1be8839018011f8d90b8"
-        },
-        {
-          "author": "dumasori",
-          "author_details": {
-            "name": "",
-            "username": "dumasori",
-            "avatar_path": "/eZ86AtmtHSNnCeHKztYEEgxaGcN.jpg",
-            "rating": 9
-          },
-          "content": "**Watched it 32 times**\r\n\r\nCall me obsessed, but I have watched this movie 32 times (and counting) over the past 2 decades. One may wonder why? It is because every time I watch this movie, I learn something new from it. For example, despite being such a good friend of Red, Andy never shares his plan with him. This taught me that discipline and focus is vital for success.\r\n\r\nI can not praise enough the tight plot, direction, acting and everything. On my favorite movies list, this one certainly tops the chart.",
-          "created_at": "2024-01-27T02:52:05.572Z",
-          "id": "65b46fd5f6596f0163fdba0d",
-          "updated_at": "2024-02-09T22:55:29.684Z",
-          "url": "https://www.themoviedb.org/review/65b46fd5f6596f0163fdba0d"
-        },
-        {
-          "author": "Angel Rodríguez",
-          "author_details": {
-            "name": "Angel Rodríguez",
-            "username": "angerls182",
-            "avatar_path": "/sbrHbqxcCU1G7yhlYqEspL4hGFO.png",
-            "rating": 10
-          },
-          "content": "Amazing movie",
-          "created_at": "2024-02-16T01:18:24.971Z",
-          "id": "65ceb7e084f249018a42e379",
-          "updated_at": "2024-02-29T16:43:59.900Z",
-          "url": "https://www.themoviedb.org/review/65ceb7e084f249018a42e379"
-        },
-        {
-          "author": "khanz1",
-          "author_details": {
-            "name": "",
-            "username": "khanz1",
-            "avatar_path": null,
-            "rating": null
-          },
-          "content": "This movie is an absolute masterpiece, blending deep emotion and powerful storytelling. It follows the journey of a banker wrongfully imprisoned, whose enduring hope and resilience inspire everyone around him. His friendship with a fellow inmate is heartwarming and beautifully portrayed, capturing the essence of human connection. The film explores themes of redemption and the strength of the human spirit, leaving a lasting impact. With unforgettable performances and a story that resonates on so many levels, it’s a film that stays with you long after the credits roll. I can’t help but give it a 10/10.",
-          "created_at": "2024-07-12T08:51:29.769Z",
-          "id": "6690ee91fdef4d001b2cdd4f",
-          "updated_at": "2024-07-12T18:49:37.315Z",
-          "url": "https://www.themoviedb.org/review/6690ee91fdef4d001b2cdd4f"
-        },
-        {
-          "author": "Leezan",
-          "author_details": {
-            "name": "Leezan",
-            "username": "Leezannn",
-            "avatar_path": null,
-            "rating": 10
-          },
-          "content": "Simple, I would say, beauty in the art of cinematography and storytelling.",
-          "created_at": "2024-09-17T12:01:37.693Z",
-          "id": "66e96fa15c0519a234d2d399",
-          "updated_at": "2024-09-17T15:13:01.430Z",
-          "url": "https://www.themoviedb.org/review/66e96fa15c0519a234d2d399"
-        },
-        {
-          "author": "sachin_13",
-          "author_details": {
-            "name": "",
-            "username": "sachin_13",
-            "avatar_path": null,
-            "rating": null
-          },
-          "content": "The Shawshank Redemption is a timeless masterpiece, blending powerful performances with a poignant narrative about hope and friendship. Tim Robbins and Morgan Freeman deliver unforgettable performances, creating a deeply emotional story of resilience and redemption. With its captivating plot and profound themes, it remains one of the greatest films ever made.",
-          "created_at": "2024-11-21T19:29:31.513Z",
-          "id": "673f8a1b3f6b210e5842265a",
-          "updated_at": "2024-11-21T23:23:45.254Z",
-          "url": "https://www.themoviedb.org/review/673f8a1b3f6b210e5842265a"
+          "content": "FULL SPOILER-FREE REVIEW @ https://movieswetextedabout.com/bullet-train-explosion-film-review-visually-sharp-strong-direction-narratively-safe/\r\n\r\n\"Bullet Train Explosion is a legacy sequel that honors the spirit of the original without being bound by it, opting for a more accessible, modern approach.\r\n\r\nThe suspense scenes are effective, the cast delivers solid performances, and there's a remarkable - if not fully successful - attempt to tackle relevant social themes amid the intense action. Nevertheless, the lack of stronger character development, the tendency to over-explain, and a somewhat inconsequential narrative prevent the movie from achieving the emotional impact it aspires to.\r\n\r\nIt entertains, and at times provokes reflection, but it could - and perhaps should - have gone further.\"\r\n\r\nRating: B-",
+          "created_at": "2025-04-25T15:43:20.395Z",
+          "id": "680bad98271ecb3ae08a8857",
+          "updated_at": "2025-04-25T15:43:20.479Z",
+          "url": "https://www.themoviedb.org/review/680bad98271ecb3ae08a8857"
         },
         {
           "author": "RalphRahal",
@@ -13328,416 +13120,19 @@
             "name": "",
             "username": "RalphRahal",
             "avatar_path": null,
-            "rating": 10
+            "rating": 6
           },
-          "content": "The Shawshank Redemption is one of those timeless classics that pulls you in with its heartfelt storytelling and remarkable performances. At its core, it’s a story about hope, friendship, and the resilience of the human spirit, set against the bleak backdrop of Shawshank prison. Tim Robbins as Andy Dufresne and Morgan Freeman as Red deliver deeply moving performances, capturing the bond that grows between two men confined by walls but freed by hope. Every scene feels purposeful, and the script, adapted from Stephen King’s novella, is simply brilliant in how it weaves small moments into a powerful narrative.\r\n\r\nOne of the most unforgettable parts of the movie is Brooks’ storyline. Watching him leave the world he knew, only to find himself unable to adapt to a society that had progressed beyond his comprehension, is heartbreaking every time. It’s a stark reminder of how institutionalization can strip people of their ability to live freely, even after they've served their time. That moment, along with Red’s own journey, adds a bittersweet layer of realism to the story’s broader themes of freedom and redemption.\r\n\r\nThe direction by Frank Darabont is masterful, turning what could have been a straightforward prison drama into something deeply profound. The setting of Shawshank feels both oppressive and oddly serene, perfectly capturing the tone of the story. The simplicity of the plot is its strength, allowing the characters and their emotional arcs to take center stage. With its pitch-perfect pacing, poetic dialogue, and an uplifting finale, The Shawshank Redemption remains a film that resonates on every rewatch. It’s not just a movie; it’s an experience.",
-          "created_at": "2024-12-21T21:55:01.389Z",
-          "id": "67673935b67e4547255e3c50",
-          "updated_at": "2024-12-21T21:55:01.449Z",
-          "url": "https://www.themoviedb.org/review/67673935b67e4547255e3c50"
+          "content": "Bullet Train Explosion (2025) is an interesting ride that tries to bring back the disaster-thriller vibe but falls a little short on the human side of things. The directing by Shinji Higuchi feels like it cares more about showing the technical process of running a train than about telling a story through its characters. You can tell a lot of work went into the production itself, especially with the practical effects, model sets, and tight editing that really keep the tension high. The problem is, while everything looks good and feels intense, the characters end up feeling like background noise rather than the heart of the movie. It feels more like you are watching a really well-made simulation than being pulled into a story.\r\n\r\nThe acting is decent, especially from Tsuyoshi Kusanagi, who manages to bring some presence even without a lot of material to work with. The script, though, feels a bit thin, like it was written just enough to move from one tense scene to another without really digging into who these people are. The cinematography is clean and sharp, with some really impressive shots during the action sequences, and the sound design does a solid job of keeping you in that high-stakes atmosphere. The score is there but not very memorable, mostly serving the moment without standing out. Overall, it is a movie you can enjoy for the tension and visuals, but if you are hoping to get attached to the characters or dive deep into the story, it might leave you wanting more.",
+          "created_at": "2025-05-05T01:07:10.224Z",
+          "id": "68180f3e22884627a78b6635",
+          "updated_at": "2025-05-05T01:07:10.311Z",
+          "url": "https://www.themoviedb.org/review/68180f3e22884627a78b6635"
         }
       ],
-      "trailer_url": "https://www.youtube.com/watch?v=PLl99DlL6b4",
-      "cast": "Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler, Clancy Brown",
-      "category": "top_rated",
-      "createdAt": "2025-05-13T01:11:13.289Z"
-    },
-    {
-      "id": "496243",
-      "adult": false,
-      "backdrop_path": "/hiKmpZMGZsrkA3cdce8a7Dpos1j.jpg",
-      "original_language": "ko",
-      "original_title": "기생충",
-      "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
-      "popularity": 49.0563,
-      "poster_path": "/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
-      "release_date": "2019-05-30",
-      "title": "Parasite",
-      "vote_average": 8.5,
-      "vote_count": 19020,
-      "poster_url": "https://image.tmdb.org/t/p/original/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/original/hiKmpZMGZsrkA3cdce8a7Dpos1j.jpg",
-      "genres": [
-        "Comedy",
-        "Thriller",
-        "Drama"
-      ],
-      "reviews": [
-        {
-          "author": "SWITCH.",
-          "author_details": {
-            "name": "SWITCH.",
-            "username": "maketheSWITCH",
-            "avatar_path": "/klZ9hebmc8biG1RC4WmzNFnciJN.jpg",
-            "rating": 10
-          },
-          "content": "What makes ‘Parasite’ so satisfying is that it commits neither error. It’s an engrossing, stylish and near perfect movie, and its underlying themes go beyond merely pointing out class exploitation to challenge the logic of capital. Though he is often juggling a mosaic of characters, themes and social issues, Bong never eschews his anarchic impulses and dark humour. It’s a movie that should be seen as widely as possible, if only so that Bong Joon-ho gets more chances to make movies for modern audiences that badly need them.\r\n- Jake Watt\r\n\r\nRead Jake's full article...\r\nhttps://www.maketheswitch.com.au/article/review-parasite-a-bloodthirsty-and-very-funny-look-at-class-warfare\r\n\r\nHead to https://www.maketheswitch.com.au/sff for more Sydney Film Festival reviews.",
-          "created_at": "2019-06-16T08:43:44.648Z",
-          "id": "5d060140c3a36832f220dedd",
-          "updated_at": "2021-06-23T15:58:23.343Z",
-          "url": "https://www.themoviedb.org/review/5d060140c3a36832f220dedd"
-        },
-        {
-          "author": "Sheldon Nylander",
-          "author_details": {
-            "name": "Sheldon Nylander",
-            "username": "dalboz",
-            "avatar_path": "/d9fi8H0uBIhn9B9WY8Avo5L1vzm.jpg",
-            "rating": 10
-          },
-          "content": "The working class and down on their luck Kim family struggle to make ends meet. When a friend of the son, Ki-Woo’s, who is an English tutor for the daughter in the wealthy Park family, has to leave his position, he recommends Ki-Woo for the job. Now having an \"in\" with the wealthy family, the Kims begin plotting the downfall of the current household servants and inserting themselves into those vacant positions, making them all gainfully employed and with money finally flowing into the household. But not everything is as it seems in the Park house or with their previous servants.\r\n\r\nThis movie starts out as a comedy and quickly goes into social commentary, pointing out the differences between the poor working class family and the wealthy privileged family. The differences are ones that get commonly pointed out with the well-to-do having what usually gets termed as first-world-problems, while the poor family is literally trying to survive and save meager possessions in a flood. It doesn’t shy away or try to be subtle about it, but interestingly enough, we don’t feel beaten over the head with it either, which is a major change from the ham-fisted approach taken by most filmmakers. Couching this in a comedy is a good approach, as well, as the audience’s guard is let down and we become more receptive to the ideas.\r\n\r\nHowever, I do say it’s MOSTLY a comedy. The third act takes a dark, dark turn, and the contrast, not to mention general disdain and even indifference, between the classes becomes much more severe. This gets into some hard territory, and characters that we’ve found quirky and even come to like in some ways show very different sides of themselves. At the same time, it doesn’t feel unexpected, almost like we could tell that this was under the surface all the time and tried to ignore it, but aren’t surprised by it when it does show up. This is some masterful characterization!\r\n\r\nAnother aspect of note is that this film is rich in allegory and metaphor. It’s a smart film, yet at the same time the filmmakers are not condescending about it. They give the audience credit for being able to understand the symbolism and don’t spoon feed you everything, which is a refreshing change from the usual head-beating most filmmakers go for. At the same time, they understand that not every audience member will understand or immediately pick up on every symbol, but they have crafted this so carefully and so perfectly that you don’t have to understand each and every one. That understanding merely enriches the experience, but isn’t essential to it.\r\n\r\nThis film has gotten some recognition, and deservedly so. It is rich, intelligent, and polished to a degree that we sadly don’t see as often as we should nowadays, showing the filmmakers are masters of their craft. This is easily one of the best films I’ve seen in 2019. Highly recommended!",
-          "created_at": "2019-10-19T11:26:13.011Z",
-          "id": "5daaf2d59661fc001241a1d8",
-          "updated_at": "2021-06-23T15:58:28.159Z",
-          "url": "https://www.themoviedb.org/review/5daaf2d59661fc001241a1d8"
-        },
-        {
-          "author": "Saru",
-          "author_details": {
-            "name": "Saru",
-            "username": "saru2020",
-            "avatar_path": null,
-            "rating": 4
-          },
-          "content": "This is VERY HIGHLY OVERRATED. \r\nThe most part of the movie is foul-playing, most of those scenes seem to have been copied from the 1999/old Vijay’s movie: Minsaara Kannan [IMDB: https://www.imdb.com/title/tt7562630/?ref_=nv_sr_srsg_2], (Warning: This again might be a copy of some other movie as well]. \r\n“Morse code” has been used in a much better way in 2017 Ajith’s film: Vivegam [IMDB:https://www.imdb.com/title/tt6878378/?ref_=nv_sr_srsg_0] [Letterboxd: https://letterboxd.com/film/vivegam/]\r\nI just don’t understand what makes this movie so special that it has been appraised so highly. It is not even 10% of the Tamil movies at this level/standard.\r\nPeople who’re praising this movie must start watching Tamil movies instead of Korean, there are so many gems that have gone unnoticed.\r\nThere is really nothing special in this movie that stands out. \r\nCannot digest that an average movie like this has got so much limelight. Btw: Where does this kinda BS trend start off?",
-          "created_at": "2020-01-12T14:18:25.406Z",
-          "id": "5e1b2ab13520e8001735adfa",
-          "updated_at": "2021-06-23T15:58:32.063Z",
-          "url": "https://www.themoviedb.org/review/5e1b2ab13520e8001735adfa"
-        },
-        {
-          "author": "tmdb39513728",
-          "author_details": {
-            "name": "",
-            "username": "tmdb39513728",
-            "avatar_path": null,
-            "rating": 10
-          },
-          "content": "errbnb\r\n\r\nNews that Adam McCay is collaborating with Bong Joon Ho to retool Parasite as a Netflix series makes me positively giddy. Parasite is easily the best movie I've seen since the Big Short. Joon Ho's compelling ease of execution alongside the effortless lure of the plot's trappings had me hooked in an instant. I would have been happy watching this family fold pizza boxes for two hours. The story, like the family, takes on a life of its own, rapidly elevating to a setup impossible to sustain. The Bunuelesque occupy-the-rich scheme gleefully, blissfully ascends to lofty heights only, inevitably, to hit the fatal fan. The poor buggers ultimately find themselves literally chin deep in their own sh*t. The hotsy-totsy aristocrats, meanwhile, host a lovely garden party that flips into a tragic Shakespearean bloodbath. It's all fun and games till someone loses a daughter. (Note to the rich: Check the references of new hires and think twice before inviting riffraff to your afternoon functions). Decades in the making, the implosion of a middle income buffer and a widening disparity between social classes make Parasite a must-see for all income brackets. You don't have to be rich or detest or envy the rich to enjoy this instant classic. But please, whatever you do, don't try this a home, folks. Never combine the rich and poor without safety goggles or outside the confines of a controlled and supervised laboratory setting.",
-          "created_at": "2020-01-23T13:18:00.835Z",
-          "id": "5e299d081685da0011e2cd24",
-          "updated_at": "2021-06-23T15:58:33.361Z",
-          "url": "https://www.themoviedb.org/review/5e299d081685da0011e2cd24"
-        },
-        {
-          "author": "Matthew Brady",
-          "author_details": {
-            "name": "Matthew Brady",
-            "username": "MatthewL.Brady",
-            "avatar_path": "/k5J0l25FXOCw4TcX6iWaJmYpCZ4.jpg",
-            "rating": 9
-          },
-          "content": "\"You know what kind of plan that never fails? No plan. No plan at all. You know why? Because life cannot be planned.\"\r\n\r\n'Parasite' is absolutely fantastic. I'm still buzzing how good this movie is. Unpredictable and nuts. You know, this summer I was starting to get a little worn out with the endless sequels, remakes and soulless crash grabs, so I find it refreshing we get movies like this once awhile.\r\n\r\nI admire Bong Joon-Ho as a director, especially his Korean movies. Not to say I dislike his English language films like 'Snowpiercer' and 'Okja', but in my personal opinion those don't match the same quality as his Korean movies and there isn't a sex pest trying to control his work. Anywhere, Bong Joon-Ho is one of the best working directors alive and 'Parasite' proves it.\r\n\r\nThe movie perfectly blends drama and comedy so effortlessly, it basically breaks the impossible. And the comedy is actually hilarious and well written with the execution being sold on the actors. The thing I love so much is how funny, thrilling and intense the movie can be, hijacking all senses and emotions all wrapped into one - only a few directors can pull something this unique.\r\n\r\nThe performances from everyone was brilliant and there's so much depth to each character, they make the movie as captivating as it is. The cinematography was beautiful, the music was remarkable, and the movie says so much it's the reason why I was engaged throughout.\r\n\r\nI highly recommend people to avoid knowing anything before going in, because trust me it will add to your experience.\r\n\r\nOverall rating: Finally, a breath of fresh air. My second favorite movie of this year.",
-          "created_at": "2020-01-27T18:11:44.059Z",
-          "id": "5e2f27e0c56d2d00134e8e40",
-          "updated_at": "2021-06-23T15:58:33.480Z",
-          "url": "https://www.themoviedb.org/review/5e2f27e0c56d2d00134e8e40"
-        },
-        {
-          "author": "Manuel São Bento",
-          "author_details": {
-            "name": "Manuel São Bento",
-            "username": "msbreviews",
-            "avatar_path": null,
-            "rating": 10
-          },
-          "content": "If you enjoy reading my Spoiler-Free reviews, please follow my blog @\r\nhttps://www.msbreviews.com\r\n\r\nYes, I know. I'm late as hell. I don't really have anything to offer you besides my personal opinion. Theses and video essays are breaking down Parasite at such a deep level that I can't really write anything new. Nevertheless, I'll share my thoughts on it because it would be a massive miss from someone who considers himself as a film critic. I had this movie on my watchlist since last summer, but I kept delaying it, underestimating my time. So, no, I'm not just watching Parasite because it won Best Picture at the Oscars, I always planned on it.\r\n\r\nIn addition to that, yes, I also love it like most people, and no, I'm not writing this because I'm \"following the pack\". Bong Joon Ho simply delivered one of 2019's best films, and it's definitely cracking a spot in my Top10. I really enjoyed what Bong did with Okja, and I'm a massive fan of Snowpiercer. Therefore, this isn't just another South Korean flick. It's directed and co-written by someone who has been proving himself for quite some time. Even though I still defend that Sam Mendes deserved to win Best Director for his work on 1917, I'm more than happy that a foreign movie finally won Best Picture, and what a film to do it!\r\n\r\nIt can be described as a dark dramedy, but I think social satire is more adequate. The differences between the rich and the poor are beautifully shown on-screen exclusively through visuals. There's so little exposition, which is one of the reasons why Parasite has one of 2019's best screenplays. The balance between explaining something and leaving it ambiguous is perfect. Throughout the runtime, Bong Joon Ho leans on an actor's face so that the audience can understand what that character is feeling through its expressions, which will explain its actions later on.\r\n\r\nThere's a sequence that surely has been heavily discussed for the past months. It's raining, and Bong cleverly divides the screen with how the wealthy family is dealing with it against the poor neighborhood where the Kim family comes from. The gorgeous cinematography, the unforgettable musical score, the seamless editing... Everything about this sequence is technically flawless, and it carries such an emotionally powerful message. Something astonishing and beautiful to look at for some can be a horrible disaster for others.\r\n\r\nIt's a movie that balances a lot of tones. In ten minutes, the tone goes from funny to dramatic to suspenseful to scary to absolute tragedy... and it all feels incredibly realistic. That's one of my major compliments to Parasite: I never felt like it was fiction. I never thought \"this is too much, this would never occur\". Even in the third act, where the narrative takes some bold decisions, everything makes sense with what had been shown until then. From shocking character actions to surprising plot points, Bong and Han Jin-won's screenplay is excellent.\r\n\r\nEveryone in the cast is fantastic, but Song Kang-ho is the standout, in my opinion. His role as the father of the Kim family is brilliant. I'm actually surprised he wasn't nominated for Best Actor in more award shows. I created a connection with this family in such a way that the ending truly impacted me. It's tough to deny that the writing is what makes Parasite the phenomenon that so many people fell in love with, myself included.\r\n\r\nTechnically, I don't have any defects to point out. It's one of those films that I firmly believe in having virtually no flaws. I'm in love with the score, I gasped several times at the impressive cinematography, and the editing is perfect. Whatever genre the story decides to go to, it's always entertaining and extremely captivating. Its comedy is very smart, and it made me laugh a lot of times. Its dramatic storylines kept my eyes always focused on what was happening. Even when it briefly delves into the horror territory, it's more suspenseful and scary than most of that genre's flicks nowadays.\r\n\r\nAll in all, Parasite genuinely surprised me. With so many people hyping it to a ridiculously high level, my expectations were very moderate. Nevertheless, I love it as much or more as everyone else. I know that watching it this late can make some people question my opinion/rating, but I would never love a movie because I \"should\" or because other people do. It deserves every award it received, especially the ones concerning the screenplay. It's one of the best original stories of the last few years, and it's written in such a brilliant manner, with beautiful visual storytelling instead of the overused exposition. An emotionally resonant message is present throughout the whole runtime, and the various tones are balanced seamlessly. Technically flawless: cinematography, score, editing... everything's absolutely perfect. Nothing is placed without purpose. Not a single line of dialogue is wasted. Bong Joon Ho is a phenomenal filmmaker, one that cares about the art and everything that comes with it. He truly put his heart and soul into this, and it would be a shame if anyone fails to watch this magnificent movie just because it's in a foreign language. Please, don't make such an awful mistake...\r\n\r\nRating: A+",
-          "created_at": "2020-02-16T17:26:34.659Z",
-          "id": "5e497b4a676ce20018001b8c",
-          "updated_at": "2021-06-23T15:58:34.050Z",
-          "url": "https://www.themoviedb.org/review/5e497b4a676ce20018001b8c"
-        },
-        {
-          "author": "JPV852",
-          "author_details": {
-            "name": "",
-            "username": "JPV852",
-            "avatar_path": "/xNLOqXXVJf9m7WngUMLIMFsjKgh.jpg",
-            "rating": 7
-          },
-          "content": "Decent enough dark comedy/thriller, with nice performances and an engaging story, though not entirely sure it was Best Picture worthy though reserving judgment as I've only seen one other nominee, Joker which I loved but not worthy of a BP.\r\n\r\nI don't know, maybe I'm a bit disappointed given the awards the film won and my viewpoint would've been different seeing it a couple weeks back. As it is, had some entertaining and thrilling moments, but emotionally can't say I was invested... **3.75/5**",
-          "created_at": "2020-02-18T19:44:47.181Z",
-          "id": "5e4c3eaf283ed900175abfdd",
-          "updated_at": "2021-06-23T15:58:34.126Z",
-          "url": "https://www.themoviedb.org/review/5e4c3eaf283ed900175abfdd"
-        },
-        {
-          "author": "Stephen Campbell",
-          "author_details": {
-            "name": "Stephen Campbell",
-            "username": "Bertaut",
-            "avatar_path": "/cT0bXfDbdFOJ1gp7XRJ1x0K9itZ.jpg",
-            "rating": 9
-          },
-          "content": "**_An uncategorisable masterpiece_**\r\n\r\n>_We fat all creatures else to fat us, and we fat ourselves for maggots. Your fat king and your lean beggar is but variable service – two dishes, but to one table._\r\n\r\n- William Shakespeare; _The Tragicall Historie of Hamlet Prince of Denmarke_, 4.iii.23-24 (1599-1601)\r\n\r\nWhat is one to make of the utterly uncategorisable and impossible-to-define _Gisaengchung_ [_Parasite_]? Only the third film to win both the Palme d'Or and the Academy Award for Best Picture, after Billy Wilder's _The Lost Weekend_ (1945) and Delbert Mann's _Marty_ (1955), _Parasite_ is one of the best-reviewed films of the century thus far and caused huge waves when it became the first non-English language film to win Best Picture. Co-writer and director Bong Joon-ho also tied with Walt Disney for the most Oscars awarded to one person in one night – four (Best Picture, Best Foreign Language Film, Best Director, and Best Original Screenplay). On top of that, he became the first person in history to win more than three Oscars for a single film. In short, Parasite has had a significant, and relatively unexpected, impact.\r\n\r\nBut what exactly is _Parasite_? Described on its official website as a \"_pitch-black modern fairy-tale_\", even a comprehensive plot summary wouldn't adequately delineate its real nature – part comedy of manners, part social satire, part heist film, part thriller, part horror, part family drama, part farce, part economic treatise, part social realism, part tragedy, part allegory. And that's just the opening scene! It's the _Ulysses_ of cinema, adopting and shedding genres so often and so seamlessly that it effectively becomes its own genre. And, like _Ulysses_, it's exceptional in just about every way – screenplay (co-written by Bong and Han Jin-won), directing, cinematography, _mise en scène_, editing, production design, sound design, score, acting. There's not a weak link here, in a film that achieves that rarest of things – it lives up to the hype.\r\n\r\nThe Kim family are down on their luck. Father Ki-taek (Song Kang-ho), mother Chung-sook (Chang Hyae-jin), daughter Ki-jeong (Park So-dam), and son Ki-woo (Choi Woo-shik) reside in a tiny basement apartment, with their only window looking out onto a popular urination spot in a back alley. With all four unemployed, they eke out a meagre living folding pizza boxes for a nearby restaurant. However, their fortunes change when Ki-Woo meets Min-hyuk (Park Seo-joon), a childhood friend who is now at university. Min-hyuk works as an English tutor for the daughter of a wealthy family, but he's soon to leave Korea, and so suggests that Ki-Woo take over. Armed with a fake diploma created by Ki-jeong on Photoshop, Ki-Woo successfully applies for the job. The Park family, father Dong-ik, (Lee Sun-kyun), mother Yeon-gyo (Cho Yeo-jeong), daughter Da-hye (Jung Ji-so), and son Da-song (Jung Hyeon-jun), welcomes Ki-woo into their lavish home, and upon discovering just how wealthy the Parks are, the Kims hatch an elaborate scheme to oust the Park's current domestic staff and take their places. And so, hiding the fact that they're all related, Ki-taek is hired as a chauffeur, Chung-Sook as a housekeeper, and Ki-jeong as an art therapist for Da-song. However, it doesn't take long before things start to go very, very awry for both families, in ways none of them (or the audience) could ever have imagined.\r\n\r\nWe live in an era where wealth is distributed upwards and the gap between the haves and have-nots is wider than ever. According to inequality.org, the richest 1% of the world's population controls 45% of global wealth. At the same time, adults with less than $10,000 capital make up 64% of the population and control less than 1% of the wealth. In 2018, Oxfam reported that the wealth of the 26 richest people in the world was equal to the combined wealth of the 3.5 billion poorest people. This is the _milieu_ of _Parasite_, a film which taps into some of the same ideological thinking as gave rise to \"_Hell Joseon_\" sentiments, wherein up to 75% of Koreans aged 19-34 want to leave the country. \r\n\r\nObviously enough, Bong's main themes are class division and class conflict, the artificiality of societal hierarchy, and the concomitant social inequality and differentiation in status that makes such a hierarchy possible in the first place. As thoroughly entertaining (and funny) as the film is, it remains, in essence, an economic treatise, albeit with a savagely satirical quality. However, make no mistake, this is a satire with teeth – the hilarity and playfulness of the long first act give way to a darker political vibe in the second, before Bong violently deconstructs his own allegory in the emotionally draining and batshit insane third act, ultimately driving the knife home in an epilogue that's about as different from the film's early scenes as you could imagine. Of course, this is far from the first time Bong has dealt with issues of class, touching obliquely on similar themes in _Sarinui Chueok_ [_Memories of Murder_] (2003), _Gwoemul_ [_The Host_] (2006), and _Madeo_ [_Mother_] (2009). _Parasite_'s engagement with class and economics, however, is far more overt, aligning it with Bong's English-language work, _Snowpiercer_ (2013) and _Okja_ (2015). Never before, however, has he been this caustic, this acerbic, but so too this compassionate, this witty. Indeed, _Parasite_ feels like a culmination, the film to which he's been building for his entire career.\r\n\r\nIn the film's press notes, Bong states;\r\n\r\n>_I think that one way to portray the continuing polarisation and inequality of our society is as a sad comedy. We are living in an era when capitalism is the reigning order, and we have no other alternative. It's not just in Korea, but the entire world faces a situation where the tenets of capitalism cannot be ignored. In the real world, the paths of families like our four unemployed protagonists and the Park family are unlikely ever to cross. The only instance is in matters of employment between classes, as when someone is hired as a tutor or a domestic worker. In such cases there are moments when the two classes come into close enough proximity to feel each other's breath. In this film, even though there is no malevolent intention either side, the two classes are pulled into a situation where the slightest slip can lead to fissures and eruptions. In today's capitalistic society there are ranks and castes that are invisible to the eye. We keep them disguised and out of sight, and superficially look down on class hierarchies as a relic of the past, but the reality is that there are class lines that cannot be crossed._\r\n\r\nIn this manner, the film works as a literalisation of the theory that co-existence between the various classes is becoming increasingly difficult; the Kims and the Parks aren't simply differentiated due to wealth, rather they live in completely different worlds and have vastly different, and largely incompatible, ideologies.\r\n\r\nOne of the most deftly-handled elements of the film is Bong's avoidance of the clichés one so often finds in films dealing with economics – the Kims are by no means the default protagonists, a victimised family immediately worthy of sympathy, whilst the Parks are by no means the default antagonists, a callous family immediately worthy of scorn. Rather, the Parks are depicted as perfectly friendly and pleasant whilst the Kims are shown to be liars and scoundrels. Indeed, it's the Kims who are the more crassly materialistic of the two families – obsessed with their mobile phones and WhatsApp, we first meet them as they're wandering around their apartment, phones held aloft, trying to pick up their neighbour's WiFi signal. Later, as they ingratiate themselves with the Parks and acquire more and more access to a wealthy lifestyle, all four Kims start to carry themselves differently, as if being in such proximity to wealth has had a physiological effect. \r\n\r\nThere are no heroes and villains here – Bong is uninterested in trucking in black and white oppositions because such rigid diametrics aren't the norm in the real world. For all their scheming and lying, the Kims merely con their way into menial jobs, trying to earn enough to make survival a little easier. As for the Parks, their wealth has insulated them from the world of families such as the Kims, but their greatest crimes are disconnection and ignorance, nothing more. At the same time, the Kims are depicted as a far more unified and loving family than the Parks. Although all four Kims regularly occupy the same frame, to the best of my recollection, we never see the four Parks together in the same shot; Da-hye and Da-song rarely leave their rooms, Yeon-gyo spends most of her time in the kitchen and living room, and Dong-ik is seen most regularly in his car. It's a wonderful bit of cinematic shorthand to convey a thematic point, with Bong utilising the visual component of the medium to maximum effect – this is a filmmaker who knows precisely what he's doing.\r\n\r\nIt's in relation to the two family's status as heroes or villains that the film's title is so important. Strictly speaking, the Korean title, \"_기생충_\" (\"gisaengchung\"), means \"helminth\" rather than \"parasite\", but as a helminth is a parasitic worm, the slight difference in the translation isn't a big deal. In any case, a parasitic organism such as a helminth lives in or on a host and takes its nourishment from that host. A simple reading of this is that the Kims are the parasites and the Parks are the hosts, with the Kims feeding off the Parks' wealth and status. However, in a film where nothing is as it seems, things aren't that simple. Bong depicts the Parks as parasites as well – they've been rendered relatively helpless by their wealth, unable to complete basic tasks such as driving or cleaning without the assistant of working-class employees; i.e. they sustain themselves based off of the labour of their servants. And so, just as the Kims feed off the Parks, the Parks feed off the Kims, in what quickly becomes a symbiotic relationship. Concerning this issue, in his Director's Statement, Bong says,\r\n\r\n>_it is increasingly the case in this sad world that humane relationships based on co-existence or symbiosis cannot hold, and one group is pushed into a parasitic relationship with another. In the midst of such a world, who can point their finger at a struggling family, locked in a fight for survival, and call them parasites? It's not that they were parasites from the start. They are our neighbours, friends and colleagues, who have merely been pushed to the edge of a precipice._\r\n\r\nHowever, as strong as the film is narratively and thematically, it also has an aesthetic design to die for. Hong Kyung-pyo's cinematography, for example, is magnificent. Hong also shot Lee Chang-dong's superb _Beoning_ (2018), and the camerawork here has a similar smoothness and restlessness, gliding through the Parks house like it's a fifth member of the Kim family. Lee Ha-jun's production design is also praise-worthy, with the Kims' and Parks' living conditions contrasted in every way; the Parks live in a pristine post-modernist semi-open plan house, accessible only by an electronically controlled gate, and hidden from the street by tall trees and dense shrubs; the Kims, on the other hand, live in a cluttered and dilapidated apartment with barely any room, their toilet situated beside the aforementioned window looking into an alley.\r\n\r\nIt's also in relation to production design wherein one of the film's best metaphors is to be found, which is also a great example of just how much of a masterwork this is, how completely Bong is in control of his craft. As a film at least partly in the tradition of the \"upstairs/downstairs\" subgenre (think James Ivory's _The Remains of the Day_ or Robert Altman's _Gosford Park_), Bong literalises the separation between those above and those below insofar as stairways are a recurring motif. The Kims live in a basement apartment without stairs, mirroring their stagnation and inability to rise in a socio-economic sense. On the other hand, the Parks' lavish home has two main stairways – one going up, the other going down into the cellar. As Ki-jeong and Ki-woo gain more access to Da-song and Da-hye, they start to spend most of their time upstairs. Ki-taek and Chung-sook, however, along with Dong-ik and Yeon-gyo, spend most of their time downstairs, indicating a fissure between the adults and their children. The stairway to the cellar is its own unique animal, with Bong shooting it like he's suddenly directing a horror film (there's a thematic reason for this that I can't go into without spoilers). In this way, he bestows upon it an ominousness that, at first, makes little sense, but ultimately reveals itself to be a spectacular bit of foreshadowing. There's also a third stairway in the Park home, one not revealed until late in the second act, but one which has huge narrative and thematic importance.\r\n\r\n_Parasite_ is a masterpiece, with Bong, operating at the peak of his abilities, never putting a foot wrong. It could have been a self-serving and didactic message-movie – a homily to the honour of the poor or a deconstruction of the unhappiness of the rich – but Bong is far too talented for that, avoiding rhetorical cant, and allowing the film to find its own space. Quite unlike anything I've ever seen, it works as allegory just as well as it works as social realism just as well as it works as comedy just as well as it works as tragedy, and so on. This is cinema as art; it's the best Palme d'Or winner since Terrence Malick's _The Tree of Life_ in 2011 and the best Best Picture winner since Kevin Costner's _Dances with Wolves_ in 1990. Bong is currently working with HBO to develop a limited series English-language adaptation, which fills me with dread, but no matter what happens with that project, no matter how good (or bad) it may be, here in 2020, Parasite has proven itself very much a game-changer, a film that deserves every bit of praise it's received.",
-          "created_at": "2020-02-20T03:02:48.070Z",
-          "id": "5e4df6d89b86160018699c80",
-          "updated_at": "2021-06-23T15:58:34.212Z",
-          "url": "https://www.themoviedb.org/review/5e4df6d89b86160018699c80"
-        },
-        {
-          "author": "rojitasaha",
-          "author_details": {
-            "name": "",
-            "username": "rojitasaha",
-            "avatar_path": null,
-            "rating": null
-          },
-          "content": "First of all it's a masterpiece, it's shows how the higher class actually judge the lower class people. At it looks like a normal story of a family who all are struggling hard to live, but their life gets changed when all four of them one by one get employed in park's house. After sometime we also got to see the frustration and anger of Kim family on park family because they were judged by them.their were no unnecessarily plot twist in the film which led the film very smoothly. All over it's a must watch film.",
-          "created_at": "2020-05-18T12:48:01.363Z",
-          "id": "5ec284019979d20021325ef2",
-          "updated_at": "2021-06-23T15:58:38.179Z",
-          "url": "https://www.themoviedb.org/review/5ec284019979d20021325ef2"
-        },
-        {
-          "author": "Gimly",
-          "author_details": {
-            "name": "Gimly",
-            "username": "Ruuz",
-            "avatar_path": "/xUObnJSvHrFPsIpoDmb1jiQZLq7.jpg",
-            "rating": 8
-          },
-          "content": "\"We all live in the same country... called capitalism.\" \r\n\r\n_Final rating:★★★★ - Very strong appeal. A personal favourite._",
-          "created_at": "2020-05-19T06:48:00.971Z",
-          "id": "5ec3812028723c0020498caf",
-          "updated_at": "2021-06-23T15:58:38.216Z",
-          "url": "https://www.themoviedb.org/review/5ec3812028723c0020498caf"
-        },
-        {
-          "author": "tmdb92312096",
-          "author_details": {
-            "name": "",
-            "username": "tmdb92312096",
-            "avatar_path": null,
-            "rating": 10
-          },
-          "content": "What starts as a seemingly simple premise quickly unfolds into much more. I didn't expect an enhanced perspective into my own life, but that's just what happened. Parasite is a timely analysis of the ever-increasing divide between rich and poor, all while being witty enough to make for an exhilarating ride.",
-          "created_at": "2020-07-31T03:14:17.619Z",
-          "id": "5f238c8943999b00355e819f",
-          "updated_at": "2021-06-23T15:58:41.839Z",
-          "url": "https://www.themoviedb.org/review/5f238c8943999b00355e819f"
-        },
-        {
-          "author": "RustyBoi",
-          "author_details": {
-            "name": "",
-            "username": "RustyBoi",
-            "avatar_path": null,
-            "rating": 10
-          },
-          "content": "One of the funniest and most disturbing films I've ever seen. Probably some of the best cinematography ever. 10/10",
-          "created_at": "2020-08-21T16:51:25.394Z",
-          "id": "5f3ffb8d19ab5900371d852c",
-          "updated_at": "2021-06-23T15:58:42.959Z",
-          "url": "https://www.themoviedb.org/review/5f3ffb8d19ab5900371d852c"
-        },
-        {
-          "author": "r96sk",
-          "author_details": {
-            "name": "",
-            "username": "r96sk",
-            "avatar_path": "/mwR7rFHoDcobAx1i61I3skzMW3U.jpg",
-            "rating": 9
-          },
-          "content": "Despite hearing about this from day dot, I thankfully managed to avoid knowing anything about this other than it's title, director and subsequent success. Boy am I glad, because it's quite the ride!\r\n\r\nNo doubt about it, <em>'Parasite'</em> is a high quality film. It wasn't at all what I had assumed it would be like, it has a much more comedic side to it than I was expecting - and that's a positive. Yet, it's still pretty dark. It's a great mix. The plot is one that is very entertaining to see play out - the ending is particularly nuts.\r\n\r\nThe cast do a fantastic job, especially the main quartet. Song Kang-ho would be my personal standout, I enjoyed watching him throughout. Choi Woo-shik is very good too, as are Park So-dam and Jang Hye-jin. All of the onscreen talent do terrific though, from Cho Yeo-jeong to Lee Jung-eun.\r\n\r\nI don't have any negatives for this, it's a brilliant film. From the cinematography, to the dialogue, to the locations, to the humour. You name it, this produces it on an impressive level.\r\n\r\nNot that I need to say this, given I'm seemingly one of the last few who hadn't, but you must watch this!",
-          "created_at": "2020-11-01T01:40:56.693Z",
-          "id": "5f9e122853866e0039ea1cf1",
-          "updated_at": "2021-06-23T15:58:46.933Z",
-          "url": "https://www.themoviedb.org/review/5f9e122853866e0039ea1cf1"
-        },
-        {
-          "author": "Repo Jack",
-          "author_details": {
-            "name": "Repo Jack",
-            "username": "repojack",
-            "avatar_path": "/3bGlq0gaf6dK3qFYTWcmrimxbbt.jpg",
-            "rating": 10
-          },
-          "content": "<i>Parasite</i> is fantastic. \r\n\r\nIt's clever. It's funny. It's disturbing. And yes, there is a powerful underlying theme of the divide between rich and poor. But the latter is so deftly weaved into the fabric of the story, you really don't think about it much until a fateful scene before the last act. \r\n\r\nIt fully deserved the Oscar for Best Picture and Director. If only for the peach fuzz fight scene.",
-          "created_at": "2020-11-27T06:57:46.743Z",
-          "id": "5fc0a36a4c1d9a004185e12e",
-          "updated_at": "2021-06-23T15:58:48.074Z",
-          "url": "https://www.themoviedb.org/review/5fc0a36a4c1d9a004185e12e"
-        },
-        {
-          "author": "fourfridays",
-          "author_details": {
-            "name": "",
-            "username": "fourfridays",
-            "avatar_path": null,
-            "rating": 8
-          },
-          "content": "Loved it! It's a different kind of movie from your usual run of the mill kind. The twists and turns in the storyline keep you engaged. Recommended!",
-          "created_at": "2021-08-16T19:41:27.132Z",
-          "id": "611abf67006b010046aaf5e0",
-          "updated_at": "2021-08-17T00:53:59.038Z",
-          "url": "https://www.themoviedb.org/review/611abf67006b010046aaf5e0"
-        }
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=bM9QabAojCg",
-      "cast": "Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong, Choi Woo-shik, Park So-dam",
-      "category": "top_rated",
-      "createdAt": "2025-05-13T01:11:16.320Z"
-    },
-    {
-      "id": "977294",
-      "adult": false,
-      "backdrop_path": "/jRvhP4AfFnJ03lCQhp1fie7XPSd.jpg",
-      "original_language": "en",
-      "original_title": "Tin Soldier",
-      "overview": "An ex-special forces operative seeks revenge against a cult leader who has corrupted his former comrades, the Shinjas. This leader, known as The Bokushi, promises veterans a purpose and protection, but is revealed to be a destructive influence. The ex-soldier, Nash Cavanaugh, joins forces with military operative Emmanuel Ashburn to infiltrate the Bokushi's fortress and expose his reign of terror",
-      "popularity": 357.722,
-      "poster_path": "/lFFDrFLXywFhy6khHes1LCFVMsL.jpg",
-      "release_date": "2025-05-22",
-      "title": "Tin Soldier",
-      "vote_average": 0,
-      "vote_count": 0,
-      "poster_url": "https://image.tmdb.org/t/p/original/lFFDrFLXywFhy6khHes1LCFVMsL.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/original/jRvhP4AfFnJ03lCQhp1fie7XPSd.jpg",
-      "genres": [
-        "Action",
-        "Thriller"
-      ],
-      "reviews": [
-        {
-          "author": "MovieGuys",
-          "author_details": {
-            "name": "",
-            "username": "MovieGuys",
-            "avatar_path": null,
-            "rating": 3
-          },
-          "content": "Simply put a shambolic, disjointed, mess.\r\n\r\n\"Tin Solider\" has little to redeem itself. Lets start with a appallingly chaotic, disorganised script, that feels like narrative confetti. Just as awful, is the, often times, unwatchable visuals. Blurry, overly dark, jarringly unclear, especially the action sequences. Not helped either by generally dismal CGI, that's not fooling anyone.\r\n\r\nActing is decent but the aforementioned impediments, are so pronounced, that they stifle the best efforts, from the cast.\r\n\r\nIn summary, \"Tin Soldier\" is an experimental disaster, that should never have been green lighted. One to avoid.",
-          "created_at": "2025-05-11T07:08:42.605Z",
-          "id": "68204cfa609728336aa15bd3",
-          "updated_at": "2025-05-11T07:13:59.942Z",
-          "url": "https://www.themoviedb.org/review/68204cfa609728336aa15bd3"
-        },
-        {
-          "author": "AA",
-          "author_details": {
-            "name": "AA",
-            "username": "aa",
-            "avatar_path": null,
-            "rating": 1
-          },
-          "content": "FUCK",
-          "created_at": "2025-05-14T01:44:44.336Z",
-          "id": "na6rb4zli"
-        }
-      ],
-      "trailer_url": null,
-      "cast": "Scott Eastwood, Robert De Niro, Jamie Foxx, John Leguizamo, Nora Arnezeder",
-      "category": "popular",
-      "createdAt": "2025-05-13T01:11:00.712Z"
-    },
-    {
-      "id": "1241436",
-      "adult": false,
-      "backdrop_path": "/cJvUJEEQ86LSjl4gFLkYpdCJC96.jpg",
-      "original_language": "en",
-      "original_title": "Warfare",
-      "overview": "A platoon of Navy SEALs embarks on a dangerous mission in Ramadi, Iraq, with the chaos and brotherhood of war retold through their memories of the event.",
-      "popularity": 574.5249,
-      "poster_path": "/j8tqBXwH2PxBPzbtO19BTF9Ukbf.jpg",
-      "release_date": "2025-04-09",
-      "title": "Warfare",
-      "vote_average": 7.2,
-      "vote_count": 224,
-      "poster_url": "https://image.tmdb.org/t/p/original/j8tqBXwH2PxBPzbtO19BTF9Ukbf.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/original/cJvUJEEQ86LSjl4gFLkYpdCJC96.jpg",
-      "genres": [
-        "War",
-        "Action"
-      ],
-      "reviews": [
-        {
-          "author": "CinemaSerf",
-          "author_details": {
-            "name": "CinemaSerf",
-            "username": "Geronimo1967",
-            "avatar_path": "/yz2HPme8NPLne0mM8tBnZ5ZWJzf.jpg",
-            "rating": 7
-          },
-          "content": "A squad of American soldiers seemingly randomly select an house in Ramadi and having relocated it’s sleeping occupants to the ground floor, set up a sniper station from where they can monitor the goings on around them. Initially, this all looks harmless enough as the Iraqi locals go about their business, but gradually the spotters become suspicious of repetitive activity, the odd person who seems to be snooping on them - and then, well all hell breaks loose leaving them facing an existential threat that will test their mettle, their equipment and require some feats of legerdemain if they are to survive long enough to be rescued. There is quite some intensity to this drama as the young men under siege must each deal with their fears, strengths and weaknesses under a constant stream of fire. Will Poulter’s “Erik” leads the team, but the best effort for me came from his comms man “Ray” (D’Pharoah Woon-A-Tai) and, though sparingly, from Kit Connor’s rookie “Tommy” who, like us watching, had no idea what they were doing in this house and what the purpose of their mission actually was in the first place. There isn’t so much a script as an increasingly nervous dialogue that disintegrates as their predicament becomes more perilous and the photography and particularly the audio serve really well in conveying a sense of the lethally claustrophobic atmosphere in which these men had to function. Real veterans wrote the story, advised the production and that shows in something that is certainly incomplete from a narrative perspective, but is uncomfortably enthralling to watch and graphically displays the horrors of urban warfare.",
-          "created_at": "2025-04-20T14:18:59.522Z",
-          "id": "68050253276bf64e41aa882b",
-          "updated_at": "2025-04-20T14:22:31.333Z",
-          "url": "https://www.themoviedb.org/review/68050253276bf64e41aa882b"
-        },
-        {
-          "author": "r96sk",
-          "author_details": {
-            "name": "",
-            "username": "r96sk",
-            "avatar_path": "/mwR7rFHoDcobAx1i61I3skzMW3U.jpg",
-            "rating": 8
-          },
-          "content": "<em>'Warfare'</em> ends up as expected: bleak and miserable. The sound design is truly outstanding, such fine work ensures that you hear and feel everything. The plot being told in real time makes it rather captivating too, the tone of either trepidation or torment is omnipresent.\r\n\r\nWell, I say omnipresent, that's taking out the opening scene. I was not expecting that! Very fun though and a good way to show a snapshot of the camaraderie. It shouldn't work because it's not like it matches the rest of the film, but I gotta say I really loved it. What a tune, by the way.\r\n\r\nIt's a fairly stacked cast list, from Will Poulter to Joseph Quinn to Charles Melton to Michael Gandolfini to D'Pharaoh Woon-A-Tai. No-one actually stands out individually, but I think that's entirely a good thing because it obviously isn't a story about any one person - it's about all of them.",
-          "created_at": "2025-04-25T20:23:32.198Z",
-          "id": "680bef4415a1d5a614ab8ff1",
-          "updated_at": "2025-04-25T20:24:11.552Z",
-          "url": "https://www.themoviedb.org/review/680bef4415a1d5a614ab8ff1"
-        },
-        {
-          "author": "MovieGuys",
-          "author_details": {
-            "name": "",
-            "username": "MovieGuys",
-            "avatar_path": null,
-            "rating": 7
-          },
-          "content": "\"Warfare\" is as a simple statement on the reality of conflict.\r\n\r\nWarfare can be dull, even bureaucratic, with its own language, spoken over radio in codes. Equally, its frenetic, violent and horribly visceral. \r\n\r\nWe see all of these aspects of war, in this film. I'll admit its depressing, sad, underlining in blood, the wastefulness of war. Mind you, that's what war is. Not heroic, symphonic, grandiose. \r\n\r\nSuffice to say, I liked this film. Its unpretentious and makes you question, not only the need for war but attempts to make it appear noble, when clearly, its nothing of the kind.\r\n\r\nIn summary, a realistic portrayal of the true face of war. Something every young person, thinking of joining the military, should watch.",
-          "created_at": "2025-05-07T09:51:18.112Z",
-          "id": "681b2d164aecedda1c701596",
-          "updated_at": "2025-05-07T09:53:07.957Z",
-          "url": "https://www.themoviedb.org/review/681b2d164aecedda1c701596"
-        },
-        {
-          "author": "Manuel São Bento",
-          "author_details": {
-            "name": "Manuel São Bento",
-            "username": "msbreviews",
-            "avatar_path": null,
-            "rating": 7
-          },
-          "content": "FULL SPOILER-FREE REVIEW @ https://movieswetextedabout.com/warfare-movie-review-garland-and-mendoza-strip-the-genre-to-its-rawest-form/\r\n\r\n\"Warfare is a film you admire more than you enjoy. Its anti-narrative structure, slow pacing, and lack of strong central figures make it difficult to revisit - but impossible to forget.\r\n\r\nIt's a remarkable display of technical realism, a brutally honest recreation of a war zone, and a testament to cinema's power when it refuses to play by the rules. Alex Garland and Ray Mendoza may not have crafted a universally captivating masterpiece, but they've created something undeniably authentic.\r\n\r\nAnd sometimes, that's enough.\"\r\n\r\nRating: B",
-          "created_at": "2025-05-09T10:21:12.037Z",
-          "id": "681dd718c901137e2b6e3c12",
-          "updated_at": "2025-05-09T10:21:12.124Z",
-          "url": "https://www.themoviedb.org/review/681dd718c901137e2b6e3c12"
-        }
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=JER0Fkyy3tw",
-      "cast": "D'Pharaoh Woon-A-Tai, Will Poulter, Cosmo Jarvis, Kit Connor, Finn Bennett",
-      "category": "popular",
-      "createdAt": "2025-05-13T01:10:59.042Z"
-    },
-    {
-      "id": "1323784",
-      "adult": false,
-      "backdrop_path": "/zXUxcXnBPHF1cD0IHi4KUpsNvF4.jpg",
-      "original_language": "es",
-      "original_title": "Mala influencia",
-      "overview": "An ex-con gets a fresh start when hired to protect a wealthy heiress from a stalker — but their chemistry is hard to resist as they grow closer.",
-      "popularity": 178.1265,
-      "poster_path": "/ghhooCOqQDqC6vhS1SVN2tCE0k8.jpg",
-      "release_date": "2025-01-24",
-      "title": "Bad Influence",
-      "vote_average": 5.758,
-      "vote_count": 62,
-      "poster_url": "https://image.tmdb.org/t/p/original/ghhooCOqQDqC6vhS1SVN2tCE0k8.jpg",
-      "backdrop_url": "https://image.tmdb.org/t/p/original/zXUxcXnBPHF1cD0IHi4KUpsNvF4.jpg",
-      "genres": [
-        "Thriller",
-        "Drama",
-        "Romance"
-      ],
-      "reviews": [],
-      "trailer_url": "https://www.youtube.com/watch?v=412WAdJM7sY",
-      "cast": "Alberto Olmo, Eléa Rochera, Enrique Arce, Mirela Balić, Farid Bechara",
-      "category": "popular",
-      "createdAt": "2025-05-13T01:11:04.613Z"
+      "trailer_url": "https://www.youtube.com/watch?v=bYopWaT8Sr0",
+      "cast": "Tsuyoshi Kusanagi, Machiko Ono, Jun Kaname, Non, Kanata Hosoda",
+      "category": "now_playing",
+      "createdAt": "2025-05-13T01:11:20.437Z"
     },
     {
       "id": "986056",
@@ -13865,25 +13260,324 @@
       "createdAt": "2025-05-13T01:10:59.675Z"
     },
     {
-      "title": "TEST",
-      "original_title": "TEST",
-      "poster_url": "http://localhost:5173/admin/0/editSeries",
-      "backdrop_url": "http://localhost:5173/admin/0/editSeries",
-      "release_date": "2025-05-14T00:00:00.000Z",
-      "original_language": "TEST",
-      "genres": [
-        "comedy"
-      ],
-      "overview": "",
-      "vote_average": 4,
-      "vote_count": 6,
-      "popularity": 5,
-      "reviews": [],
+      "id": "155",
       "adult": false,
-      "trailer_url": "http://localhost:5173/admin/0/editSeries",
-      "cast": "TEST",
-      "category": "upcoming",
-      "id": "78616bf3-bab4-4baa-98c5-d66c64309abb"
+      "backdrop_path": "/oOv2oUXcAaNXakRqUPxYq5lJURz.jpg",
+      "original_language": "en",
+      "original_title": "The Dark Knight",
+      "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+      "popularity": 29.7107,
+      "poster_path": "/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+      "release_date": "2008-07-16",
+      "title": "The Dark Knight",
+      "vote_average": 8.519,
+      "vote_count": 33816,
+      "poster_url": "https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/oOv2oUXcAaNXakRqUPxYq5lJURz.jpg",
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "reviews": [
+        {
+          "author": "tricksy",
+          "author_details": {
+            "name": "",
+            "username": "tricksy",
+            "avatar_path": null,
+            "rating": null
+          },
+          "content": "Excellent movie. Best of the trilogy. Lovely music. Nolan is a genius. So is Heath Ledger.",
+          "created_at": "2015-06-09T07:21:30.464Z",
+          "id": "557693fac3a368569a003fab",
+          "updated_at": "2021-06-23T15:57:35.053Z",
+          "url": "https://www.themoviedb.org/review/557693fac3a368569a003fab"
+        },
+        {
+          "author": "talisencrw",
+          "author_details": {
+            "name": "",
+            "username": "talisencrw",
+            "avatar_path": null,
+            "rating": 10
+          },
+          "content": "This has no competition. It is the very finest comic-book character movie ever made. Knowing the Burton, Donner and Nolan filmic adaptations of Batman and Superman exist helps me to sleep at night. They are Exhibit A of 'How to Make a Comic-Book Movie'. Nothing else has ever come even remotely close. These seven films (I include 'Superman II' because it was mostly Donner's work)--and Nolan's trilogy especially--are what I imagine a great director like Kubrick, Hitchcock or Kurosawa would have come up with, if they had ever been asked to make a Superman or Batman movie. They are the easiest for an audience to identify with because in these the scripts most approximate human emotions and the typical conundrums of the human experience--in short, are the closest, in a good way, they come to the complexities of the human condition. Peerless.",
+          "created_at": "2016-05-25T23:49:13.042Z",
+          "id": "574639f9c3a36806b00002c1",
+          "updated_at": "2021-06-23T15:57:47.911Z",
+          "url": "https://www.themoviedb.org/review/574639f9c3a36806b00002c1"
+        },
+        {
+          "author": "erickprieto",
+          "author_details": {
+            "name": "",
+            "username": "erickprieto",
+            "avatar_path": "/clCvYPqM4EgLo9msno2xSPSGNJ6.jpg",
+            "rating": null
+          },
+          "content": "Perhaps the best Batman movie of all times. I think that this Batman trilogy presents the well-known superhero history in an unexpected way with the capable to maintain on the edge of the chair all time.\r\n**Heath Ledger** present an excellent impersonification of a psychopath.\r\nAll support roles are magnificent.\r\nAnd Bruce Wayne role played by Christian Bale, shows a human being behind of the mask.",
+          "created_at": "2018-11-06T09:42:05.673Z",
+          "id": "5be161edc3a3680a00009915",
+          "updated_at": "2021-06-23T15:58:14.241Z",
+          "url": "https://www.themoviedb.org/review/5be161edc3a3680a00009915"
+        },
+        {
+          "author": "moubledian",
+          "author_details": {
+            "name": "",
+            "username": "moubledian",
+            "avatar_path": null,
+            "rating": null
+          },
+          "content": "I used to leave a theatre after seeing a highly anticipated movie, specifically a sequel, and be so revved up about what I saw that I would declare that movie to be the best of a series. After each of the prequel \"Star Wars\" films, I rated that one the best, as good as any of the originals...for a time, until my opinion balanced out and I had a more well-rounded take. For that reason, I steer away from that mindset, and did for \"Dark Knight\".\r\n\r\nThough my opinion is solidifying already after having seen a Warner Bros. screening last night, \"Dark Knight\" ably stands on its own with or without \"Batman Begins\". At a two and a half hour runtime, it's definitely an epic of a movie, but one that never runs out of gas. A delightful addition to this experience was a healthy amount of IMAX footage, which significantly adds to the feel of being on a personal, and gruesome, tour of Gotham City.\r\n\r\nChristian Bale plays such a well rounded Batman and Bruce Wayne, qualities that none of those who have donned the cowl before him have pulled off. I still have to remember that Bale is British since he speaks with such a spot on American accent. Bale has a particular slurring lisp that serves him quite well, charmingly for Bruce Wayne and threateningly for Batman.\r\n\r\nCountering him is the late Heath Ledger, who plays such a scary and creepy Joker that I found it impossible to NOT have chills half the time I saw him on screen. What really separates this brand of Joker from Jack Nicholson's portrayal is true unpredictability. It's obvious that, to be a good guy and think like the Joker, it really takes a toll, and it sure isn't easy. How exactly does one take him down when he's woven his harebrained plot around multiple hostages, explosives, or disappearing parlor tricks?\r\n\r\nInitially, I was uneasy about how the character of Harvey Dent would be handled. In my mind, there was really only one faithful portrayal of him, and that could be found in the \"Batman\" animated series of the early 90s. As well as Tommy Lee Jones COULD have handled him in \"Batman Forever\", he certainly did not, though it still was a highlight of that movie. Aaron Eckhart ably assumes the mantle here, delivering a performance out of this world, easily on par with the Batman animated series.\r\n\r\nBe it known, this caped avenger stands for the good of Gotham City that the police force and its counterparts can't represent, the good that has no jurisdiction, no procedures...and no rules, save for one. I can only hope that we've seen just the prelude to the Dark Knight's upcoming legendary battles with the worst of Gotham City's dark underside.\r\n\r\n\"The Dark Knight\" gets a solid 10 of 10 stars.\r\n\r\nI used to leave a theatre after seeing a highly anticipated movie, specifically a sequel, and be so revved up about what I saw that I would declare that movie to be the best of a series. After each of the prequel \"Star Wars\" films, I rated that one the best, as good as any of the originals...for a time, until my opinion balanced out and I had a more well-rounded take. For that reason, I steer away from that mindset, and did for \"Dark Knight\".\r\n\r\nThough my opinion is solidifying already after having seen a Warner Bros. screening last night, \"Dark Knight\" ably stands on its own with or without \"Batman Begins\". At a two and a half hour runtime, it's definitely an epic of a movie, but one that never runs out of gas. A delightful addition to this experience was a healthy amount of IMAX footage, which significantly adds to the feel of being on a personal, and gruesome, tour of Gotham City.\r\n\r\nChristian Bale plays such a well rounded Batman and Bruce Wayne, qualities that none of those who have donned the cowl before him have pulled off. I still have to remember that Bale is British since he speaks with such a spot on American accent. Bale has a particular slurring lisp that serves him quite well, charmingly for Bruce Wayne and threateningly for Batman.\r\n\r\nCountering him is the late Heath Ledger, who plays such a scary and creepy Joker that I found it impossible to NOT have chills half the time I saw him on screen. What really separates this brand of Joker from Jack Nicholson's portrayal is true unpredictability. It's obvious that, to be a good guy and think like the Joker, it really takes a toll, and it sure isn't easy. How exactly does one take him down when he's woven his harebrained plot around multiple hostages, explosives, or disappearing parlor tricks?\r\n\r\nInitially, I was uneasy about how the character of Harvey Dent would be handled. In my mind, there was really only one faithful portrayal of him, and that could be found in the \"Batman\" animated series of the early 90s. As well as Tommy Lee Jones COULD have handled him in \"Batman Forever\", he certainly did not, though it still was a highlight of that movie. Aaron Eckhart ably assumes the mantle here, delivering a performance out of this world, easily on par with the Batman animated series.\r\n\r\nBe it known, this caped avenger stands for the good of Gotham City that the police force and its counterparts can't represent, the good that has no jurisdiction, no procedures...and no rules, save for one. I can only hope that we've seen just the prelude to the Dark Knight's upcoming legendary battles with the worst of Gotham City's dark underside.\r\n\r\n\"The Dark Knight\" gets a solid 10 of 10 stars.\r\n\r\nI used to leave a theatre after seeing a highly anticipated movie, specifically a sequel, and be so revved up about what I saw that I would declare that movie to be the best of a series. After each of the prequel \"Star Wars\" films, I rated that one the best, as good as any of the originals...for a time, until my opinion balanced out and I had a more well-rounded take. For that reason, I steer away from that mindset, and did for \"Dark Knight\".\r\n\r\nThough my opinion is solidifying already after having seen a Warner Bros. screening last night, \"Dark Knight\" ably stands on its own with or without \"Batman Begins\". At a two and a half hour runtime, it's definitely an epic of a movie, but one that never runs out of gas. A delightful addition to this experience was a healthy amount of IMAX footage, which significantly adds to the feel of being on a personal, and gruesome, tour of Gotham City.\r\n\r\nChristian Bale plays such a well rounded Batman and Bruce Wayne, qualities that none of those who have donned the cowl before him have pulled off. I still have to remember that Bale is British since he speaks with such a spot on American accent. Bale has a particular slurring lisp that serves him quite well, charmingly for Bruce Wayne and threateningly for Batman.\r\n\r\nCountering him is the late Heath Ledger, who plays such a scary and creepy Joker that I found it impossible to NOT have chills half the time I saw him on screen. What really separates this brand of Joker from Jack Nicholson's portrayal is true unpredictability. It's obvious that, to be a good guy and think like the Joker, it really takes a toll, and it sure isn't easy. How exactly does one take him down when he's woven his harebrained plot around multiple hostages, explosives, or disappearing parlor tricks?\r\n\r\nInitially, I was uneasy about how the character of Harvey Dent would be handled. In my mind, there was really only one faithful portrayal of him, and that could be found in the \"Batman\" animated series of the early 90s. As well as Tommy Lee Jones COULD have handled him in \"Batman Forever\", he certainly did not, though it still was a highlight of that movie. Aaron Eckhart ably assumes the mantle here, delivering a performance out of this world, easily on par with the Batman animated series.\r\n\r\nBe it known, this caped avenger stands for the good of Gotham City that the police force and its counterparts can't represent, the good that has no jurisdiction, no procedures...and no rules, save for one. I can only hope that we've seen just the prelude to the Dark Knight's upcoming legendary battles with the worst of Gotham City's dark underside.\r\n\r\n\"The Dark Knight\" gets a solid 10 of 10 stars.",
+          "created_at": "2019-03-23T06:05:56.233Z",
+          "id": "5c95ccc40e0a2645f151d76d",
+          "updated_at": "2021-06-23T15:58:19.727Z",
+          "url": "https://www.themoviedb.org/review/5c95ccc40e0a2645f151d76d"
+        },
+        {
+          "author": "tmdb22590444",
+          "author_details": {
+            "name": "",
+            "username": "tmdb22590444",
+            "avatar_path": null,
+            "rating": 10
+          },
+          "content": "One of the best movies of all time. Christopher Nolan has brought us the Batman trilogy that it made it feel it could happen today. Christian Bale returns as Batman, was able to perform as wonderfully as he did in Batman Begins. The one person that ultimately stole the show had to be the late Heath Ledger who played as the Joker. His performance as a psychotic clown terrorizing Gotham City was one of the best performance as a superhero villain. One of the best parts of the Joker was when he was telling his victims on how “he got his scars?”. Another great part was when he kidnapped a police officer and he was recording it while scaring the man and also giving a warning to Batman. The supporting actor and actresses did a good job of delivering the story. I was disappointed that Katie Holmes did not return as Rachael Dawes but the actress how played as her Maggie Gyllenhaal did a really good job. One of the best parts of Christopher Nolan is that in every movie of his, the cinematography would look amazing and this movie is no exception.",
+          "created_at": "2019-05-03T05:43:10.850Z",
+          "id": "5ccbd4ee0e0a262fcd009b52",
+          "updated_at": "2021-06-23T15:58:21.563Z",
+          "url": "https://www.themoviedb.org/review/5ccbd4ee0e0a262fcd009b52"
+        },
+        {
+          "author": "tmdb79614358",
+          "author_details": {
+            "name": "",
+            "username": "tmdb79614358",
+            "avatar_path": null,
+            "rating": 10
+          },
+          "content": "A Masterpiece!!! I Love how The Dark Knight shows to me the \"Dark & Gritty Tone\". Overall, Nolan give us the Game changing, best superhero film OF ALL TIME. For me it's 10/10",
+          "created_at": "2020-11-30T14:22:09.262Z",
+          "id": "5fc50011420228003dc3d744",
+          "updated_at": "2021-06-23T15:58:48.204Z",
+          "url": "https://www.themoviedb.org/review/5fc50011420228003dc3d744"
+        },
+        {
+          "author": "EDSR",
+          "author_details": {
+            "name": "",
+            "username": "EDSR",
+            "avatar_path": null,
+            "rating": 3
+          },
+          "content": "A sickening, borderline fascist film that is simultaneously dull and harmful. The editing represents that of an anti-pirate commercial and the politics are beyond reprehensible. The film ends with a monologue about how violent law-enforcement and brutality is what the country needs, but does not deserve. Nolan clearly did not intend for any subtext, yet that is not an excuse, if anything, that makes it worse. He includes these scenes to make the film more dark and edgy, yet there are people, from suppressed countries, who have to live through the hardships of violence from law-enforcers and dictatorship every day, and in his obliviousness, Nolan thinks that using this in a superhero film is a good excuse for self-importance. He is a war profiteer, and exploiter, and this is nothing short of disgusting.",
+          "created_at": "2021-09-13T10:03:55.272Z",
+          "id": "613f220ba6ddcb002c698ab8",
+          "updated_at": "2021-09-20T16:28:41.430Z",
+          "url": "https://www.themoviedb.org/review/613f220ba6ddcb002c698ab8"
+        },
+        {
+          "author": "AstroNoud",
+          "author_details": {
+            "name": "",
+            "username": "AstroNoud",
+            "avatar_path": "/6zLnrhVdSDzTjhwjKxE5xQdk2Wu.jpg",
+            "rating": 10
+          },
+          "content": "Unforgettable crime film with good dialogue, thrilling action and chase scenes and once again a magnificent cast (most notably a terrifically terrifying Ledger) and superb score.\r\n\r\n10/10",
+          "created_at": "2022-02-26T21:06:50.918Z",
+          "id": "621a966ad7a70a00430d4c21",
+          "updated_at": "2022-02-26T21:06:50.918Z",
+          "url": "https://www.themoviedb.org/review/621a966ad7a70a00430d4c21"
+        },
+        {
+          "author": "CinemaSerf",
+          "author_details": {
+            "name": "CinemaSerf",
+            "username": "Geronimo1967",
+            "avatar_path": "/yz2HPme8NPLne0mM8tBnZ5ZWJzf.jpg",
+            "rating": 7
+          },
+          "content": "Heath Ledger is outstanding in this follow up to the 2006 \"Batman Begins\" outing for the caped crusader. His portrayal of the malevolent \"Joker' is confident and highly entertaining, treading a fine line between supreme intellect and total insanity with considerable aplomb. He comes back to terrorise \"Gotham\" after \"Batman\" (Christian Bale), \"Gordon\" (Gary Oldman) - now Commissioner in charge of the police force, and newly installed District Attorney \"Dent\" (Aaron Eckhart) had made progress getting the criminals off the street. The \"Joker\", meantime, decides that the best strategy is to rob the mob - and pitching them all against each other, and with the help of the duplicitous \"Lau\" (Chin Han) manages to secure enough of their funds to initiate a campaign of lawlessness that is ruthless, manipulative and good fun to watch. Not only has the man in black his new, potent, nemesis to deal with - but he also begins to realise that his childhood sweetheart \"Rachel\" (this time Maggie Gyllenhaal) is drifting into the arms of the new DA. it is also pretty clear that they are both now proving to be an useful additional weapon in the armoury of his enemy who knows, increasingly, which buttons to press to cause maximum anxiety among those who would bring him down. It's over 2½ hours long, but really does fly by as the quickly paced action really does kick in right from the start. The story is dark and gritty but the pace isn't ponderous and moody - Ledger exudes a sense of peril throughout the whole thing, but that has an edge to it - a sophistication that plays well against the flawed superhero who is increasingly having to identify and cope with his own demons. Sir Michael Caine pops up now and again as his shrewd butler \"Alfred\", always striving to keep his boss on the right side of sanity, and Morgan Freeman continues to feature (sparingly) and his quartermaster. On that latter front, there are loads of new gadgets that still have that element of plausibility to them (no super-powers!). On balance I think I still preferred the first film, but as sequels go - this takes, and will take, some beating. On a big screen in a packed cinema, it's just a great experience.",
+          "created_at": "2022-07-14T06:48:17.528Z",
+          "id": "62cfbc31394a8704ae5c02a3",
+          "updated_at": "2022-07-14T06:48:17.528Z",
+          "url": "https://www.themoviedb.org/review/62cfbc31394a8704ae5c02a3"
+        },
+        {
+          "author": "The Movie Mob",
+          "author_details": {
+            "name": "The Movie Mob",
+            "username": "mooney240",
+            "avatar_path": "/blEC280vq31MVaDcsWBXuGOsYnB.jpg",
+            "rating": 10
+          },
+          "content": "**Overall : A cinematic marvel and once-in-a-decade masterpiece.**\r\n\r\nThis isn't simply a superhero movie or a Christopher Nolan film. The Dark Knight is a masterpiece. A perfect film. An epic scale with magnificent action pieces, oscar-winning performances, incredible writing, excellent pacing, dazzling special effects, and the list goes on and on, including the set design, costumes, and more. But, Christopher Nolan did more than make the greatest superhero movie of all time. He made one of the greatest movies of all time! All this is elevated further by Heath Ledger's once-in-a-lifetime portrayal of the Joker. Ledger was born for this role with a performance in league with Anthony Hopkins' Hannibal Lecter or Val Kilmer's Doc Holliday.",
+          "created_at": "2022-08-19T23:15:37.597Z",
+          "id": "63001999097c49007f5fced9",
+          "updated_at": "2022-09-03T15:17:20.030Z",
+          "url": "https://www.themoviedb.org/review/63001999097c49007f5fced9"
+        },
+        {
+          "author": "drystyx",
+          "author_details": {
+            "name": "",
+            "username": "drystyx",
+            "avatar_path": "/hLLsAvAnVT0cFU7JuuaaItTWXv8.jpg",
+            "rating": 1
+          },
+          "content": "Even worse than Tim Burton's Batman, although obviously copying the neo Nazi ideology of \"kill all the brunettes you can in a movie\".\r\nThis is so predictable and so poorly written that it boggles the mind. Yet there is a fan base of what can only be described as neo Nazis. I guess those fans were poor cuckolds who got jilted by too many brunettes at a young age, and they couldn't get over it.\r\nThat's about the entire story here. Oh, the Joker kills anything he sees. Whoopee. And he's invulnerable. And he's a demigod who can only be beaten by another demigod.\r\nSo, we've got traditional mundane Greek heroes and villains here, just like most Hollywood movies.\r\nUnfortunately, the fans of these traditional Hollywood movies are the loudest people on Earth, and the biggest control freaks. It's ridiculous to believe there are actually this big a percentage of fans for this kind of depressing Hollywood formula movie making, but if you look at Imdb's top 250, you see such movies make up over half of the top 250. Are they voted up because control freaks vote more than non control freaks? Or are they voted up because control freaks use many fake user names? Probably both, which explains why over half of the top 250 are nothing more than Greek traditional idolizations of control freaks.\r\nOh, and Batman turns totally gay, which would be okay if he'd admit it, but he's given the choice of saving a man from death or a hot woman from death, and he chooses to save the man. This isn't any real Batman. It's just another contrived story line for the Nolan Nazi merit badge. They are not even subtle. They bang you over the head with their worship of Adolf and Eva. \r\nGod help the world if this garbage still has a fan base fifty years from now. But it could happen. We may have drug addicts and meth heads around for even longer than that, praising the hate and feeding the hate. It would be nice if someone made a real Batman movie with a real story line involving some degree of motivation.",
+          "created_at": "2023-04-18T19:52:54.996Z",
+          "id": "643ef51668b7660524ee929b",
+          "updated_at": "2023-04-18T19:52:55.078Z",
+          "url": "https://www.themoviedb.org/review/643ef51668b7660524ee929b"
+        },
+        {
+          "author": "Andre Gonzales",
+          "author_details": {
+            "name": "Andre Gonzales",
+            "username": "SoSmooth1982",
+            "avatar_path": "/ast1oGYDI7Li9daLuOV4UxGiXj.jpg",
+            "rating": 7
+          },
+          "content": "I enjoyed watching the Dark Knight. They were at least able to keep the same batman from the the last one made too.",
+          "created_at": "2023-04-25T20:12:25.938Z",
+          "id": "64483429b76cbb0492a3bf0f",
+          "updated_at": "2023-04-25T20:12:26.017Z",
+          "url": "https://www.themoviedb.org/review/64483429b76cbb0492a3bf0f"
+        },
+        {
+          "author": "James",
+          "author_details": {
+            "name": "James",
+            "username": "JN2012",
+            "avatar_path": "/mgNCdh78RtrS3LctrrhD4bUQuQ6.jpg",
+            "rating": 8
+          },
+          "content": "If I can hold my pee for a whole two and a half hours rewatching a film I’ve already seen then I love it.",
+          "created_at": "2023-10-14T16:31:32.429Z",
+          "id": "652ac2641511aa013886872f",
+          "updated_at": "2023-10-19T02:26:50.433Z",
+          "url": "https://www.themoviedb.org/review/652ac2641511aa013886872f"
+        },
+        {
+          "author": "maxim",
+          "author_details": {
+            "name": "maxim",
+            "username": "thiolier",
+            "avatar_path": "/gUUfntpygALYpWvjejaE2YK6cLC.jpg",
+            "rating": 10
+          },
+          "content": "I'm deeply in romantical love with the joker. this movie made my delusions worse",
+          "created_at": "2024-12-13T19:49:19.458Z",
+          "id": "675c8fbf73e957a01a87c522",
+          "updated_at": "2025-02-03T16:01:42.787Z",
+          "url": "https://www.themoviedb.org/review/675c8fbf73e957a01a87c522"
+        },
+        {
+          "author": "RalphRahal",
+          "author_details": {
+            "name": "",
+            "username": "RalphRahal",
+            "avatar_path": null,
+            "rating": 10
+          },
+          "content": "The Dark Knight (2008), directed by Christopher Nolan, isn’t just another superhero film—it’s a gripping piece of cinema that balances action, emotion, and a deep exploration of morality and chaos. It’s the kind of movie that lingers with you, not because of its spectacle, but because of the questions it asks and the unforgettable performances it delivers. Chief among those is Heath Ledger’s Joker, a portrayal that reshaped how we see villains.\r\n\r\nLedger’s performance as the Joker is nothing short of extraordinary. He’s chaotic and unpredictable, yet his presence is magnetic—every moment he’s on screen feels alive with tension. From his unsettling voice to his haunting laugh, he created a character that’s terrifyingly human yet larger than life. Ledger didn’t just act the part; he became the Joker, and it’s a performance that still sends chills down your spine. It’s no wonder he was awarded a posthumous Oscar—this wasn’t just a role; it was a transformation.\r\n\r\nChristian Bale continues to bring depth to Bruce Wayne, exploring his inner conflict and the weight of his decisions as Gotham’s protector. Aaron Eckhart as Harvey Dent adds a tragic layer to the story, showing how even the noblest intentions can be corrupted. Gary Oldman, Michael Caine, and Morgan Freeman bring warmth and stability to a world teetering on the edge of chaos.\r\n\r\nWhat really sets The Dark Knight apart, though, is Nolan’s storytelling. He doesn’t just focus on action—though the film has some of the most intense sequences you’ll see—but on creating a story that makes you think. The way it explores the fragile balance between order and chaos, the cost of heroism, and the power of fear, makes it a deeply compelling watch. Add to that the breathtaking visuals and Hans Zimmer’s score, which pulses with urgency, and you’ve got a film that’s as thrilling as it is thought-provoking.\r\n\r\nHere’s a fun tidbit: Ledger’s iconic scene where he claps in the jail cell was entirely unscripted. It’s one of those moments that perfectly captures the Joker’s unsettling genius, and it’s all thanks to Ledger’s improvisation.\r\n\r\nThe Dark Knight is a film that deserves all the praise it gets. It’s intense, thoughtful, and unforgettable, with Heath Ledger delivering one of the most iconic performances of all time. If you haven’t seen it yet—or even if you have—it’s a movie that’s always worth revisiting.",
+          "created_at": "2024-12-17T16:32:14.192Z",
+          "id": "6761a78eb80a974245cbeebc",
+          "updated_at": "2024-12-17T16:32:14.251Z",
+          "url": "https://www.themoviedb.org/review/6761a78eb80a974245cbeebc"
+        }
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=_PZpmTj1Q8Q",
+      "cast": "Christian Bale, Heath Ledger, Aaron Eckhart, Michael Caine, Maggie Gyllenhaal",
+      "category": "top_rated",
+      "createdAt": "2025-05-13T01:11:15.285Z"
+    },
+    {
+      "id": "240",
+      "adult": false,
+      "backdrop_path": "/kGzFbGhp99zva6oZODW5atUtnqi.jpg",
+      "original_language": "en",
+      "original_title": "The Godfather Part II",
+      "overview": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
+      "popularity": 15.7696,
+      "poster_path": "/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
+      "release_date": "1974-12-20",
+      "title": "The Godfather Part II",
+      "vote_average": 8.6,
+      "vote_count": 12944,
+      "poster_url": "https://image.tmdb.org/t/p/original/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/kGzFbGhp99zva6oZODW5atUtnqi.jpg",
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "reviews": [
+        {
+          "author": "jkbbr549",
+          "author_details": {
+            "name": "",
+            "username": "jkbbr549",
+            "avatar_path": null,
+            "rating": null
+          },
+          "content": "This is by far the greatest movie of all time!  Even better than the first Godfather!",
+          "created_at": "2015-04-21T11:41:26.541Z",
+          "id": "553637669251416518002602",
+          "updated_at": "2021-06-23T15:57:34.131Z",
+          "url": "https://www.themoviedb.org/review/553637669251416518002602"
+        },
+        {
+          "author": "Matthew Dixon",
+          "author_details": {
+            "name": "Matthew Dixon",
+            "username": "matthewdixon",
+            "avatar_path": "/Af7sJr2dLx38npWMIaDzVmdzwd4.jpg",
+            "rating": 10
+          },
+          "content": "Worthy sequel to the first movie. In something more meditative and unhurried, in something more philosophically meaningful than its legendary predecessor. Backstage games and backstage talks replaced the dramatic mood swings of the main characters and the exchange of fire.\r\n\r\nThe second film continues the story of Michael Carleone in the role of the Godfather, and also complements the family story with scenes of the formation of the young Vito Andolini and his escape to America. The difficult choice of being young Don, his sphere of expansion of influence opens up new heights and horizons, but also acquires new enemies. Big money and power always keep pace with great temptation, and therefore you should always keep your ears open. After all, the knife in the back can insert exactly the one from whom you do not expect ...",
+          "created_at": "2019-07-30T08:28:10.884Z",
+          "id": "5d3fff9ab87aec6aa339e228",
+          "updated_at": "2021-06-23T15:58:24.936Z",
+          "url": "https://www.themoviedb.org/review/5d3fff9ab87aec6aa339e228"
+        },
+        {
+          "author": "CinemaSerf",
+          "author_details": {
+            "name": "CinemaSerf",
+            "username": "Geronimo1967",
+            "avatar_path": "/yz2HPme8NPLne0mM8tBnZ5ZWJzf.jpg",
+            "rating": 7
+          },
+          "content": "Building on the first volume, this self-adaptation by writer Mario Puzo and director Francis Ford Coppola develops the story of the new Don - \"Michael\" (Al Pacino). His attempts to expand, and to a certain extent legitimise, the family businesses see him associating with the duplicitous \"Hyman Roth\" (Lee Strasberg) in Cuba; subject to betrayal, assassination attempts and fighting what may be a losing battle to keep his own family together - all whilst doing plenty of Machiavellian manipulation of his own. There is an equally strong parallel thread depicting how his father \"Vito\" (Robert de Niro) rose to prominence after fleeing Sicily after the murder of his family at the hands of \"Don Ciccio\". With the principal characters all now well established, we can hit the ground running with a solid and complex set of inter-connected, character-driven storylines. The superior cast deliver this story really effectively - Robert Duvall and Diane Keaton as the consigliere and wife respectively, standing out. The attention to detail alongside the instantly recognisable Nino Rota score add amply to what is just a great story of Michael's efforts to build upon (and honour) his father's legacy, before he loses all of his own, once prevailing, decency. It is long, and it does miss Brando, but Pacino is on super form as the increasingly ruthless and isolated - even lonely - figure and I reckon this is every bit as good at the \"Godfather\" (1972).",
+          "created_at": "2022-04-04T16:39:54.710Z",
+          "id": "624b1f5a1c6329004ec03965",
+          "updated_at": "2022-04-04T16:39:54.710Z",
+          "url": "https://www.themoviedb.org/review/624b1f5a1c6329004ec03965"
+        },
+        {
+          "author": "drystyx",
+          "author_details": {
+            "name": "",
+            "username": "drystyx",
+            "avatar_path": "/hLLsAvAnVT0cFU7JuuaaItTWXv8.jpg",
+            "rating": 4
+          },
+          "content": "This Hollywood style formula movie about mobsters isn't as pathetic as the first or third one, simply because it is too dull and poorly directed to stay awake through.\r\nIt's basically just a bunch of scenes of people \"talking tough\" or getting killed, with no point.\r\nIf you're looking for a plot or story, forget it. There is none. It's a muddled mess. It appears that by the end, the chief mobster is in anguish over whether or not to kill his brother. \r\nWhy? Who knows? None of this makes sense to those of us who aren't born with some super psychic ESP. \r\nIt also appears there's some revenge, but we never know why, or who, or what. It's just a poorly directed and poorly written mess.\r\nIt does cure Insomnia, though, which is why it gets a 2 rating instead of a 1.",
+          "created_at": "2023-04-02T16:19:11.302Z",
+          "id": "6429aaffc0442901f002ad45",
+          "updated_at": "2023-04-03T16:45:18.611Z",
+          "url": "https://www.themoviedb.org/review/6429aaffc0442901f002ad45"
+        }
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=7pfqivkYUlE",
+      "cast": "Al Pacino, Robert Duvall, Diane Keaton, Robert De Niro, John Cazale",
+      "category": "top_rated",
+      "createdAt": "2025-05-13T01:11:13.908Z"
     }
   ]
 }

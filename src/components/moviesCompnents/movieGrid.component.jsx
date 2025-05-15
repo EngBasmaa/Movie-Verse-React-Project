@@ -10,7 +10,7 @@ export function MovieGrid({ movies, isSeries }) {
           imageUrl={item.poster_url || item.poster_path}
           title={isSeries ? item.name : item.title}
           rating={item.vote_average}
-          releaseDate={isSeries ? item.first_air_date : item.release_date}
+          releaseDate={isSeries ? item.release_date : item.release_date}
           showPlayButton={true}
           id={item.id}
           typeOfCard={isSeries ? "tv" : "movie"}
