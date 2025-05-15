@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
@@ -11,11 +11,15 @@ import { getMovieById } from "../../movies/movieApi";
 import { useDispatch } from "react-redux";
 import { addMovieAction, editMovieAction } from "../../movies/movieSlice";
 import { v4 as uuidv4 } from "uuid";
+import { AuthContext } from "../../auth/AuthContext";
 
 export function MovieForm() {
   const { id } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const { setIsHeader } = useContext(AuthContext);
+
+  setIsHeader(true);
 
   const [formData, setFormData] = useState({
     title: "",
@@ -106,10 +110,11 @@ export function MovieForm() {
     setFormErrors((prev) => ({ ...prev, [name]: error }));
   };
 
-  // إضافة الدالة المفقودة renderInput هنا
   const renderInput = (label, name, type = "text") => (
     <div className="space-y-2">
-      <Label htmlFor={name}>{label}</Label>
+      <Label htmlFor={name} className="text-zinc-300 font-medium">
+        {label}
+      </Label>
       <Input
         id={name}
         name={name}
@@ -117,16 +122,16 @@ export function MovieForm() {
         value={formData[name]}
         onChange={handleChange}
         onBlur={handleBlur}
-        className={`bg-zinc-700 text-white ${
+        className={`bg-zinc-800/70 border-zinc-700 text-white hover:border-zinc-600 focus:border-amber-500 focus:ring-1 focus:ring-amber-500/50 ${
           formErrors[name] && submitAttempted
-            ? "border-red-500 bg-red-100 text-red-800"
-            : "border-zinc-600"
+            ? "border-red-500 bg-red-900/20 focus:border-red-500 focus:ring-red-500/50"
+            : ""
         }`}
         required
       />
-      {formErrors[name] && (
-        <p className="text-sm text-red-500">
-          <ExclamationTriangleIcon className="inline-block mr-1 align-text-bottom" />
+      {formErrors[name] && submitAttempted && (
+        <p className="flex items-center gap-1 text-sm text-red-400">
+          <ExclamationTriangleIcon className="inline-block size-4" />
           {formErrors[name]}
         </p>
       )}
@@ -207,13 +212,15 @@ export function MovieForm() {
 
   const renderCategorySelect = () => (
     <div className="space-y-2">
-      <Label htmlFor="category">Category</Label>
+      <Label htmlFor="category" className="text-zinc-300 font-medium">
+        Category
+      </Label>
       <select
         id="category"
         name="category"
         value={formData.category}
         onChange={handleChange}
-        className="bg-zinc-700 text-white rounded-md px-3 py-2 w-full"
+        className="flex h-10 w-full rounded-md border border-zinc-700 bg-zinc-800/70 px-3 py-2 text-sm text-white ring-offset-zinc-900 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-zinc-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
       >
         <option value="top_rated">Top Rated</option>
         <option value="popular">Popular</option>
@@ -223,14 +230,21 @@ export function MovieForm() {
   );
 
   return (
-    <div className="bg-zinc-800 p-5">
+    <div className="min-h-screen bg-gradient-to-br from-zinc-950 to-zinc-900 py-12 px-4 sm:px-6 lg:px-8">
       <form
         onSubmit={handleSubmit}
-        className="bg-red-100 border border-pink-700 rounded-2xl p-8 shadow-xl w-full max-w-4xl mx-auto text-pink-700"
+        className="bg-zinc-900/80 backdrop-blur-sm border border-zinc-800 rounded-2xl p-8 shadow-2xl w-full max-w-4xl mx-auto"
       >
-        <h3 className="text-2xl font-bold text-pink-700 mb-6 text-center">
-          {id === "0" ? "🎬 Add New Movie" : "✏️ Edit Movie"}
-        </h3>
+        <div className="text-center mb-8">
+          <h3 className="text-3xl font-bold bg-gradient-to-r from-amber-400 to-pink-500 bg-clip-text text-transparent">
+            {id === "0" ? "Add New Movie" : "Edit Movie"}
+          </h3>
+          <p className="text-zinc-400 mt-2">
+            {id === "0"
+              ? "Fill in the details to add a new movie"
+              : "Update the movie information"}
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {renderInput("Title", "title")}
@@ -240,11 +254,13 @@ export function MovieForm() {
           {renderInput("Release Date", "release_date", "date")}
           {renderInput("Original Language", "original_language")}
           {renderInput("Trailer URL", "trailer_url")}
-          {renderInput("Cast", "cast")}
+          {renderInput("Cast (comma separated)", "cast")}
           {renderCategorySelect()}
 
           <div className="space-y-2">
-            <Label htmlFor="genres">Genres</Label>
+            <Label htmlFor="genres" className="text-zinc-300 font-medium">
+              Genres
+            </Label>
             <select
               id="genres"
               name="genres"
@@ -252,10 +268,8 @@ export function MovieForm() {
               value={formData.genres}
               onChange={handleChange}
               onBlur={handleBlur}
-              className={`bg-zinc-700 text-white rounded-md px-3 py-2 w-full ${
-                formErrors.genres && submitAttempted
-                  ? "border-red-500 bg-red-100 text-red-800"
-                  : "border-zinc-600"
+              className={`flex h-10 w-full rounded-md border border-zinc-700 bg-zinc-800/70 px-3 py-2 text-sm text-white ring-offset-zinc-900 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-zinc-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 ${
+                formErrors.genres && submitAttempted ? "border-red-500" : ""
               }`}
               required
             >
@@ -265,28 +279,40 @@ export function MovieForm() {
               <option value="horror">Horror</option>
               <option value="romance">Romance</option>
             </select>
-            {formErrors.genres && (
-              <p className="text-sm text-red-500">
-                <ExclamationTriangleIcon className="inline-block mr-1 align-text-bottom" />
+            {formErrors.genres && submitAttempted && (
+              <p className="flex items-center gap-1 text-sm text-red-400">
+                <ExclamationTriangleIcon className="inline-block size-4" />
                 {formErrors.genres}
               </p>
             )}
           </div>
 
-          {renderInput("Vote Average", "vote_average", "number")}
+          {renderInput("Vote Average (0-10)", "vote_average", "number")}
           {renderInput("Vote Count", "vote_count", "number")}
           {renderInput("Popularity", "popularity", "number")}
 
           <div className="md:col-span-2 space-y-2">
-            <Label htmlFor="reviews">Reviews (JSON format)</Label>
+            <Label htmlFor="overview" className="text-zinc-300 font-medium">
+              Overview
+            </Label>
             <Textarea
-              id="reviews"
-              name="reviews"
-              value={formData.reviews}
+              id="overview"
+              name="overview"
+              rows="4"
+              value={formData.overview}
               onChange={handleChange}
-              rows="6"
-              className="bg-zinc-700 text-white"
+              onBlur={handleBlur}
+              className={`bg-zinc-800/70 border-zinc-700 text-white hover:border-zinc-600 focus:border-amber-500 focus:ring-1 focus:ring-amber-500/50 ${
+                formErrors.overview && submitAttempted ? "border-red-500" : ""
+              }`}
+              required
             />
+            {formErrors.overview && submitAttempted && (
+              <p className="flex items-center gap-1 text-sm text-red-400">
+                <ExclamationTriangleIcon className="inline-block size-4" />
+                {formErrors.overview}
+              </p>
+            )}
           </div>
 
           <div className="md:col-span-2 flex items-center gap-3 pt-4">
@@ -294,23 +320,34 @@ export function MovieForm() {
               checked={formData.adult}
               onCheckedChange={handleSwitch}
               id="adult"
+              className="data-[state=checked]:bg-amber-500 data-[state=unchecked]:bg-zinc-700"
             />
-            <Label htmlFor="adult">Adult Only?</Label>
+            <Label htmlFor="adult" className="text-zinc-300">
+              Adult Content
+            </Label>
           </div>
         </div>
 
-        <div className="text-center mt-8">
+        <div className="flex justify-center gap-4 mt-10">
+          <Button
+            type="button"
+            variant="outline"
+            onClick={() => navigate("/admin/movies")}
+            className="border-zinc-700 text-zinc-300 hover:bg-zinc-800/50 hover:text-white px-8 py-3 rounded-xl font-medium transition-all"
+          >
+            Cancel
+          </Button>
           <Button
             type="submit"
-            className="bg-pink-700 hover:bg-pink-800 text-white px-6 py-3 rounded-xl text-sm font-medium"
+            className="bg-gradient-to-r from-amber-500 to-pink-600 hover:from-amber-400 hover:to-pink-500 text-white px-8 py-3 rounded-xl font-medium shadow-lg hover:shadow-amber-500/20 transition-all"
           >
             {id === "0" ? (
-              <>
-                <MdAddTask className="inline-block mr-2 size-6" />
-                Add Movie
-              </>
+              <div className="flex items-center gap-2">
+                <MdAddTask className="size-5" />
+                <span>Add Movie</span>
+              </div>
             ) : (
-              "✏️ Edit Movie"
+              "Save Changes"
             )}
           </Button>
         </div>

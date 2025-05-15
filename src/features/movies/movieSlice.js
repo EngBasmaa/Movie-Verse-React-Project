@@ -29,18 +29,30 @@ export const getAllMoviesAction = createAsyncThunk(
     }
   }
 );
-// GET MOVIE BY ID
 export const getMovieByIdAction = createAsyncThunk(
   "movie/getMovieByIdAction",
-  async (movieId, { rejectWithValue }) => {
+  async (movieId, { rejectWithValue, getState }) => {
     try {
+      // 1. حاول البحث في الأفلام أولاً
       const response = await getMovieById(movieId);
       return response.data;
     } catch (error) {
-      console.log(error.message);
-      return rejectWithValue(
-        error.response?.data || { message: error.message }
-      );
+      // 2. إذا فشل، ابحث في known_for للممثلين
+      const state = getState();
+      const people = state.peopleSlice.people;
+
+      const foundInPeople = people
+        .flatMap((person) => person.known_for)
+        .find((movie) => movie?.id == movieId);
+
+      if (foundInPeople) {
+        return foundInPeople; // إرجاع الفيلم من بيانات الممثلين
+      }
+
+      // 3. إذا لم يُوجد في أي مكان
+      return rejectWithValue({
+        message: `Movie ${movieId} not found in any source`,
+      });
     }
   }
 );

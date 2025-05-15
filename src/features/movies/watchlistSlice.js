@@ -16,6 +16,7 @@ export const addToWatchlistAction = createAsyncThunk(
     }
   }
 );
+
 export const fetchWatchlistAction = createAsyncThunk(
   "watchlist/fetch",
   async (_, { rejectWithValue }) => {
@@ -28,6 +29,7 @@ export const fetchWatchlistAction = createAsyncThunk(
     }
   }
 );
+
 export const removeFromWatchlistAction = createAsyncThunk(
   "watchlist/remove",
   async (mediaId, { rejectWithValue }) => {
@@ -39,7 +41,7 @@ export const removeFromWatchlistAction = createAsyncThunk(
         }
       );
       if (!response.ok) throw new Error("Failed to remove from watchlist");
-      return mediaId;
+      return mediaId; // تأكد من أن الـ API يُعيد الـ ID الصحيح
     } catch (error) {
       return rejectWithValue(error.message);
     }
@@ -50,38 +52,50 @@ const watchlistSlice = createSlice({
   name: "watchlist",
   initialState: {
     items: [],
-    loading: false,
+    status: "idle", // 'idle' | 'loading' | 'succeeded' | 'failed'
     error: null,
   },
   reducers: {},
   extraReducers: (builder) => {
     builder
+      // معالجة إضافة العناصر
       .addCase(addToWatchlistAction.pending, (state) => {
-        state.loading = true;
+        state.status = "loading";
       })
       .addCase(addToWatchlistAction.fulfilled, (state, action) => {
+        state.status = "succeeded";
         state.items.push(action.payload);
-        state.loading = false;
       })
       .addCase(addToWatchlistAction.rejected, (state, action) => {
+        state.status = "failed";
         state.error = action.payload;
-        state.loading = false;
-      });
-    builder
+      })
+
+      // معالجة جلب القائمة
       .addCase(fetchWatchlistAction.pending, (state) => {
-        state.loading = true;
+        state.status = "loading";
       })
       .addCase(fetchWatchlistAction.fulfilled, (state, action) => {
+        state.status = "succeeded";
         state.items = action.payload;
-        state.loading = false;
       })
       .addCase(fetchWatchlistAction.rejected, (state, action) => {
+        state.status = "failed";
         state.error = action.payload;
-        state.loading = false;
+      })
+
+      // معالجة حذف العناصر
+      .addCase(removeFromWatchlistAction.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(removeFromWatchlistAction.fulfilled, (state, action) => {
+        state.status = "succeeded";
+        state.items = state.items.filter((item) => item.id !== action.payload);
+      })
+      .addCase(removeFromWatchlistAction.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.payload;
       });
-    builder.addCase(removeFromWatchlistAction.fulfilled, (state, action) => {
-      state.items = state.items.filter((item) => item.id !== action.payload);
-    });
   },
 });
 

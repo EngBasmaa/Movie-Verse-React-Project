@@ -9,7 +9,7 @@ export default function NewReleas() {
       getMovies={filterAnimation}
       limit={20}
       navigationId="New-swiper-nav"
-      overlayVariant="grey"
+      overlayVariant="dark"
     />
   );
 }

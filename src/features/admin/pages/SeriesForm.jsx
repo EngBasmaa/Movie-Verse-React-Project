@@ -4,18 +4,22 @@ import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { ExclamationTriangleIcon } from "@radix-ui/react-icons";
 import { MdAddTask } from "react-icons/md";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Textarea } from "@/components/ui/textarea";
 import { getSeriesById } from "../../series/seriesApi";
 import { useDispatch } from "react-redux";
 import { addSeriesAction, editSeriesAction } from "../../series/seriesSlice";
 import { v4 as uuidv4 } from "uuid";
+import { AuthContext } from "../../auth/AuthContext";
 
 export function SeriesForm() {
   const { id } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const { setIsHeader } = useContext(AuthContext);
+
+  setIsHeader(true);
 
   const [formData, setFormData] = useState({
     title: "",
@@ -188,7 +192,9 @@ export function SeriesForm() {
 
   const renderInput = (label, name, type = "text") => (
     <div className="space-y-2">
-      <Label htmlFor={name}>{label}</Label>
+      <Label htmlFor={name} className="text-zinc-300 font-medium">
+        {label}
+      </Label>
       <Input
         id={name}
         name={name}
@@ -196,16 +202,16 @@ export function SeriesForm() {
         value={formData[name]}
         onChange={handleChange}
         onBlur={handleBlur}
-        className={`bg-zinc-800 text-white ${
+        className={`bg-zinc-800/70 border-zinc-700 text-white hover:border-zinc-600 focus:border-amber-500 focus:ring-1 focus:ring-amber-500/50 ${
           formErrors[name] && submitAttempted
-            ? "border-red-500 bg-red-100 text-red-800"
-            : "border-zinc-600"
+            ? "border-red-500 bg-red-900/20 focus:border-red-500 focus:ring-red-500/50"
+            : ""
         }`}
         required
       />
-      {formErrors[name] && (
-        <p className="text-sm text-red-500">
-          <ExclamationTriangleIcon className="inline-block mr-1 align-text-bottom" />
+      {formErrors[name] && submitAttempted && (
+        <p className="flex items-center gap-1 text-sm text-red-400">
+          <ExclamationTriangleIcon className="inline-block size-4" />
           {formErrors[name]}
         </p>
       )}
@@ -214,46 +220,57 @@ export function SeriesForm() {
 
   const renderCategorySelect = () => (
     <div className="space-y-2">
-      <Label htmlFor="category">Category</Label>
+      <Label htmlFor="category" className="text-zinc-300 font-medium">
+        Category
+      </Label>
       <select
         id="category"
         name="category"
         value={formData.category}
         onChange={handleChange}
-        className="bg-zinc-800 text-white rounded-md px-3 py-2 w-full"
+        className="flex h-10 w-full rounded-md border border-zinc-700 bg-zinc-800/70 px-3 py-2 text-sm text-white ring-offset-zinc-900 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-zinc-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
       >
-        <option value="top_rated">top_rated </option>
-        <option value="popular"> popular </option>
-        <option value="upcoming">upcoming </option>
+        <option value="top_rated">Top Rated</option>
+        <option value="popular">Popular</option>
+        <option value="upcoming">Upcoming</option>
       </select>
     </div>
   );
 
   return (
-    <div className="bg-zinc-800">
+    <div className="min-h-screen bg-gradient-to-br from-zinc-950 to-zinc-900 py-12 px-4 sm:px-6 lg:px-8">
       <form
         onSubmit={handleSubmit}
-        className="bg-red-100 border text-pink-700 border-gray-200 rounded-2xl p-8 shadow-xl w-full max-w-4xl mx-auto"
+        className="bg-zinc-900/80 backdrop-blur-sm border border-zinc-800 rounded-2xl p-8 shadow-2xl w-full max-w-4xl mx-auto"
       >
-        <h3 className="text-2xl font-bold text-pink-700 mb-6 text-center">
-          {id === "0" ? "🎬 Add new series" : "✏️ edit series"}
-        </h3>
+        <div className="text-center mb-8">
+          <h3 className="text-3xl font-bold bg-gradient-to-r from-amber-400 to-pink-500 bg-clip-text text-transparent">
+            {id === "0" ? "Add New Series" : "Edit Series"}
+          </h3>
+          <p className="text-zinc-400 mt-2">
+            {id === "0"
+              ? "Fill in the details to add a new series"
+              : "Update the series information"}
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {renderInput("title", "title")}
-          {renderInput("original title ", "original_title")}
-          {renderInput("بوستر المسلسل", "poster_url")}
-          {renderInput("خلفية المسلسل", "backdrop_url")}
-          {renderInput("تاريخ الإصدار", "release_date", "date")}
-          {renderInput("اللغة الأصلية", "original_language")}
-          {renderInput("عدد المواسم", "number_of_seasons", "number")}
-          {renderInput("عدد الحلقات", "number_of_episodes", "number")}
-          {renderInput("المقطع الدعائي", "trailer_url")}
-          {renderInput("طاقم التمثيل", "cast")}
+          {renderInput("Title", "title")}
+          {renderInput("Original Title", "original_title")}
+          {renderInput("Poster URL", "poster_url")}
+          {renderInput("Backdrop URL", "backdrop_url")}
+          {renderInput("Release Date", "release_date", "date")}
+          {renderInput("Original Language", "original_language")}
+          {renderInput("Number of Seasons", "number_of_seasons", "number")}
+          {renderInput("Number of Episodes", "number_of_episodes", "number")}
+          {renderInput("Trailer URL", "trailer_url")}
+          {renderInput("Cast (comma separated)", "cast")}
           {renderCategorySelect()}
 
           <div className="space-y-2">
-            <Label htmlFor="genres">الأنواع</Label>
+            <Label htmlFor="genres" className="text-zinc-300 font-medium">
+              Genres
+            </Label>
             <select
               id="genres"
               name="genres"
@@ -261,31 +278,33 @@ export function SeriesForm() {
               value={formData.genres}
               onChange={handleChange}
               onBlur={handleBlur}
-              className={`bg-zinc-800 text-white rounded-md px-3 py-2 w-full ${
+              className={`flex h-10 w-full rounded-md border border-zinc-700 bg-zinc-800/70 px-3 py-2 text-sm text-white ring-offset-zinc-900 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-zinc-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 ${
                 formErrors.genres && submitAttempted ? "border-red-500" : ""
               }`}
               required
             >
-              <option value="action">أكشن</option>
-              <option value="comedy">كوميديا</option>
-              <option value="drama">دراما</option>
-              <option value="horror">رعب</option>
-              <option value="romance">رومانسي</option>
+              <option value="action">Action</option>
+              <option value="comedy">Comedy</option>
+              <option value="drama">Drama</option>
+              <option value="horror">Horror</option>
+              <option value="romance">Romance</option>
             </select>
-            {formErrors.genres && (
-              <p className="text-sm text-red-500">
-                <ExclamationTriangleIcon className="inline-block mr-1 align-text-bottom" />
+            {formErrors.genres && submitAttempted && (
+              <p className="flex items-center gap-1 text-sm text-red-400">
+                <ExclamationTriangleIcon className="inline-block size-4" />
                 {formErrors.genres}
               </p>
             )}
           </div>
 
-          {renderInput("التقييم العام", "vote_average", "number")}
-          {renderInput("عدد التقييمات", "vote_count", "number")}
-          {renderInput("الشعبية", "popularity", "number")}
+          {renderInput("Vote Average (0-10)", "vote_average", "number")}
+          {renderInput("Vote Count", "vote_count", "number")}
+          {renderInput("Popularity", "popularity", "number")}
 
           <div className="md:col-span-2 space-y-2">
-            <Label htmlFor="overview">الملخص</Label>
+            <Label htmlFor="overview" className="text-zinc-300 font-medium">
+              Overview
+            </Label>
             <Textarea
               id="overview"
               name="overview"
@@ -293,14 +312,14 @@ export function SeriesForm() {
               value={formData.overview}
               onChange={handleChange}
               onBlur={handleBlur}
-              className={`bg-zinc-800 text-white ${
+              className={`bg-zinc-800/70 border-zinc-700 text-white hover:border-zinc-600 focus:border-amber-500 focus:ring-1 focus:ring-amber-500/50 ${
                 formErrors.overview && submitAttempted ? "border-red-500" : ""
               }`}
               required
             />
-            {formErrors.overview && (
-              <p className="text-sm text-red-500">
-                <ExclamationTriangleIcon className="inline-block mr-1 align-text-bottom" />
+            {formErrors.overview && submitAttempted && (
+              <p className="flex items-center gap-1 text-sm text-red-400">
+                <ExclamationTriangleIcon className="inline-block size-4" />
                 {formErrors.overview}
               </p>
             )}
@@ -311,23 +330,34 @@ export function SeriesForm() {
               checked={formData.adult}
               onCheckedChange={handleSwitch}
               id="adult"
+              className="data-[state=checked]:bg-amber-500 data-[state=unchecked]:bg-zinc-700"
             />
-            <Label htmlFor="adult">للبالغين فقط؟</Label>
+            <Label htmlFor="adult" className="text-zinc-300">
+              Adult Content
+            </Label>
           </div>
         </div>
 
-        <div className="text-center mt-8">
+        <div className="flex justify-center gap-4 mt-10">
+          <Button
+            type="button"
+            variant="outline"
+            onClick={() => navigate("/admin/series")}
+            className="border-zinc-700 text-zinc-300 hover:bg-zinc-800/50 hover:text-white px-8 py-3 rounded-xl font-medium transition-all"
+          >
+            Cancel
+          </Button>
           <Button
             type="submit"
-            className="bg-pink-700 hover:bg-pink-800 text-white px-6 py-3 rounded-xl text-sm font-medium"
+            className="bg-gradient-to-r from-amber-500 to-pink-600 hover:from-amber-400 hover:to-pink-500 text-white px-8 py-3 rounded-xl font-medium shadow-lg hover:shadow-amber-500/20 transition-all"
           >
             {id === "0" ? (
-              <>
-                <MdAddTask className="inline-block mr-2 size-6" />
-                إضافة مسلسل
-              </>
+              <div className="flex items-center gap-2">
+                <MdAddTask className="size-5" />
+                <span>Add Series</span>
+              </div>
             ) : (
-              "✏️ حفظ التعديلات"
+              "Save Changes"
             )}
           </Button>
         </div>

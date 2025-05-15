@@ -33,7 +33,6 @@ export function Movies() {
     // تصفية البيانات حسب النوع المختار
     const filtered =
       selectedGenre === "Everything" || selectedGenre === "TV Movie"
-
         ? cleanedData
         : filterByGenre(cleanedData, selectedGenre);
 
@@ -97,9 +96,7 @@ export function Movies() {
             <button
               key={i}
               className={`px-3 py-1 border rounded ${
-
                 currentPage === i + 1 ? "bg-sky-600 text-white" : "bg-white"
-
               }`}
               onClick={() => handlePageChange(i + 1)}
             >

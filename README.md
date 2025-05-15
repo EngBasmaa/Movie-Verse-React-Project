@@ -1,12 +1,46 @@
-# React + Vite
+# 🎬 MovieVerse – IMDb-like Movies & TV Shows Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**MovieVerse** is a frontend web application built with **React.js** that allows users to browse movies, TV shows, and actors, and view detailed pages for each. The data is fetched from a local server using `JSON Server`.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Browse movies and TV shows
+- View detailed pages for each title
+- View actor profiles
+- Search functionality
+- Responsive and modern UI
 
-## Expanding the ESLint configuration
+## ⚙️ Requirements
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js and npm installed on your machine
+- A local server running on **http://localhost:3001** using `JSON Server`
+
+> ⚠️ **Important**: Before running the app, make sure you start the local backend using the `db.json` file on port `3001`.
+
+## 📦 Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/movieverse.git
+
+   ```
+
+2. Install frontend dependencies:
+
+   ```bash
+    npm install
+
+   ```
+
+3. Start the JSON Server (in a separate terminal):
+
+   ```bash
+    npx json-server --watch db.json --port 3001
+
+   ```
+
+4. Start the React app:
+   ```bash
+    npm start
+   ```

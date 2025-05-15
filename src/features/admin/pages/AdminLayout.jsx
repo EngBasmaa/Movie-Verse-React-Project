@@ -135,7 +135,7 @@ export function AdminLayout() {
 
   return (
     <div className="flex">
-      <main className="flex-1 p-6 bg-zinc-800 w-full">
+      <main className="flex-1 shadow-2xl bg-zinc-800 w-full">
         <MyHeader
           activeTab={activeTab}
           onTabChange={(tab) => navigate(`/admin/${tab}`)}
@@ -162,28 +162,94 @@ export function AdminLayout() {
         )}
 
         {isMoviesTab && (
-          <div className="px-6 py-8">
-            <h2 className="text-4xl font-semibold text-white mb-6 border-b pb-2 border-gray-300 mt-6">
-              🎬 Movies Statistics
-            </h2>
+          <>
+            <MyTable
+              type={isMoviesTab ? "movie" : "series"}
+              tableTitle={isMoviesTab ? "All Movies" : "All Series"}
+              data={paginatedData}
+              pagination={{ currentPage, totalPages }}
+              setPage={setCurrentPage}
+            />
 
-            <div className=" p-4 mb-6">
-              <MyChart movies={filteredData} />
+            {/* Pagination Controls */}
+            <div className="flex justify-center mt-6">
+              <button
+                className="px-4 py-2 mr-2  rounded-3xl bg-pink-700 text-white hover:text-red-200   hover:bg-pink-900 transition"
+                disabled={currentPage === 1}
+                onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+              >
+                Previous
+              </button>
+              <span className="px-4 py-2 text-white">
+                {currentPage} of {totalPages}
+              </span>
+              <button
+                className="px-4 py-2 mr-2  rounded-3xl bg-pink-700 text-white hover:text-red-200   hover:bg-pink-900 transition"
+                disabled={currentPage === totalPages}
+                onClick={() =>
+                  setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+                }
+              >
+                Next
+              </button>
             </div>
-          </div>
+
+            <div className="px-6 py-8">
+              <h2 className="text-4xl font-semibold text-white mb-6 border-b pb-2 border-gray-300 mt-6">
+                🎬 Movies Statistics
+              </h2>
+
+              <div className=" p-4 mb-6">
+                <MyChart movies={filteredData} />
+              </div>
+            </div>
+          </>
         )}
 
         {isSeriesTab && (
-          <div className="px-6 py-8">
-            <h2 className="text-4xl font-semibold text-white mb-6 border-b pb-2 border-gray-300 mt-6">
-              📺 Series Statistics
-            </h2>
+          <>
+            <MyTable
+              type={isMoviesTab ? "movie" : "series"}
+              tableTitle={isMoviesTab ? "All Movies" : "All Series"}
+              data={paginatedData}
+              pagination={{ currentPage, totalPages }}
+              setPage={setCurrentPage}
+            />
 
-            {/* Line Chart */}
-            <div className=" p-4 mb-6">
-              <MyChart series={filteredData} />
+            {/* Pagination Controls */}
+            <div className="flex justify-center mt-6">
+              <button
+                className="px-4 py-2 mr-2  rounded-3xl bg-pink-700 text-white hover:text-red-200   hover:bg-pink-900 transition"
+                disabled={currentPage === 1}
+                onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+              >
+                Previous
+              </button>
+              <span className="px-4 py-2 text-white">
+                {currentPage} of {totalPages}
+              </span>
+              <button
+                className="px-4 py-2 mr-2  rounded-3xl bg-pink-700 text-white hover:text-red-200   hover:bg-pink-900 transition"
+                disabled={currentPage === totalPages}
+                onClick={() =>
+                  setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+                }
+              >
+                Next
+              </button>
             </div>
-          </div>
+
+            <div className="px-6 py-8">
+              <h2 className="text-4xl font-semibold text-white mb-6 border-b pb-2 border-gray-300 mt-6">
+                📺 Series Statistics
+              </h2>
+
+              {/* Line Chart */}
+              <div className=" p-4 mb-6">
+                <MyChart series={filteredData} />
+              </div>
+            </div>
+          </>
         )}
 
         {isDashboard && (
@@ -233,41 +299,6 @@ export function AdminLayout() {
                 </section>
               </div>
             )}
-          </>
-        )}
-
-        {!isDashboard && (
-          <>
-            <MyTable
-              type={isMoviesTab ? "movie" : "series"}
-              tableTitle={isMoviesTab ? "All Movies" : "All Series"}
-              data={paginatedData}
-              pagination={{ currentPage, totalPages }}
-              setPage={setCurrentPage}
-            />
-
-            {/* Pagination Controls */}
-            <div className="flex justify-center mt-6">
-              <button
-                className="px-4 py-2 mr-2  rounded-3xl bg-pink-700 text-white hover:text-red-200   hover:bg-pink-900 transition"
-                disabled={currentPage === 1}
-                onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-              >
-                Previous
-              </button>
-              <span className="px-4 py-2 text-white">
-                {currentPage} of {totalPages}
-              </span>
-              <button
-                className="px-4 py-2 mr-2  rounded-3xl bg-pink-700 text-white hover:text-red-200   hover:bg-pink-900 transition"
-                disabled={currentPage === totalPages}
-                onClick={() =>
-                  setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-                }
-              >
-                Next
-              </button>
-            </div>
           </>
         )}
       </main>
