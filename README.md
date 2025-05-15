@@ -1,6 +1,6 @@
 # 🎬 MovieVerse – IMDb-like Movies & TV Shows Website
 
-**MovieVerse** is a frontend web application built with **React.js** that allows users to browse movies, TV shows, and actors, and view detailed pages for each. The data is fetched from a local server using `JSON Server`.
+**MovieVerse** is a frontend web application built with **React.js** that allows users to browse movies, TV shows, and actors, and view detailed pages for each. The data is fetched from a local server using  `JSON Server`.
 
 ## 🌟 Features
 
