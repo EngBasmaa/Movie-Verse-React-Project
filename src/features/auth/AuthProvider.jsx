@@ -1,6 +1,6 @@
 // src/features/auth/context/AuthProvider.jsx
 import { useState, useEffect } from "react";
-import { AuthContext } from "./authContext";
+import { AuthContext } from "./AuthContext";
 import Cookies from "js-cookie";
 
 export const AuthProvider = ({ children }) => {
