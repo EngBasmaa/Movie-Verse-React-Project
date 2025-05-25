@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useContext } from "react";
-import { AuthContext } from "../../auth/AuthContext.js";
+import { AuthContext } from "../../auth/authContext.js";
 
 export function MyHeader({ activeTab, onTabChange }) {
   const { logout, setIsHeader } = useContext(AuthContext);

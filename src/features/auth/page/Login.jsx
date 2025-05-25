@@ -23,7 +23,7 @@ import { Separator } from "@/components/ui/separator";
 import { SocialLoginButtons } from "../components/SocialLoginButtons";
 import { Link, useNavigate } from "react-router-dom";
 import { LogIn, AlertCircle } from "lucide-react";
-import { AuthContext } from "../AuthContext.js";
+import { AuthContext } from "../authContext.js";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 export default function Login() {
