@@ -1,6 +1,6 @@
 // src/features/auth/context/AuthProvider.jsx
 import { useState, useEffect } from "react";
-import { AuthContext } from "./AuthContext";
+import { AuthContext } from "./authContext";
 import Cookies from "js-cookie";
 
 export const AuthProvider = ({ children }) => {
@@ -41,7 +41,7 @@ export const AuthProvider = ({ children }) => {
         login,
         logout,
         isHeader,
-        setIsHeader,
+        setIsHeader
       }}
     >
       {children}
